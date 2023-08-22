@@ -24,14 +24,14 @@
         <help_tag>More information</help_tag>
         <help_text/>
         <hidden>false</hidden>
-        <include_none>false</include_none>
+        <include_none>true</include_none>
         <instructions/>
         <layout>normal</layout>
         <list_table/>
-        <lookup_label>name</lookup_label>
+        <lookup_label/>
         <lookup_price/>
         <lookup_table>x_323515_account_0_ru_definition</lookup_table>
-        <lookup_unique>false</lookup_unique>
+        <lookup_unique>true</lookup_unique>
         <lookup_value>name</lookup_value>
         <macro/>
         <macroponent/>
@@ -39,7 +39,7 @@
         <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>u_reference_unit_name</name>
+        <name>reference_unit_name</name>
         <order>100</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
@@ -53,7 +53,7 @@
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table>x_323515_account_0_resource_unit</record_producer_table>
-        <reference/>
+        <reference>x_323515_account_0_ru_definition</reference>
         <reference_qual/>
         <reference_qual_condition/>
         <rich_text/>
@@ -73,19 +73,19 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-08-21 10:55:57</sys_created_on>
+        <sys_created_on>2023-08-22 11:00:28</sys_created_on>
         <sys_id>e717786197f0b110e25972d6f053afb0</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>What is the Resource unit number?</sys_name>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
         <sys_update_name>item_option_new_e717786197f0b110e25972d6f053afb0</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-08-21 10:58:24</sys_updated_on>
+        <sys_updated_on>2023-08-22 11:06:25</sys_updated_on>
         <table/>
         <tooltip/>
-        <type>18</type>
+        <type>8</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>

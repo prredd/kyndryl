@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Resource Unit Data">f88be46597b0b110e25972d6f053af28</catalog_item>
+        <catalog_variable>IO:8f473c6197f0b110e25972d6f053affd</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-22 11:02:09</sys_created_on>
+        <sys_id>e542ce7d97b03110e25972d6f053af4b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>current_month_count</sys_name>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_e542ce7d97b03110e25972d6f053af4b</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-08-22 11:06:23</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make 'current_month_count' mandatory &amp; visible depending on 'get_data_from_cmdb'">71020a7d97b03110e25972d6f053af74</ui_policy>
+        <variable>current_month_count</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>
