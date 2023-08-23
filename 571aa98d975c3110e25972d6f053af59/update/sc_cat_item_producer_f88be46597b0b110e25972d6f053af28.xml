@@ -108,7 +108,7 @@ else if(gd.getMonthNoTZ() == 11){
 }
 else if(gd.getMonthNoTZ() == 12){
 	current.m12_results = producer.current_month_count;
-};
+}
 ]]></script>
         <short_description>Enter RU Data Monthly</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
@@ -125,7 +125,7 @@ else if(gd.getMonthNoTZ() == 12){
         <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
         <sys_update_name>sc_cat_item_producer_f88be46597b0b110e25972d6f053af28</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-08-22 11:06:25</sys_updated_on>
+        <sys_updated_on>2023-08-23 11:11:42</sys_updated_on>
         <table_name>x_323515_account_0_resource_unit</table_name>
         <taxonomy_topic/>
         <template/>
