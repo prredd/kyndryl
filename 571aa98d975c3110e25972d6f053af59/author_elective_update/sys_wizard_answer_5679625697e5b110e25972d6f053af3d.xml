@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>true</active>
+        <answer>Financial Statement</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Financial Statement</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">c4598f86c51021108c8b506e733c4c9f</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-30 09:57:28</sys_created_on>
+        <sys_id>5679625697e5b110e25972d6f053af3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Financial Statement</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_wizard_answer_5679625697e5b110e25972d6f053af3d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-30 09:57:28</sys_updated_on>
+        <table/>
+        <target_url>x_323515_account_0_financial_statement.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_wizard_answer_5679625697e5b110e25972d6f053af3d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>Financial Statement</answer><button_label/><dependent_value/><element/><name>Financial Statement</name><next_question/><order>100</order><payload_name/><question display_value="Task" name="Task">c4598f86c51021108c8b506e733c4c9f</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-30 09:57:28</sys_created_on><sys_id>5679625697e5b110e25972d6f053af3d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Financial Statement</sys_name><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>sys_wizard_answer_5679625697e5b110e25972d6f053af3d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-30 09:57:28</sys_updated_on><table/><target_url>x_323515_account_0_financial_statement.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>1524601063</payload_hash>
+        <record_name>Financial Statement</record_name>
+        <reverted_from/>
+        <source>9056b53197332110e25972d6f053af3e</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-07-03 17:07:08</sys_created_on>
+        <sys_id>867a269697e5b110e25972d6f053afbc</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>1891cb8ea600000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Answer</type>
+        <update_guid>467a269674e5b110fa5633c616f212bc</update_guid>
+        <update_guid_history>467a269674e5b110fa5633c616f212bc:1524601063</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-30 10:01:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>6eae1d928fa149a096eae26913422f79</sys_id>
+        <sys_metadata>5679625697e5b110e25972d6f053af3d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Financial Statement</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent display_value="Task">c4598f86c51021108c8b506e733c4c9f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_5679625697e5b110e25972d6f053af3d</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_5679625697e5b110e25972d6f053af3d">867a269697e5b110e25972d6f053afbc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-30 10:01:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

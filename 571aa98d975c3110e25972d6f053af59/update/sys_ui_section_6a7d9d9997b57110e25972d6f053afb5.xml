@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="6a7d9d9997b57110e25972d6f053afb5" sys_domain="global" table="x_323515_account_0_financial_statement" version="3" view="workspace-resource-unit-management-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>process_flow.xml</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 12:07:13</sys_created_on>
+            <sys_id>6a7d9d9997b57110e25972d6f053afb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Process Flow">6f9e08b197613110e25972d6f053af0c</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_financial_statement" sys_domain="global" view="cc7d99999eb5711026fa915d1faddeab">6a7d9d9997b57110e25972d6f053afb5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 12:07:13</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 12:07:13</sys_created_on>
+            <sys_id>6e7d9d9997b57110e25972d6f053afb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_financial_statement" sys_domain="global" view="cc7d99999eb5711026fa915d1faddeab">6a7d9d9997b57110e25972d6f053afb5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 12:07:13</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 12:07:13</sys_created_on>
+            <sys_id>627d9d9997b57110e25972d6f053afb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_financial_statement" sys_domain="global" view="cc7d99999eb5711026fa915d1faddeab">6a7d9d9997b57110e25972d6f053afb5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 12:07:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 12:07:13</sys_created_on>
+            <sys_id>667d9d9997b57110e25972d6f053afb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_financial_statement" sys_domain="global" view="cc7d99999eb5711026fa915d1faddeab">6a7d9d9997b57110e25972d6f053afb5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 12:07:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 12:07:13</sys_created_on>
+            <sys_id>6a7d9d9997b57110e25972d6f053afb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_financial_statement" sys_domain="global" view="cc7d99999eb5711026fa915d1faddeab">6a7d9d9997b57110e25972d6f053afb5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 12:07:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 12:07:13</sys_created_on>
+            <sys_id>6e7d9d9997b57110e25972d6f053afb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_financial_statement" sys_domain="global" view="cc7d99999eb5711026fa915d1faddeab">6a7d9d9997b57110e25972d6f053afb5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 12:07:13</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>approval</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 12:07:13</sys_created_on>
+            <sys_id>627d9d9997b57110e25972d6f053afb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_financial_statement" sys_domain="global" view="cc7d99999eb5711026fa915d1faddeab">6a7d9d9997b57110e25972d6f053afb5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 12:07:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>stage</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 12:07:13</sys_created_on>
+            <sys_id>667d9d9997b57110e25972d6f053afb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_financial_statement" sys_domain="global" view="cc7d99999eb5711026fa915d1faddeab">6a7d9d9997b57110e25972d6f053afb5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 12:07:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 12:07:13</sys_created_on>
+            <sys_id>6a7d9d9997b57110e25972d6f053afb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_financial_statement" sys_domain="global" view="cc7d99999eb5711026fa915d1faddeab">6a7d9d9997b57110e25972d6f053afb5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 12:07:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 12:07:13</sys_created_on>
+            <sys_id>6e7d9d9997b57110e25972d6f053afb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_financial_statement" sys_domain="global" view="cc7d99999eb5711026fa915d1faddeab">6a7d9d9997b57110e25972d6f053afb5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 12:07:13</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 12:07:13</sys_created_on>
+            <sys_id>627d9d9997b57110e25972d6f053afb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_financial_statement" sys_domain="global" view="cc7d99999eb5711026fa915d1faddeab">6a7d9d9997b57110e25972d6f053afb5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 12:07:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 12:07:13</sys_created_on>
+            <sys_id>667d9d9997b57110e25972d6f053afb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_financial_statement" sys_domain="global" view="cc7d99999eb5711026fa915d1faddeab">6a7d9d9997b57110e25972d6f053afb5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 12:07:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 12:07:13</sys_created_on>
+            <sys_id>6a7d9d9997b57110e25972d6f053afb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_financial_statement" sys_domain="global" view="cc7d99999eb5711026fa915d1faddeab">6a7d9d9997b57110e25972d6f053afb5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 12:07:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 12:07:13</sys_created_on>
+            <sys_id>6e7d9d9997b57110e25972d6f053afb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_financial_statement" sys_domain="global" view="cc7d99999eb5711026fa915d1faddeab">6a7d9d9997b57110e25972d6f053afb5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 12:07:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_323515_account_0_financial_statement</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 12:07:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6a7d9d9997b57110e25972d6f053afb5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_323515_account_0_financial_statement</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+            <sys_update_name>sys_ui_section_6a7d9d9997b57110e25972d6f053afb5</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 12:07:13</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Workspace Resource Unit Management 0" name="workspace-resource-unit-management-0">cc7d99999eb5711026fa915d1faddeab</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

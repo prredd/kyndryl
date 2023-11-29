@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections action="DELETE" form_id="b9c216ac97753110e25972d6f053afe5" sys_domain="global" table="x_323515_account_0_ru_task" version="3">
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_323515_account_0_ru_task</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-07 08:04:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b9c216ac97753110e25972d6f053afe5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_323515_account_0_ru_task</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+            <sys_update_name>sys_ui_form_sections_b9c216ac97753110e25972d6f053afe5</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-07 08:04:39</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace-x 323515 account 0-0" name="Workspace-x_323515_account_0-0">06b21e6cb9753110f2b44b0b96da4553</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_ui_form_sections_b9c216ac97753110e25972d6f053afe5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_form_sections form_id="b9c216ac97753110e25972d6f053afe5" sys_domain="global" table="x_323515_account_0_ru_task" version="3"><sys_ui_form action="INSERT_OR_UPDATE"><name>x_323515_account_0_ru_task</name><roles/><sys_class_name>sys_ui_form</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-10-07 08:04:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b9c216ac97753110e25972d6f053afe5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_323515_account_0_ru_task</sys_name><sys_overrides/><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>sys_ui_form_sections_b9c216ac97753110e25972d6f053afe5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-10-07 08:04:39</sys_updated_on><sys_user/><view display_value="Workspace-x 323515 account 0-0" name="Workspace-x_323515_account_0-0">06b21e6cb9753110f2b44b0b96da4553</view><view_name/></sys_ui_form></sys_ui_form_sections></record_update>]]></payload>
+        <payload_hash>-375031827</payload_hash>
+        <record_name>RU Task</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-07 08:04:39</sys_created_on>
+        <sys_id>79c216ac97753110e25972d6f053afe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b092ac3250000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-07 08:04:39</sys_updated_on>
+        <type>Form Sections</type>
+        <update_guid>bdc216ac6a7531108e0acb169f80eae6</update_guid>
+        <update_guid_history>bdc216ac6a7531108e0acb169f80eae6:-375031827</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 10:14:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_form">sys_ui_form</sys_db_object>
+        <sys_id>007888927dfa41d0821c8813a5eeccc1</sys_id>
+        <sys_metadata>b9c216ac97753110e25972d6f053afe5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_323515_account_0_ru_task</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent display_value="RU Task">72be783897613110e25972d6f053af14</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_ui_form_sections_b9c216ac97753110e25972d6f053afe5</sys_update_name>
+        <sys_update_version display_value="sys_ui_form_sections_b9c216ac97753110e25972d6f053afe5">79c216ac97753110e25972d6f053afe7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-29 10:14:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

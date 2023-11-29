@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="List">453b73c997317110e25972d6f053afdc</macroponent>
+        <name>ListMenu Toggle</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api, event, helpers, imports}) {
+    const listPreference = api.state.listMenuOpenPreference;
+    const open = event.payload.listMenuOpen;
+
+    api.setState('listMenuOpen', open);
+    api.setState('listDisplayPanes', open? 'both': 'right');
+ 
+    api.data.setListPreference.execute({
+        'name': listPreference,
+        'value': open
+    });    
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 04:57:52</sys_created_on>
+        <sys_id>953b77c997317110e25972d6f053af0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ListMenu Toggle</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_ux_client_script_953b77c997317110e25972d6f053af0d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 04:57:52</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_ux_client_script_953b77c997317110e25972d6f053af0d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="List"&gt;453b73c997317110e25972d6f053afdc&lt;/macroponent&gt;&lt;name&gt;ListMenu Toggle&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api, event, helpers, imports}) {
+    const listPreference = api.state.listMenuOpenPreference;
+    const open = event.payload.listMenuOpen;
+
+    api.setState('listMenuOpen', open);
+    api.setState('listDisplayPanes', open? 'both': 'right');
+ 
+    api.data.setListPreference.execute({
+        'name': listPreference,
+        'value': open
+    });    
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-10-09 04:57:52&lt;/sys_created_on&gt;&lt;sys_id&gt;953b77c997317110e25972d6f053af0d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;ListMenu Toggle&lt;/sys_name&gt;&lt;sys_package display_value="Account Financials" source="x_323515_account_0"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Account Financials"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_953b77c997317110e25972d6f053af0d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-10-09 04:57:52&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1990108870</payload_hash>
+        <record_name>ListMenu Toggle</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 04:57:53</sys_created_on>
+        <sys_id>6d3b77c997317110e25972d6f053af61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b12cc7de40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 04:57:53</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>253b77c9f7317110557e8dbf46b2b161</update_guid>
+        <update_guid_history>253b77c9f7317110557e8dbf46b2b161:1990108870,293b37c9d6317110861f975747a1d4cb:-26186565,993b77c966317110707f18add3bb7913:1990108870</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 04:58:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>23507e121b574fba9c814899481618a4</sys_id>
+        <sys_metadata>953b77c997317110e25972d6f053af0d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ListMenu Toggle</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_953b77c997317110e25972d6f053af0d</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_953b77c997317110e25972d6f053af0d">6d3b77c997317110e25972d6f053af61</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 04:58:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

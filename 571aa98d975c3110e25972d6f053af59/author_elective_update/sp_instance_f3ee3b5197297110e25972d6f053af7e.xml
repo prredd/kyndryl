@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>0</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="3">37ee3b5197297110e25972d6f053af7c</sp_column>
+        <sp_widget display_value="Knowledge MostViewed Articles">d4f0d56cdb68320099f93691f0b8f502</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-27 13:36:56</sys_created_on>
+        <sys_id>f3ee3b5197297110e25972d6f053af7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Most Viewed</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sp_instance_f3ee3b5197297110e25972d6f053af7e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-27 13:36:56</sys_updated_on>
+        <title>Most Viewed</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"table": {
+		"value": "kb_knowledge",
+		"displayValue": "kb_knowledge"
+	},
+	"display_field": {
+		"value": "",
+		"displayValue": ""
+	},
+	"secondary_fields": {
+		"value": "",
+		"displayValue": ""
+	},
+	"max_records": {
+		"value": "",
+		"displayValue": ""
+	},
+	"always_show": {
+		"value": "true",
+		"displayValue": "true"
+	},
+	"show_secondary_fields_label": {
+		"value": "false",
+		"displayValue": "false"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=f3ee3b5197297110e25972d6f053af7e"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sp_instance_f3ee3b5197297110e25972d6f053af7e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;0&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="3"&gt;37ee3b5197297110e25972d6f053af7c&lt;/sp_column&gt;&lt;sp_widget display_value="Knowledge MostViewed Articles"&gt;d4f0d56cdb68320099f93691f0b8f502&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-09-27 13:36:56&lt;/sys_created_on&gt;&lt;sys_id&gt;f3ee3b5197297110e25972d6f053af7e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Most Viewed&lt;/sys_name&gt;&lt;sys_package display_value="Account Financials" source="x_323515_account_0"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Account Financials"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_f3ee3b5197297110e25972d6f053af7e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-09-27 13:36:56&lt;/sys_updated_on&gt;&lt;title&gt;Most Viewed&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"table": {
+		"value": "kb_knowledge",
+		"displayValue": "kb_knowledge"
+	},
+	"display_field": {
+		"value": "",
+		"displayValue": ""
+	},
+	"secondary_fields": {
+		"value": "",
+		"displayValue": ""
+	},
+	"max_records": {
+		"value": "",
+		"displayValue": ""
+	},
+	"always_show": {
+		"value": "true",
+		"displayValue": "true"
+	},
+	"show_secondary_fields_label": {
+		"value": "false",
+		"displayValue": "false"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=f3ee3b5197297110e25972d6f053af7e"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1283342237</payload_hash>
+        <record_name>Most Viewed</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-27 13:36:56</sys_created_on>
+        <sys_id>33ee3b5197297110e25972d6f053af80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ad6db64100000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-27 13:36:56</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>7bee3b513e2971107123daba69d9007f</update_guid>
+        <update_guid_history>7bee3b513e2971107123daba69d9007f:1283342237</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Most Viewed">fc104ca197297110e25972d6f053af66</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-27 13:41:55</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>a4031490737a4d3eba5b569b9fd969c4</sys_id>
+        <sys_metadata>f3ee3b5197297110e25972d6f053af7e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Most Viewed</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sp_instance_f3ee3b5197297110e25972d6f053af7e</sys_update_name>
+        <sys_update_version display_value="sp_instance_f3ee3b5197297110e25972d6f053af7e">33ee3b5197297110e25972d6f053af80</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-27 13:41:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

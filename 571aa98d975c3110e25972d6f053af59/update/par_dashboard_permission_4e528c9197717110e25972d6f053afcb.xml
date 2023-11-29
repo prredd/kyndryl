@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_permission">
+    <par_dashboard_permission action="INSERT_OR_UPDATE">
+        <can_read>true</can_read>
+        <can_share>false</can_share>
+        <can_write>false</can_write>
+        <dashboard display_value="RU Service Delivery Owner">09524c912b717110b85fab53a614e995</dashboard>
+        <group/>
+        <role display_value="x_323515_account_0.ru_list_user" name="x_323515_account_0.ru_list_user">f1b9080a97203110e25972d6f053afa1</role>
+        <sys_class_name>par_dashboard_permission</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 05:29:03</sys_created_on>
+        <sys_id>4e528c9197717110e25972d6f053afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>09524c912b717110b85fab53a614e995</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>par_dashboard_permission_4e528c9197717110e25972d6f053afcb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 05:29:03</sys_updated_on>
+        <user/>
+    </par_dashboard_permission>
+</record_update>

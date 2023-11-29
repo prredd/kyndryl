@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description>Tabs Configuration</description>
+        <name>chrome_tab</name>
+        <page display_value="Account Financials">d681c851a17171105a13cb5d7e49881d</page>
+        <required_translations>[ {
+  "message" : "New Financial Statement",
+  "comment" : ""
+}, {
+  "message" : "New RU Definition",
+  "comment" : ""
+}, {
+  "message" : "New RU Requests",
+  "comment" : ""
+}, {
+  "message" : "New RU Task",
+  "comment" : ""
+}, {
+  "message" : "New Resource Unit",
+  "comment" : ""
+}, {
+  "message" : "New Statement Adjustments",
+  "comment" : ""
+} ]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 05:25:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>5281c851987171103f2ffa201326110d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>chrome_tab</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_ux_page_property_5281c851987171103f2ffa201326110d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 05:25:38</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_323515_account_0.d681c851a17171105a13cb5d7e49881d.root.chrome_tab</unique_name>
+        <value>{"contextual":["record"],"newTabMenu":[{"label":{"translatable":true,"message":"New Resource Unit"},"routeInfo":{"route":"record","fields":{"table":"x_323515_account_0_resource_unit","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_323515_account_0_resource_unit","canCreate":true}}},{"label":{"translatable":true,"message":"New RU Definition"},"routeInfo":{"route":"record","fields":{"table":"x_323515_account_0_ru_definition","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_323515_account_0_ru_definition","canCreate":true}}},{"label":{"translatable":true,"message":"New Financial Statement"},"routeInfo":{"route":"record","fields":{"table":"x_323515_account_0_financial_statement","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_323515_account_0_financial_statement","canCreate":true}}},{"label":{"translatable":true,"message":"New RU Task"},"routeInfo":{"route":"record","fields":{"table":"x_323515_account_0_ru_task","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_323515_account_0_ru_task","canCreate":true}}},{"label":{"translatable":true,"message":"New Statement Adjustments"},"routeInfo":{"route":"record","fields":{"table":"x_323515_account_0_statement_adjustments","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_323515_account_0_statement_adjustments","canCreate":true}}},{"label":{"translatable":true,"message":"New RU Requests"},"routeInfo":{"route":"record","fields":{"table":"x_323515_account_0_ru_requests","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_323515_account_0_ru_requests","canCreate":true}}}],"maxMainTabLimit":10,"maxTotalSubTabLimit":30}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="DELETE" query="documentkey=5281c851987171103f2ffa201326110d"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_ux_page_property_5281c851987171103f2ffa201326110d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description>Tabs Configuration</description><name>chrome_tab</name><page display_value="Account Financials">d681c851a17171105a13cb5d7e49881d</page><required_translations>[ {
+  "message" : "New Financial Statement",
+  "comment" : ""
+}, {
+  "message" : "New RU Definition",
+  "comment" : ""
+}, {
+  "message" : "New RU Requests",
+  "comment" : ""
+}, {
+  "message" : "New RU Task",
+  "comment" : ""
+}, {
+  "message" : "New Resource Unit",
+  "comment" : ""
+}, {
+  "message" : "New Statement Adjustments",
+  "comment" : ""
+} ]</required_translations><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-10-09 05:25:32</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>5281c851987171103f2ffa201326110d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>chrome_tab</sys_name><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>sys_ux_page_property_5281c851987171103f2ffa201326110d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-10-09 05:25:38</sys_updated_on><type>json</type><unique_name>x_323515_account_0.d681c851a17171105a13cb5d7e49881d.root.chrome_tab</unique_name><value>{"contextual":["record"],"newTabMenu":[{"label":{"translatable":true,"message":"New Resource Unit"},"routeInfo":{"route":"record","fields":{"table":"x_323515_account_0_resource_unit","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_323515_account_0_resource_unit","canCreate":true}}},{"label":{"translatable":true,"message":"New RU Definition"},"routeInfo":{"route":"record","fields":{"table":"x_323515_account_0_ru_definition","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_323515_account_0_ru_definition","canCreate":true}}},{"label":{"translatable":true,"message":"New Financial Statement"},"routeInfo":{"route":"record","fields":{"table":"x_323515_account_0_financial_statement","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_323515_account_0_financial_statement","canCreate":true}}},{"label":{"translatable":true,"message":"New RU Task"},"routeInfo":{"route":"record","fields":{"table":"x_323515_account_0_ru_task","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_323515_account_0_ru_task","canCreate":true}}},{"label":{"translatable":true,"message":"New Statement Adjustments"},"routeInfo":{"route":"record","fields":{"table":"x_323515_account_0_statement_adjustments","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_323515_account_0_statement_adjustments","canCreate":true}}},{"label":{"translatable":true,"message":"New RU Requests"},"routeInfo":{"route":"record","fields":{"table":"x_323515_account_0_ru_requests","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_323515_account_0_ru_requests","canCreate":true}}}],"maxMainTabLimit":10,"maxTotalSubTabLimit":30}</value></sys_ux_page_property><sys_translated_text action="delete_multiple" query="documentkey=5281c851987171103f2ffa201326110d"/></record_update>]]></payload>
+        <payload_hash>-277167634</payload_hash>
+        <record_name>chrome_tab</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 05:25:38</sys_created_on>
+        <sys_id>0c914c5197717110e25972d6f053af71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b12e5e5fd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 05:25:38</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>04914c51757171108dda1fbc5e8fdc71</update_guid>
+        <update_guid_history>04914c51757171108dda1fbc5e8fdc71:-277167634,00914c51b971711038d0d6aeef516170:-297428214</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 12:05:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>779b6eccdc4944f189f8cae3c5fdcf91</sys_id>
+        <sys_metadata>5281c851987171103f2ffa201326110d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_tab</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_5281c851987171103f2ffa201326110d</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_5281c851987171103f2ffa201326110d">0c914c5197717110e25972d6f053af71</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 12:05:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

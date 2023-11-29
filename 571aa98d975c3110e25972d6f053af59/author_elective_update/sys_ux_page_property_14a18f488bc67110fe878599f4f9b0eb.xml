@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description>A default view for Resource Unit Management generated</description>
+        <name>view</name>
+        <page display_value="Resource Unit Management">5ca18f48e6c67110cb9ff5216ce700fb</page>
+        <required_translations/>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-18 08:28:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>14a18f488bc67110fe878599f4f9b0eb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>view</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_ux_page_property_14a18f488bc67110fe878599f4f9b0eb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-18 08:28:15</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_323515_account_0.5ca18f48e6c67110cb9ff5216ce700fb.root.view</unique_name>
+        <value>workspace-resource-unit-management-0</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="DELETE" query="documentkey=14a18f488bc67110fe878599f4f9b0eb"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_ux_page_property_14a18f488bc67110fe878599f4f9b0eb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description>A default view for Resource Unit Management generated</description><name>view</name><page display_value="Resource Unit Management">5ca18f48e6c67110cb9ff5216ce700fb</page><required_translations/><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-10-18 08:28:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>14a18f488bc67110fe878599f4f9b0eb</sys_id><sys_mod_count>1</sys_mod_count><sys_name>view</sys_name><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>sys_ux_page_property_14a18f488bc67110fe878599f4f9b0eb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-10-18 08:28:15</sys_updated_on><type>string</type><unique_name>x_323515_account_0.5ca18f48e6c67110cb9ff5216ce700fb.root.view</unique_name><value>workspace-resource-unit-management-0</value></sys_ux_page_property><sys_translated_text action="delete_multiple" query="documentkey=14a18f488bc67110fe878599f4f9b0eb"/></record_update>]]></payload>
+        <payload_hash>-1827999829</payload_hash>
+        <record_name>view</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-18 08:28:15</sys_created_on>
+        <sys_id>f6a1c38897c67110e25972d6f053af08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b41e6534b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-18 08:28:15</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>7ea1c388dec671101bfe552c12819e07</update_guid>
+        <update_guid_history>7ea1c388dec671101bfe552c12819e07:-1827999829,7aa1c388f8c671101ce08b51fddf2f06:1474538891</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 10:11:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>71aee793f4184e50ada2c41018e6b100</sys_id>
+        <sys_metadata>14a18f488bc67110fe878599f4f9b0eb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>view</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_14a18f488bc67110fe878599f4f9b0eb</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_14a18f488bc67110fe878599f4f9b0eb">f6a1c38897c67110e25972d6f053af08</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-29 10:11:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

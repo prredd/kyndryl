@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Resource Unit Data">36711ce797153110e25972d6f053afd1</catalog_item>
+        <catalog_variable>IO:1c13dc2b97153110e25972d6f053af20</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 10:03:41</sys_created_on>
+        <sys_id>c08490eb97153110e25972d6f053afef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>current_month_count</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_c08490eb97153110e25972d6f053afef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 10:03:41</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make 'current_month_count' read-only depending on 'get_data_from_cmdb' &amp; 'get_data_from_cmdb'">42f394ab97153110e25972d6f053af6b</ui_policy>
+        <variable>current_month_count</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>catalog_ui_policy_action_c08490eb97153110e25972d6f053afef</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Resource Unit Data">36711ce797153110e25972d6f053afd1</catalog_item><catalog_variable>IO:1c13dc2b97153110e25972d6f053af20</catalog_variable><cleared>false</cleared><disabled>true</disabled><field/><mandatory>false</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 10:03:41</sys_created_on><sys_id>c08490eb97153110e25972d6f053afef</sys_id><sys_mod_count>0</sys_mod_count><sys_name>current_month_count</sys_name><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>catalog_ui_policy_action_c08490eb97153110e25972d6f053afef</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 10:03:41</sys_updated_on><table/><ui_policy display_value="Make 'current_month_count' read-only depending on 'get_data_from_cmdb' &amp; 'get_data_from_cmdb'">42f394ab97153110e25972d6f053af6b</ui_policy><variable>current_month_count</variable><variable_set/><visible>ignore</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-1265768717</payload_hash>
+        <record_name>current_month_count</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 10:03:41</sys_created_on>
+        <sys_id>ed9410eb97153110e25972d6f053afc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ab731ff130000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 10:03:41</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>299410ebdf1531103b1ae1f58d6f47c7</update_guid>
+        <update_guid_history>299410ebdf1531103b1ae1f58d6f47c7:-1265768717</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="current_month_count">d08b390d97213110e25972d6f053af22</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-26 09:24:14</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>62af6d14f2f44b648a9c570b1de1c010</sys_id>
+        <sys_metadata>c08490eb97153110e25972d6f053afef</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>current_month_count</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_c08490eb97153110e25972d6f053afef</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_c08490eb97153110e25972d6f053afef">ed9410eb97153110e25972d6f053afc7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-26 09:24:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

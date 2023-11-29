@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>monthly_ru_data_gathering</internal_name>
+        <label_cache>[{"name":"96ac213e-6e9f-4349-afba-4ebdafcdb41d.item.name","label":"3 - For Each➛RU Definition Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_323515_account_0_ru_definition","column_name":"name"},{"name":"96ac213e-6e9f-4349-afba-4ebdafcdb41d.item.service_delivery_owner","label":"3 - For Each➛RU Definition Record➛Service Delivery Owner","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_323515_account_0_ru_definition","column_name":"service_delivery_owner"},{"name":"f9c9930c-692a-4a35-8171-6c84be9c6154.requested_item","label":"1 - Submit Catalog Item Request➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"e53357ed-e4b3-4786-860d-2ba81ccf9b89.Records","label":"2 - Look Up Records➛RU Definition Records","reference":"x_323515_account_0_ru_definition","reference_display":"RU Definition Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"96ac213e-6e9f-4349-afba-4ebdafcdb41d.item.sys_id","label":"3 - For Each➛RU Definition Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_323515_account_0_ru_definition","column_name":"sys_id"}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Monthly RU Data Gathering</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 10:24:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>33699cef97153110e25972d6f053af22</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Monthly RU Data Gathering</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_hub_flow_33699cef97153110e25972d6f053af22</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 13:18:33</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=33699cef97153110e25972d6f053af22"/>
+    <sys_variable_value action="DELETE" query="document_key=33699cef97153110e25972d6f053af22"/>
+    <sys_hub_trigger_instance action="DELETE" query="flow=33699cef97153110e25972d6f053af22^sys_idNOT IN97ac94e397553110e25972d6f053affb"/>
+    <sys_hub_trigger_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Monthly RU Data Gathering">33699cef97153110e25972d6f053af22</flow>
+        <name>Monthly</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 10:39:03</sys_created_on>
+        <sys_id>97ac94e397553110e25972d6f053affb</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 13:18:32</sys_updated_on>
+        <trigger_definition display_value="Monthly">2ca52504c32222002841b63b12d3ae4a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>monthly</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="DELETE" query="document_key=97ac94e397553110e25972d6f053affb"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>97ac94e397553110e25972d6f053affb</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 10:39:03</sys_created_on>
+        <sys_id>5fac94e397553110e25972d6f053affd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 10:39:03</sys_updated_on>
+        <value>2</value>
+        <variable display_value="Day of Month">ab36a504c32222002841b63b12d3ae8a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>97ac94e397553110e25972d6f053affb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 10:39:03</sys_created_on>
+        <sys_id>d3ac94e397553110e25972d6f053affd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 10:39:03</sys_updated_on>
+        <value>1970-01-01 16:00:00</value>
+        <variable display_value="Time">b5d52504c32222002841b63b12d3aeaa</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_trigger_input_2ca52504c32222002841b63b12d3ae4a^id=97ac94e397553110e25972d6f053affb"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=33699cef97153110e25972d6f053af22"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=33699cef97153110e25972d6f053af22^sys_idNOT INbf699cef97153110e25972d6f053af22"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>33699cef97153110e25972d6f053af22</id>
+        <name>Monthly RU Data Gathering</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 10:24:52</sys_created_on>
+        <sys_id>bf699cef97153110e25972d6f053af22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 10:24:52</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=bf699cef97153110e25972d6f053af22"/>
+    <sys_hub_flow_input action="DELETE" query="model=33699cef97153110e25972d6f053af22"/>
+    <sys_hub_flow_output action="DELETE" query="model=33699cef97153110e25972d6f053af22"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=33699cef97153110e25972d6f053af22"/>
+    <sys_hub_action_instance action="DELETE" query="flow=33699cef97153110e25972d6f053af22^sys_idNOT IN6bacd4e397553110e25972d6f053af11,aad268ab97553110e25972d6f053afcf,dbacd4e397553110e25972d6f053af07"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Monthly RU Data Gathering">33699cef97153110e25972d6f053af22</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 10:39:03</sys_created_on>
+        <sys_id>6bacd4e397553110e25972d6f053af11</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 13:18:32</sys_updated_on>
+        <ui_id>e53357ed-e4b3-4786-860d-2ba81ccf9b89</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=6bacd4e397553110e25972d6f053af11"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6bacd4e397553110e25972d6f053af11</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 10:39:03</sys_created_on>
+        <sys_id>a7acd4e397553110e25972d6f053af13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 10:39:03</sys_updated_on>
+        <value>x_323515_account_0_ru_definition</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=6bacd4e397553110e25972d6f053af11"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=6bacd4e397553110e25972d6f053af11"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=6bacd4e397553110e25972d6f053af11"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Monthly RU Data Gathering">33699cef97153110e25972d6f053af22</flow>
+        <order>4</order>
+        <parent_ui_id>96ac213e-6e9f-4349-afba-4ebdafcdb41d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 11:06:02</sys_created_on>
+        <sys_id>aad268ab97553110e25972d6f053afcf</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 13:18:33</sys_updated_on>
+        <ui_id>7d261908-902e-43db-a446-8712a9197a78</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=aad268ab97553110e25972d6f053afcf"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>aad268ab97553110e25972d6f053afcf</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 11:06:02</sys_created_on>
+        <sys_id>36d268ab97553110e25972d6f053afd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 11:06:02</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Wait">f751fd0e73141300612c273ffff6a7b2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>aad268ab97553110e25972d6f053afcf</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 11:06:02</sys_created_on>
+        <sys_id>3ed268ab97553110e25972d6f053afd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 11:06:02</sys_updated_on>
+        <value>Please Enter the current month Ru count</value>
+        <variable display_value="Short Description">3751fd0e73141300612c273ffff6a7a6</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=aad268ab97553110e25972d6f053afcf"/>
+    <sys_element_mapping action="DELETE">
+        <field>ah_fields</field>
+        <id>aad268ab97553110e25972d6f053afcf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 11:06:02</sys_created_on>
+        <sys_id>bad268ab97553110e25972d6f053afd2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 13:18:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>assigned_to={{96ac213e-6e9f-4349-afba-4ebdafcdb41d.item.service_delivery_owner}}^u_ref_unit_name={{96ac213e-6e9f-4349-afba-4ebdafcdb41d.item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>ah_requested_item</field>
+        <id>aad268ab97553110e25972d6f053afcf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 11:06:02</sys_created_on>
+        <sys_id>36d268ab97553110e25972d6f053afd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 11:06:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>{{f9c9930c-692a-4a35-8171-6c84be9c6154.requested_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>ah_short_description</field>
+        <id>aad268ab97553110e25972d6f053afcf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 11:06:02</sys_created_on>
+        <sys_id>7ed268ab97553110e25972d6f053afd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 11:06:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>ah_wait</field>
+        <id>aad268ab97553110e25972d6f053afcf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 11:06:02</sys_created_on>
+        <sys_id>f6d268ab97553110e25972d6f053afd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 11:06:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=aad268ab97553110e25972d6f053afcf^sys_idNOT IN84e009e797d53110e25972d6f053af16"/>
+    <sys_hub_input_scripts action="DELETE">
+        <active>false</active>
+        <input_name>ah_fields</input_name>
+        <instance>aad268ab97553110e25972d6f053afcf</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"u_ref_unit_name":{"scriptActive":false,"savedValue":"{{96ac213e-6e9f-4349-afba-4ebdafcdb41d.item.name}}"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 13:17:12</sys_created_on>
+        <sys_id>84e009e797d53110e25972d6f053af16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 13:17:12</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=aad268ab97553110e25972d6f053afcf"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Submit Catalog Item Request">c7a04c607312001098e194596bf6a72a</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Monthly RU Data Gathering">33699cef97153110e25972d6f053af22</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 10:39:03</sys_created_on>
+        <sys_id>dbacd4e397553110e25972d6f053af07</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 13:18:32</sys_updated_on>
+        <ui_id>f9c9930c-692a-4a35-8171-6c84be9c6154</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=dbacd4e397553110e25972d6f053af07"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dbacd4e397553110e25972d6f053af07</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 10:39:03</sys_created_on>
+        <sys_id>1facd4e397553110e25972d6f053af0b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 11:15:12</sys_updated_on>
+        <value>7ae7946f97153110e25972d6f053afaf</value>
+        <variable display_value="Catalog Item">0ba04c607312001098e194596bf6a72b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dbacd4e397553110e25972d6f053af07</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 10:39:03</sys_created_on>
+        <sys_id>5bacd4e397553110e25972d6f053af0b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 11:15:12</sys_updated_on>
+        <value>{"inputs":[]}</value>
+        <variable display_value="Catalog Item Inputs">0fa04c607312001098e194596bf6a731</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dbacd4e397553110e25972d6f053af07</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 10:39:03</sys_created_on>
+        <sys_id>97acd4e397553110e25972d6f053af0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 10:39:03</sys_updated_on>
+        <value>1970-01-01 00:00:00</value>
+        <variable display_value="Duration">4963be657383001098e194596bf6a736</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_action_input_c7a04c607312001098e194596bf6a72a^id=dbacd4e397553110e25972d6f053af07"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=dbacd4e397553110e25972d6f053af07"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=dbacd4e397553110e25972d6f053af07"/>
+    <sys_hub_sub_flow_instance action="DELETE" query="flow=33699cef97153110e25972d6f053af22"/>
+    <sys_hub_flow_logic action="DELETE" query="flow=33699cef97153110e25972d6f053af22^sys_idNOT IN2bacd4e397553110e25972d6f053af14"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">2facd4e397553110e25972d6f053af13</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Monthly RU Data Gathering">33699cef97153110e25972d6f053af22</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 10:39:03</sys_created_on>
+        <sys_id>2bacd4e397553110e25972d6f053af14</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 13:18:32</sys_updated_on>
+        <ui_id>96ac213e-6e9f-4349-afba-4ebdafcdb41d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=2bacd4e397553110e25972d6f053af14"/>
+    <sys_element_mapping action="DELETE" query="id=2bacd4e397553110e25972d6f053af14"/>
+    <sys_element_mapping action="DELETE">
+        <field>items</field>
+        <id>2bacd4e397553110e25972d6f053af14</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 10:39:03</sys_created_on>
+        <sys_id>2facd4e397553110e25972d6f053af17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 10:39:03</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{e53357ed-e4b3-4786-860d-2ba81ccf9b89.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=2bacd4e397553110e25972d6f053af14"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=2bacd4e397553110e25972d6f053af14"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=33699cef97153110e25972d6f053af22"/>
+    <sys_hub_flow_variable action="DELETE" query="model=33699cef97153110e25972d6f053af22"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_33699cef97153110e25972d6f053af22"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_33699cef97153110e25972d6f053af22"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_33699cef97153110e25972d6f053af22"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_33699cef97153110e25972d6f053af22"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=33699cef97153110e25972d6f053af22"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=33699cef97153110e25972d6f053af22"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_hub_flow_33699cef97153110e25972d6f053af22</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description/><internal_name>monthly_ru_data_gathering</internal_name><label_cache>[{"name":"96ac213e-6e9f-4349-afba-4ebdafcdb41d.item.name","label":"3 - For Each➛RU Definition Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_323515_account_0_ru_definition","column_name":"name"},{"name":"96ac213e-6e9f-4349-afba-4ebdafcdb41d.item.service_delivery_owner","label":"3 - For Each➛RU Definition Record➛Service Delivery Owner","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_323515_account_0_ru_definition","column_name":"service_delivery_owner"},{"name":"f9c9930c-692a-4a35-8171-6c84be9c6154.requested_item","label":"1 - Submit Catalog Item Request➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"e53357ed-e4b3-4786-860d-2ba81ccf9b89.Records","label":"2 - Look Up Records➛RU Definition Records","reference":"x_323515_account_0_ru_definition","reference_display":"RU Definition Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"96ac213e-6e9f-4349-afba-4ebdafcdb41d.item.sys_id","label":"3 - For Each➛RU Definition Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_323515_account_0_ru_definition","column_name":"sys_id"}]</label_cache><latest_snapshot/><master_snapshot/><name>Monthly RU Data Gathering</name><natlang/><outputs/><pre_compiled>false</pre_compiled><remote_trigger_id/><run_as>system</run_as><run_with_roles/><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 10:24:52</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>33699cef97153110e25972d6f053af22</sys_id><sys_mod_count>10</sys_mod_count><sys_name>Monthly RU Data Gathering</sys_name><sys_overrides/><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>sys_hub_flow_33699cef97153110e25972d6f053af22</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 13:18:33</sys_updated_on><type>flow</type></sys_hub_flow><sys_translated_text action="delete_multiple" query="documentkey=33699cef97153110e25972d6f053af22"/><sys_variable_value action="delete_multiple" query="document_key=33699cef97153110e25972d6f053af22"/><sys_hub_trigger_instance action="delete_multiple" query="flow=33699cef97153110e25972d6f053af22^sys_idNOT IN97ac94e397553110e25972d6f053affb"/><sys_hub_trigger_instance action="INSERT_OR_UPDATE"><comment/><display_text/><flow display_value="Monthly RU Data Gathering">33699cef97153110e25972d6f053af22</flow><name>Monthly</name><remote_sys_id/><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 10:39:03</sys_created_on><sys_id>97ac94e397553110e25972d6f053affb</sys_id><sys_mod_count>10</sys_mod_count><sys_scope/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 13:18:32</sys_updated_on><trigger_definition display_value="Monthly">2ca52504c32222002841b63b12d3ae4a</trigger_definition><trigger_inputs/><trigger_outputs/><trigger_type>monthly</trigger_type></sys_hub_trigger_instance><sys_variable_value action="delete_multiple" query="document_key=97ac94e397553110e25972d6f053affb"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_trigger_instance</document><document_key>97ac94e397553110e25972d6f053affb</document_key><order>10</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 10:39:03</sys_created_on><sys_id>5fac94e397553110e25972d6f053affd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 10:39:03</sys_updated_on><value>2</value><variable display_value="Day of Month">ab36a504c32222002841b63b12d3ae8a</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_trigger_instance</document><document_key>97ac94e397553110e25972d6f053affb</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 10:39:03</sys_created_on><sys_id>d3ac94e397553110e25972d6f053affd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 10:39:03</sys_updated_on><value>1970-01-01 16:00:00</value><variable display_value="Time">b5d52504c32222002841b63b12d3aeaa</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_2ca52504c32222002841b63b12d3ae4a^id=97ac94e397553110e25972d6f053affb"/><sys_hub_flow_stage action="delete_multiple" query="flow=33699cef97153110e25972d6f053af22"/><sys_flow_cat_variable_model action="delete_multiple" query="id=33699cef97153110e25972d6f053af22^sys_idNOT INbf699cef97153110e25972d6f053af22"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>33699cef97153110e25972d6f053af22</id><name>Monthly RU Data Gathering</name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 10:24:52</sys_created_on><sys_id>bf699cef97153110e25972d6f053af22</sys_id><sys_mod_count>0</sys_mod_count><sys_scope/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 10:24:52</sys_updated_on></sys_flow_cat_variable_model><sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=bf699cef97153110e25972d6f053af22"/><sys_hub_flow_input action="delete_multiple" query="model=33699cef97153110e25972d6f053af22"/><sys_hub_flow_output action="delete_multiple" query="model=33699cef97153110e25972d6f053af22"/><sys_hub_alias_mapping action="delete_multiple" query="source_id=33699cef97153110e25972d6f053af22"/><sys_hub_action_instance action="delete_multiple" query="flow=33699cef97153110e25972d6f053af22^sys_idNOT IN6bacd4e397553110e25972d6f053af11,aad268ab97553110e25972d6f053afcf,dbacd4e397553110e25972d6f053af07"/><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="Monthly RU Data Gathering">33699cef97153110e25972d6f053af22</flow><order>2</order><parent_ui_id/><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 10:39:03</sys_created_on><sys_id>6bacd4e397553110e25972d6f053af11</sys_id><sys_mod_count>20</sys_mod_count><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 13:18:32</sys_updated_on><ui_id>e53357ed-e4b3-4786-860d-2ba81ccf9b89</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=6bacd4e397553110e25972d6f053af11"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>6bacd4e397553110e25972d6f053af11</document_key><order>0</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 10:39:03</sys_created_on><sys_id>a7acd4e397553110e25972d6f053af13</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 10:39:03</sys_updated_on><value>x_323515_account_0_ru_definition</value><variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=6bacd4e397553110e25972d6f053af11"/><sys_hub_input_scripts action="delete_multiple" query="instance=6bacd4e397553110e25972d6f053af11"/><sys_hub_alias_mapping action="delete_multiple" query="source_id=6bacd4e397553110e25972d6f053af11"/><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_inputs/><action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="Monthly RU Data Gathering">33699cef97153110e25972d6f053af22</flow><order>4</order><parent_ui_id>96ac213e-6e9f-4349-afba-4ebdafcdb41d</parent_ui_id><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 11:06:02</sys_created_on><sys_id>aad268ab97553110e25972d6f053afcf</sys_id><sys_mod_count>12</sys_mod_count><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 13:18:33</sys_updated_on><ui_id>7d261908-902e-43db-a446-8712a9197a78</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=aad268ab97553110e25972d6f053afcf"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>aad268ab97553110e25972d6f053afcf</document_key><order>4</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 11:06:02</sys_created_on><sys_id>36d268ab97553110e25972d6f053afd3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 11:06:02</sys_updated_on><value>0</value><variable display_value="Wait">f751fd0e73141300612c273ffff6a7b2</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>aad268ab97553110e25972d6f053afcf</document_key><order>2</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 11:06:02</sys_created_on><sys_id>3ed268ab97553110e25972d6f053afd2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 11:06:02</sys_updated_on><value>Please Enter the current month Ru count</value><variable display_value="Short Description">3751fd0e73141300612c273ffff6a7a6</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="id=aad268ab97553110e25972d6f053afcf"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>ah_fields</field><id>aad268ab97553110e25972d6f053afcf</id><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 11:06:02</sys_created_on><sys_id>bad268ab97553110e25972d6f053afd2</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 13:18:33</sys_updated_on><table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table><value>assigned_to={{96ac213e-6e9f-4349-afba-4ebdafcdb41d.item.service_delivery_owner}}^u_ref_unit_name={{96ac213e-6e9f-4349-afba-4ebdafcdb41d.item.sys_id}}</value></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>ah_requested_item</field><id>aad268ab97553110e25972d6f053afcf</id><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 11:06:02</sys_created_on><sys_id>36d268ab97553110e25972d6f053afd2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 11:06:02</sys_updated_on><table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table><value>{{f9c9930c-692a-4a35-8171-6c84be9c6154.requested_item}}</value></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>ah_short_description</field><id>aad268ab97553110e25972d6f053afcf</id><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 11:06:02</sys_created_on><sys_id>7ed268ab97553110e25972d6f053afd1</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 11:06:02</sys_updated_on><table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table><value/></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>ah_wait</field><id>aad268ab97553110e25972d6f053afcf</id><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 11:06:02</sys_created_on><sys_id>f6d268ab97553110e25972d6f053afd2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 11:06:02</sys_updated_on><table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table><value/></sys_element_mapping><sys_hub_input_scripts action="delete_multiple" query="instance=aad268ab97553110e25972d6f053afcf^sys_idNOT IN84e009e797d53110e25972d6f053af16"/><sys_hub_input_scripts action="INSERT_OR_UPDATE"><active>false</active><input_name>ah_fields</input_name><instance>aad268ab97553110e25972d6f053afcf</instance><referenced_table>sys_hub_action_instance</referenced_table><script>{"u_ref_unit_name":{"scriptActive":false,"savedValue":"{{96ac213e-6e9f-4349-afba-4ebdafcdb41d.item.name}}"}}</script><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 13:17:12</sys_created_on><sys_id>84e009e797d53110e25972d6f053af16</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 13:17:12</sys_updated_on></sys_hub_input_scripts><sys_hub_alias_mapping action="delete_multiple" query="source_id=aad268ab97553110e25972d6f053afcf"/><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_type display_value="Submit Catalog Item Request">c7a04c607312001098e194596bf6a72a</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="Monthly RU Data Gathering">33699cef97153110e25972d6f053af22</flow><order>1</order><parent_ui_id/><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 10:39:03</sys_created_on><sys_id>dbacd4e397553110e25972d6f053af07</sys_id><sys_mod_count>20</sys_mod_count><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 13:18:32</sys_updated_on><ui_id>f9c9930c-692a-4a35-8171-6c84be9c6154</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=dbacd4e397553110e25972d6f053af07"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>dbacd4e397553110e25972d6f053af07</document_key><order>1</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 10:39:03</sys_created_on><sys_id>1facd4e397553110e25972d6f053af0b</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 11:15:12</sys_updated_on><value>7ae7946f97153110e25972d6f053afaf</value><variable display_value="Catalog Item">0ba04c607312001098e194596bf6a72b</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>dbacd4e397553110e25972d6f053af07</document_key><order>2</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 10:39:03</sys_created_on><sys_id>5bacd4e397553110e25972d6f053af0b</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 11:15:12</sys_updated_on><value>{"inputs":[]}</value><variable display_value="Catalog Item Inputs">0fa04c607312001098e194596bf6a731</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>dbacd4e397553110e25972d6f053af07</document_key><order>10</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 10:39:03</sys_created_on><sys_id>97acd4e397553110e25972d6f053af0b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 10:39:03</sys_updated_on><value>1970-01-01 00:00:00</value><variable display_value="Duration">4963be657383001098e194596bf6a736</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_c7a04c607312001098e194596bf6a72a^id=dbacd4e397553110e25972d6f053af07"/><sys_hub_input_scripts action="delete_multiple" query="instance=dbacd4e397553110e25972d6f053af07"/><sys_hub_alias_mapping action="delete_multiple" query="source_id=dbacd4e397553110e25972d6f053af07"/><sys_hub_sub_flow_instance action="delete_multiple" query="flow=33699cef97153110e25972d6f053af22"/><sys_hub_flow_logic action="delete_multiple" query="flow=33699cef97153110e25972d6f053af22^sys_idNOT IN2bacd4e397553110e25972d6f053af14"/><sys_hub_flow_logic action="INSERT_OR_UPDATE"><block display_value="">2facd4e397553110e25972d6f053af13</block><comment/><connected_to/><decision_table/><decision_table_inputs/><display_text/><extended_inputs/><flow display_value="Monthly RU Data Gathering">33699cef97153110e25972d6f053af22</flow><flow_variable/><flow_variables_assigned/><inputs/><inputs/><logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition><order>3</order><outputs_assigned/><outputs_to_assign/><parent_ui_id/><sys_class_name>sys_hub_flow_logic</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 10:39:03</sys_created_on><sys_id>2bacd4e397553110e25972d6f053af14</sys_id><sys_mod_count>10</sys_mod_count><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 13:18:32</sys_updated_on><ui_id>96ac213e-6e9f-4349-afba-4ebdafcdb41d</ui_id><workflow_inputs/><workflow_reference/></sys_hub_flow_logic><sys_variable_value action="delete_multiple" query="document_key=2bacd4e397553110e25972d6f053af14"/><sys_element_mapping action="delete_multiple" query="id=2bacd4e397553110e25972d6f053af14"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>items</field><id>2bacd4e397553110e25972d6f053af14</id><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 10:39:03</sys_created_on><sys_id>2facd4e397553110e25972d6f053af17</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 10:39:03</sys_updated_on><table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table><value>{{e53357ed-e4b3-4786-860d-2ba81ccf9b89.Records}}</value></sys_element_mapping><sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2bacd4e397553110e25972d6f053af14"/><sys_hub_input_scripts action="delete_multiple" query="instance=2bacd4e397553110e25972d6f053af14"/><sys_hub_pill_compound action="delete_multiple" query="attached_to=33699cef97153110e25972d6f053af22"/><sys_hub_flow_variable action="delete_multiple" query="model=33699cef97153110e25972d6f053af22"/><sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_33699cef97153110e25972d6f053af22"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_33699cef97153110e25972d6f053af22"/><sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_33699cef97153110e25972d6f053af22"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_33699cef97153110e25972d6f053af22"/><sys_flow_trigger_plan action="delete_multiple" query="plan_id=33699cef97153110e25972d6f053af22"/><sys_flow_subflow_plan action="delete_multiple" query="plan_id=33699cef97153110e25972d6f053af22"/></record_update>]]></payload>
+        <payload_hash>-725047287</payload_hash>
+        <record_name>Monthly RU Data Gathering</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 13:18:33</sys_created_on>
+        <sys_id>0831cde797d53110e25972d6f053af0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ab7e466e30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 13:18:33</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>cc31cde7e0d53110af5c229f5d86e00a</update_guid>
+        <update_guid_history>cc31cde7e0d53110af5c229f5d86e00a:-725047287,98e009e790d53110645abd941bc58a42:1338202085,3dffb4a717d531103f7b329ef746acfc:1679966209,a23f3867fbd53110b02ee37407b251ab:-1199203255,51f4ac2fef55311091ecca4b35731b50:-1781016746,bed2a8ab86553110ffe6d35656ec6b05:697862826,175064e771553110d8d331a65203a1fd:234126724,00ff1ca76055311057ace049b22c8038:898527888,746f90a7a9553110e31b6382a89b3492:-1011262047,77acd4e36c5531101c19a73ae09c5b4c:284158567,807914234555311056d290a00ab48ec4:191341275</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-25 11:06:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>84f5605e09e14d94ad6ee5306720d290</sys_id>
+        <sys_metadata>33699cef97153110e25972d6f053af22</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Monthly RU Data Gathering</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_33699cef97153110e25972d6f053af22</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_33699cef97153110e25972d6f053af22">0831cde797d53110e25972d6f053af0b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-25 11:06:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

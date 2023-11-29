@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="DELETE">
+        <active>true</active>
+        <category>general</category>
+        <description>Defines the contents of the flow_formatter formatter that uses the information in the sys_flow_formatter table to build a process flow diagram on a form.</description>
+        <media_type/>
+        <name>process_flow</name>
+        <scoped_name>x_323515_account_0_process_flow</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-28 13:04:21</sys_created_on>
+        <sys_id>26f0cd7597253110e25972d6f053afe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>process_flow</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_ui_macro_26f0cd7597253110e25972d6f053afe6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-28 13:04:21</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+  <link rel="stylesheet" type="text/css" href="styles/process_flow_formatter.cssx"></link>
+  <tr>
+    <td colspan="2" width="100%" nowrap="true">
+      <div>
+	<table cellpadding="0" cellspacing="0" style="width: 100%;border:none;border-collapse:collapse" class="process_flow_formatter" role="listbox">
+	  <tr role="presentation">
+	    <g2:flow_formatter var="jvar_flows" table="$[${ref_parent}.getRecordClassName()]" current="$[${ref_parent}]" />
+            <g2:evaluate var="jvar_width" jelly="true">
+                   var size= jelly.jvar_flows.size();
+                   if(size)
+                   Math.floor(100/size);
+            </g2:evaluate>
+	    <j2:forEach items="$[jvar_flows]" var="jvar_flow">
+	    <g2:set_if var="jvar_step_status" test="$[jvar_flow.getParameter('state') == 'current']" true="step" false="false" />
+	      <td style="width:$[jvar_width]%" class="process_flow $[jvar_flow.getParameter('state')]" role="option" aria-current="$[jvar_step_status]" aria-selected="$[jvar_flow.getParameter('state') == 'current']">
+		  	  <a href="javascript:void(0);" role="presentation" aria-label="$[jvar_flow.getLabel()]">$[jvar_flow.getLabel()]</a>
+	      </td>
+	      <td width="16" height="100%"  aria-hidden="true">
+                  <img style="margin:0; padding:0px;" alt="" aria-hidden="true"
+		     src="images/chevron_$[jvar_flow.getParameter('state')]_$[jvar_flow.getParameter('next_state')].pngx" />
+	      </td>
+	    </j2:forEach>
+	  </tr>
+	</table>
+      </div>
+    </td>
+  </tr>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_ui_macro_26f0cd7597253110e25972d6f053afe6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_macro"&gt;&lt;sys_ui_macro action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;category&gt;general&lt;/category&gt;&lt;description&gt;Defines the contents of the flow_formatter formatter that uses the information in the sys_flow_formatter table to build a process flow diagram on a form.&lt;/description&gt;&lt;media_type/&gt;&lt;name&gt;process_flow&lt;/name&gt;&lt;scoped_name&gt;x_323515_account_0_process_flow&lt;/scoped_name&gt;&lt;sys_class_name&gt;sys_ui_macro&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-09-28 13:04:21&lt;/sys_created_on&gt;&lt;sys_id&gt;26f0cd7597253110e25972d6f053afe6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;process_flow&lt;/sys_name&gt;&lt;sys_package display_value="Account Financials" source="x_323515_account_0"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Account Financials"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_macro_26f0cd7597253110e25972d6f053afe6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-09-28 13:04:21&lt;/sys_updated_on&gt;&lt;xml&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+  &lt;link rel="stylesheet" type="text/css" href="styles/process_flow_formatter.cssx"&gt;&lt;/link&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2" width="100%" nowrap="true"&gt;
+      &lt;div&gt;
+	&lt;table cellpadding="0" cellspacing="0" style="width: 100%;border:none;border-collapse:collapse" class="process_flow_formatter" role="listbox"&gt;
+	  &lt;tr role="presentation"&gt;
+	    &lt;g2:flow_formatter var="jvar_flows" table="$[${ref_parent}.getRecordClassName()]" current="$[${ref_parent}]" /&gt;
+            &lt;g2:evaluate var="jvar_width" jelly="true"&gt;
+                   var size= jelly.jvar_flows.size();
+                   if(size)
+                   Math.floor(100/size);
+            &lt;/g2:evaluate&gt;
+	    &lt;j2:forEach items="$[jvar_flows]" var="jvar_flow"&gt;
+	    &lt;g2:set_if var="jvar_step_status" test="$[jvar_flow.getParameter('state') == 'current']" true="step" false="false" /&gt;
+	      &lt;td style="width:$[jvar_width]%" class="process_flow $[jvar_flow.getParameter('state')]" role="option" aria-current="$[jvar_step_status]" aria-selected="$[jvar_flow.getParameter('state') == 'current']"&gt;
+		  	  &lt;a href="javascript:void(0);" role="presentation" aria-label="$[jvar_flow.getLabel()]"&gt;$[jvar_flow.getLabel()]&lt;/a&gt;
+	      &lt;/td&gt;
+	      &lt;td width="16" height="100%"  aria-hidden="true"&gt;
+                  &lt;img style="margin:0; padding:0px;" alt="" aria-hidden="true"
+		     src="images/chevron_$[jvar_flow.getParameter('state')]_$[jvar_flow.getParameter('next_state')].pngx" /&gt;
+	      &lt;/td&gt;
+	    &lt;/j2:forEach&gt;
+	  &lt;/tr&gt;
+	&lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/j:jelly&gt;]]&gt;&lt;/xml&gt;&lt;/sys_ui_macro&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-306966050</payload_hash>
+        <record_name>process_flow</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-28 13:04:21</sys_created_on>
+        <sys_id>5411093597253110e25972d6f053afa1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18adbe3ea6e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-28 13:04:21</sys_updated_on>
+        <type>Macro</type>
+        <update_guid>9c1109359d25311003854163723979a0</update_guid>
+        <update_guid_history>9c1109359d25311003854163723979a0:-306966050</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-28 13:18:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_macro">sys_ui_macro</sys_db_object>
+        <sys_id>2e74cf8bf1504de8b450b072b438a440</sys_id>
+        <sys_metadata>26f0cd7597253110e25972d6f053afe6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>process_flow</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_ui_macro_26f0cd7597253110e25972d6f053afe6</sys_update_name>
+        <sys_update_version display_value="sys_ui_macro_26f0cd7597253110e25972d6f053afe6">5411093597253110e25972d6f053afa1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-28 13:18:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_323515_account_0_ru_task</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_323515_account_0_ru_task">state=2^EQ<item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Move Ru task state to complete</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var gr = new GlideRecord("sysapproval_approver");
+	gr.addQuery(gr.document_id ,current.sys_id);
+	gr.query();
+	while(gr.next()){
+		if(gr.state == "approved"){
+			current.state = '3';
+		}
+		else if(gr.state == 'rejected'){
+			current.state = '1';
+			current.fiscal_year = '';
+			current.get_data_from_cmdb = '';
+			current.current_month_count = '';
+			current.variance_explanation = '';
+			current.update();
+		}
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-26 17:44:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>619b238997e53110e25972d6f053af90</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Move Ru task state to complete</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_script_619b238997e53110e25972d6f053af90</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-26 17:55:13</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=619b238997e53110e25972d6f053af90"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_script_619b238997e53110e25972d6f053af90</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_323515_account_0_ru_task&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_323515_account_0_ru_task"&gt;state=2^EQ&lt;item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Move Ru task state to complete&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var gr = new GlideRecord("sysapproval_approver");
+	gr.addQuery(gr.document_id ,current.sys_id);
+	gr.query();
+	while(gr.next()){
+		if(gr.state == "approved"){
+			current.state = '3';
+		}
+		else if(gr.state == 'rejected'){
+			current.state = '1';
+			current.fiscal_year = '';
+			current.get_data_from_cmdb = '';
+			current.current_month_count = '';
+			current.variance_explanation = '';
+			current.update();
+		}
+	}
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-09-26 17:44:27&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;619b238997e53110e25972d6f053af90&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Move Ru task state to complete&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Account Financials" source="x_323515_account_0"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Account Financials"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_619b238997e53110e25972d6f053af90&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-09-26 17:55:13&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=619b238997e53110e25972d6f053af90"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1829938404</payload_hash>
+        <record_name>Move Ru task state to complete</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-26 17:55:13</sys_created_on>
+        <sys_id>217073cd97e53110e25972d6f053af8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ad2a17fbb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-26 17:55:13</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>a57073cd78e53110ad235f3965113289</update_guid>
+        <update_guid_history>a57073cd78e53110ad235f3965113289:-1829938404,e220f38d4fe5311071b2b6da0fb2c52d:44229987,11ff2b8dc1e5311026e96094f4795505:-1913665141,641f6f0d64e53110d2deaea7c01ff66d:342008570,b7fd2fc959e53110690e36607aca9dfc:699770035</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-26 18:37:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>1486539de5f34da08b05c6ad61e87990</sys_id>
+        <sys_metadata>619b238997e53110e25972d6f053af90</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Move Ru task state to complete</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent display_value="RU Task">72be783897613110e25972d6f053af14</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_script_619b238997e53110e25972d6f053af90</sys_update_name>
+        <sys_update_version display_value="sys_script_619b238997e53110e25972d6f053af90">217073cd97e53110e25972d6f053af8a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-26 18:37:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

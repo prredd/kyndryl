@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="DELETE">
+        <active>true</active>
+        <condition table="x_323515_account_0_financial_statement">state=4^EQ<item display_value="Finalized" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="4"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>Finalized</label>
+        <name>Finalized</name>
+        <order>25</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-28 12:52:30</sys_created_on>
+        <sys_id>b65ef0b197253110e25972d6f053af8c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Finalized</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_process_flow_b65ef0b197253110e25972d6f053af8c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-28 13:34:55</sys_updated_on>
+        <table>x_323515_account_0_financial_statement</table>
+    </sys_process_flow>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_process_flow_b65ef0b197253110e25972d6f053af8c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="x_323515_account_0_financial_statement">state=4^EQ<item display_value="Finalized" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="4"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Finalized</label><name>Finalized</name><order>25</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-28 12:52:30</sys_created_on><sys_id>b65ef0b197253110e25972d6f053af8c</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Finalized</sys_name><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>sys_process_flow_b65ef0b197253110e25972d6f053af8c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-28 13:34:55</sys_updated_on><table>x_323515_account_0_financial_statement</table></sys_process_flow></record_update>]]></payload>
+        <payload_hash>-403226810</payload_hash>
+        <record_name>Finalized</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-28 13:34:55</sys_created_on>
+        <sys_id>3308c17d97253110e25972d6f053af2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18adbffe4500000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-28 13:34:55</sys_updated_on>
+        <type>Flow Formatter</type>
+        <update_guid>7b08c17db0253110f058a2c6483dcf2a</update_guid>
+        <update_guid_history>7b08c17db0253110f058a2c6483dcf2a:-403226810,bd9eb0f1612531102fd1ee2f03835faf:-667710308,507e78b11b253110f1bc4527b19cb4f7:-1979285821,3a5ef0b1b42531104730016d9292418d:642382797</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-30 09:56:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_process_flow">sys_process_flow</sys_db_object>
+        <sys_id>235e54f0ec2a4f5989b7baa849f40279</sys_id>
+        <sys_metadata>b65ef0b197253110e25972d6f053af8c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Finalized</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_process_flow_b65ef0b197253110e25972d6f053af8c</sys_update_name>
+        <sys_update_version display_value="sys_process_flow_b65ef0b197253110e25972d6f053af8c">3308c17d97253110e25972d6f053af2b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-30 09:56:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

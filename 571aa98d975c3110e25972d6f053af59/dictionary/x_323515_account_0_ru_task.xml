@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="72be783897613110e25972d6f053af14" extends="task" label="RU Task" max_length="40" name="x_323515_account_0_ru_task" text_index="true" type="collection">
+        <element label="Adjustment Record" max_length="32" name="adjustment_record" reference="x_323515_account_0_statement_adjustments" type="reference"/>
+        <element label="Current month count" max_length="40" name="current_month_count" type="string"/>
+        <element label="Fiscal Year" mandatory="true" max_length="32" name="fiscal_year" reference="fiscal_period" reference_qual="fiscal_type=year^EQ" reference_qual_condition="fiscal_type=year^EQ" type="reference"/>
+        <element choice="1" label="Get Data from CMDB" mandatory="true" max_length="40" name="get_data_from_cmdb" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="2" value="no"/>
+            </choice>
+        </element>
+        <element label="Request" max_length="32" name="request" reference="x_323515_account_0_ru_requests" type="reference"/>
+        <element choice="3" label="Resource Unit Number" max_length="32" name="resource_unit_number" read_only="true" reference="x_323515_account_0_ru_definition" type="reference">
+            <choice/>
+        </element>
+        <element label="RU Description" max_length="32" name="ru_description" reference="x_323515_account_0_ru_definition" type="reference"/>
+        <element label="Variance Explanation" mandatory="true" max_length="4000" name="variance_explanation" type="string"/>
+    </element>
+</database>

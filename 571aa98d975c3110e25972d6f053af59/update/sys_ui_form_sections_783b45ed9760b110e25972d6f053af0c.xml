@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="783b45ed9760b110e25972d6f053af0c" sys_domain="global" table="x_323515_account_0_resource_unit" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-09 02:07:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b83b45ed9760b110e25972d6f053af0f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_323515_account_0_resource_unit" name="x_323515_account_0_resource_unit" sys_domain="global" view="Default view">783b45ed9760b110e25972d6f053af0c</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="Default view">961c631d9790b110e25972d6f053af2d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-09 02:07:21</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-09 02:07:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b43b45ed9760b110e25972d6f053af10</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_323515_account_0_resource_unit" name="x_323515_account_0_resource_unit" sys_domain="global" view="Default view">783b45ed9760b110e25972d6f053af0c</sys_ui_form>
+            <sys_ui_section caption="Q1 Results" display_value="Q1 Results" name="x_323515_account_0_resource_unit" sys_domain="global" view="Default view">303b45ed9760b110e25972d6f053af0b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-09 02:07:21</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-09 02:10:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>860c412197a0b110e25972d6f053af9b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_323515_account_0_resource_unit" name="x_323515_account_0_resource_unit" sys_domain="global" view="Default view">783b45ed9760b110e25972d6f053af0c</sys_ui_form>
+            <sys_ui_section caption="Q2 Results" display_value="Q2 Results" name="x_323515_account_0_resource_unit" sys_domain="global" view="Default view">710c412197a0b110e25972d6f053af98</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-09 02:10:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-09 02:10:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c60c412197a0b110e25972d6f053afab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_323515_account_0_resource_unit" name="x_323515_account_0_resource_unit" sys_domain="global" view="Default view">783b45ed9760b110e25972d6f053af0c</sys_ui_form>
+            <sys_ui_section caption="Q3 Results" display_value="Q3 Results" name="x_323515_account_0_resource_unit" sys_domain="global" view="Default view">790c412197a0b110e25972d6f053af98</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-09 02:10:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-09 02:10:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>460c412197a0b110e25972d6f053afaf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_323515_account_0_resource_unit" name="x_323515_account_0_resource_unit" sys_domain="global" view="Default view">783b45ed9760b110e25972d6f053af0c</sys_ui_form>
+            <sys_ui_section caption="Q4 Results" display_value="Q4 Results" name="x_323515_account_0_resource_unit" sys_domain="global" view="Default view">710c412197a0b110e25972d6f053af99</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-09 02:10:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_323515_account_0_resource_unit</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-09 02:07:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>783b45ed9760b110e25972d6f053af0c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_323515_account_0_resource_unit</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+            <sys_update_name>sys_ui_form_sections_783b45ed9760b110e25972d6f053af0c</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-09 02:07:21</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

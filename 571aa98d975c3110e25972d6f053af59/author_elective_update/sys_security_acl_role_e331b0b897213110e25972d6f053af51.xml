@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-25 09:21:17</sys_created_on>
+        <sys_id>e331b0b897213110e25972d6f053af51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_323515_account_0_ru_request.x_323515_account_0.ru_request_user</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_security_acl display_value="x_323515_account_0_ru_request">eb31b0b897213110e25972d6f053af4e</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_e331b0b897213110e25972d6f053af51</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-25 09:21:17</sys_updated_on>
+        <sys_user_role display_value="x_323515_account_0.ru_request_user" name="x_323515_account_0.ru_request_user">5731387897213110e25972d6f053afd1</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_security_acl_role_e331b0b897213110e25972d6f053af51</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-25 09:21:17</sys_created_on><sys_id>e331b0b897213110e25972d6f053af51</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_323515_account_0_ru_request.x_323515_account_0.ru_request_user</sys_name><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_security_acl display_value="x_323515_account_0_ru_request">eb31b0b897213110e25972d6f053af4e</sys_security_acl><sys_update_name>sys_security_acl_role_e331b0b897213110e25972d6f053af51</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-25 09:21:17</sys_updated_on><sys_user_role display_value="x_323515_account_0.ru_request_user" name="x_323515_account_0.ru_request_user">5731387897213110e25972d6f053afd1</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1439059896</payload_hash>
+        <record_name>x_323515_account_0_ru_request.x_323515_account_0.ru_request_user</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-25 09:21:17</sys_created_on>
+        <sys_id>6731b0b897213110e25972d6f053af53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18acba49dfa0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-25 09:21:17</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>af31b0b84a213110538e1f532fc7e752</update_guid>
+        <update_guid_history>af31b0b84a213110538e1f532fc7e752:1439059896</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_323515_account_0_ru_request.x_323515_account_0.ru_request_user">64cb34b497613110e25972d6f053afd5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-25 10:07:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>04de3a5663c04c9381889455385069d1</sys_id>
+        <sys_metadata>e331b0b897213110e25972d6f053af51</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_323515_account_0_ru_request.x_323515_account_0.ru_request_user</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent display_value="">eb31b0b897213110e25972d6f053af4e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_e331b0b897213110e25972d6f053af51</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_e331b0b897213110e25972d6f053af51">6731b0b897213110e25972d6f053af53</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-25 10:07:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

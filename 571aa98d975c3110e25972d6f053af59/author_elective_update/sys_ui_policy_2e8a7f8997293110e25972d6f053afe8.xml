@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="DELETE">
+        <active>true</active>
+        <conditions table="x_323515_account_0_financial_statement">state=4^EQ<item display_value="Finalized" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="4"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+var fields = g_form.getEditableFields();
+for (var x = 0; x < fields.length; x++) {
+    g_form.setReadOnly(fields[x], true);
+}
+}]]></script_true>
+        <set_values/>
+        <short_description>make fields read only after closed complete- Financial Statement</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-26 18:39:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2e8a7f8997293110e25972d6f053afe8</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>make fields read only after closed complete- Financial Statement</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_ui_policy_2e8a7f8997293110e25972d6f053afe8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-29 16:47:27</sys_updated_on>
+        <table>x_323515_account_0_financial_statement</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_ui_policy_2e8a7f8997293110e25972d6f053afe8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_323515_account_0_financial_statement"&gt;state=4^EQ&lt;item display_value="Finalized" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="4"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;true&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+var fields = g_form.getEditableFields();
+for (var x = 0; x &lt; fields.length; x++) {
+    g_form.setReadOnly(fields[x], true);
+}
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;make fields read only after closed complete- Financial Statement&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-09-26 18:39:58&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;2e8a7f8997293110e25972d6f053afe8&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;make fields read only after closed complete- Financial Statement&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Account Financials" source="x_323515_account_0"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Account Financials"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_2e8a7f8997293110e25972d6f053afe8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-09-29 16:47:27&lt;/sys_updated_on&gt;&lt;table&gt;x_323515_account_0_financial_statement&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1895702120</payload_hash>
+        <record_name>make fields read only after closed complete- Financial Statement</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-29 16:47:28</sys_created_on>
+        <sys_id>d6bd3a8e97697110e25972d6f053af94</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ae1d689070000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-29 16:47:28</sys_updated_on>
+        <type>UI Policy</type>
+        <update_guid>9ebd3a8ec5697110dbcb6bb4bc114793</update_guid>
+        <update_guid_history>9ebd3a8ec5697110dbcb6bb4bc114793:-1895702120,4a9205f51e2531108f6b0959ee515aeb:2030428762,2582c1f517253110aa5b197b9f989fe7:1640889008,f36bb7c9e129311045e12ffa29cddeaa:-1918064329,85ba7b89ec29311082649ed5e407ead6:-491312336</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-30 09:56:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy">sys_ui_policy</sys_db_object>
+        <sys_id>79df47ddc9e84588bcdf400318e02844</sys_id>
+        <sys_metadata>2e8a7f8997293110e25972d6f053afe8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>make fields read only after closed complete- Financial Statement</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent display_value="">ca08c4f997213110e25972d6f053af2c</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_2e8a7f8997293110e25972d6f053afe8</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_2e8a7f8997293110e25972d6f053afe8">d6bd3a8e97697110e25972d6f053af94</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-30 09:56:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

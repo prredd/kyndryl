@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="DELETE">
+        <active>true</active>
+        <category>general</category>
+        <description>Pop up for fiscal year</description>
+        <media_type/>
+        <name>Fiscal Year</name>
+        <scoped_name>x_323515_account_0_Fiscal Year</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-08 17:02:39</sys_created_on>
+        <sys_id>586e4f9d97a87110e25972d6f053af91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Fiscal Year</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_ui_macro_586e4f9d97a87110e25972d6f053af91</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-08 17:02:39</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+    <g:evaluate var="jvar_gr"  object="true">
+        var fiscalPeriods = new GlideRecord('fiscal_period');
+        fiscalPeriods.addQuery('fiscal_type','year');
+        fiscalPeriods.orderBy('fiscal_start_date_time');
+        fiscalPeriods.query();
+        fiscalPeriods;
+    </g:evaluate>
+
+    <g:evaluate jelly="true" object="true" var="jvar_currentYear">
+        var gdt = new GlideDateTime();
+        var year = gdt.getYearUTC();
+        year;
+    </g:evaluate>
+
+    <div id="#year-field">
+        <div class="form-group is-filled" id="fund">
+            <div nowrap="true" type="string" choice="0" data-type="label">
+                <label class="col-sm-12 col-md-4 control-label">
+                    <span class="required-marker label_description"></span>
+                    <span class="label-text">${gs.getMessage('Fiscal Year')}</span>
+                </label>
+            </div>
+            <div class="col-sm-12 col-md-6 form-field input_controls">
+                <select class="form-control" name="fiscal_year" id="fiscal_year">
+                    <j:while test="${jvar_gr.next()}">
+                        <option value="${jvar_gr.getValue('sys_id')}">${jvar_gr.getValue('name')}</option>
+                    </j:while>
+                    <option value="${jvar_currentYear}" selected="selected">${jvar_currentYear}</option>
+                </select>
+            </div>
+            <div class="col-sm-12 col-md-2 form-field-addons"></div>
+        </div>
+    </div>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_ui_macro_586e4f9d97a87110e25972d6f053af91</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_macro"&gt;&lt;sys_ui_macro action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;category&gt;general&lt;/category&gt;&lt;description&gt;Pop up for fiscal year&lt;/description&gt;&lt;media_type/&gt;&lt;name&gt;Fiscal Year&lt;/name&gt;&lt;scoped_name&gt;x_323515_account_0_Fiscal Year&lt;/scoped_name&gt;&lt;sys_class_name&gt;sys_ui_macro&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-08-08 17:02:39&lt;/sys_created_on&gt;&lt;sys_id&gt;586e4f9d97a87110e25972d6f053af91&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Fiscal Year&lt;/sys_name&gt;&lt;sys_package display_value="Account Financials" source="x_323515_account_0"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Account Financials"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_macro_586e4f9d97a87110e25972d6f053af91&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-08 17:02:39&lt;/sys_updated_on&gt;&lt;xml&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+    &lt;g:evaluate var="jvar_gr"  object="true"&gt;
+        var fiscalPeriods = new GlideRecord('fiscal_period');
+        fiscalPeriods.addQuery('fiscal_type','year');
+        fiscalPeriods.orderBy('fiscal_start_date_time');
+        fiscalPeriods.query();
+        fiscalPeriods;
+    &lt;/g:evaluate&gt;
+
+    &lt;g:evaluate jelly="true" object="true" var="jvar_currentYear"&gt;
+        var gdt = new GlideDateTime();
+        var year = gdt.getYearUTC();
+        year;
+    &lt;/g:evaluate&gt;
+
+    &lt;div id="#year-field"&gt;
+        &lt;div class="form-group is-filled" id="fund"&gt;
+            &lt;div nowrap="true" type="string" choice="0" data-type="label"&gt;
+                &lt;label class="col-sm-12 col-md-4 control-label"&gt;
+                    &lt;span class="required-marker label_description"&gt;&lt;/span&gt;
+                    &lt;span class="label-text"&gt;${gs.getMessage('Fiscal Year')}&lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-12 col-md-6 form-field input_controls"&gt;
+                &lt;select class="form-control" name="fiscal_year" id="fiscal_year"&gt;
+                    &lt;j:while test="${jvar_gr.next()}"&gt;
+                        &lt;option value="${jvar_gr.getValue('sys_id')}"&gt;${jvar_gr.getValue('name')}&lt;/option&gt;
+                    &lt;/j:while&gt;
+                    &lt;option value="${jvar_currentYear}" selected="selected"&gt;${jvar_currentYear}&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-12 col-md-2 form-field-addons"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/j:jelly&gt;]]&gt;&lt;/xml&gt;&lt;/sys_ui_macro&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2031191570</payload_hash>
+        <record_name>Fiscal Year</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-08 17:02:39</sys_created_on>
+        <sys_id>7d8ec71197e87110e25972d6f053af0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>189d619c1b80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-08 17:02:39</sys_updated_on>
+        <type>Macro</type>
+        <update_guid>b58ec711c2e87110b9864c880c6abe0c</update_guid>
+        <update_guid_history>b58ec711c2e87110b9864c880c6abe0c:-2031191570</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-28 13:18:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_macro">sys_ui_macro</sys_db_object>
+        <sys_id>6963f70ce4c54d8a8044db8fe8ff6b99</sys_id>
+        <sys_metadata>586e4f9d97a87110e25972d6f053af91</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Fiscal Year</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_ui_macro_586e4f9d97a87110e25972d6f053af91</sys_update_name>
+        <sys_update_version display_value="sys_ui_macro_586e4f9d97a87110e25972d6f053af91">7d8ec71197e87110e25972d6f053af0c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-28 13:18:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes>e75113c0c3302010de10a0f89d40dd0e</includes>
+        <macroponent display_value="List">65da7b8997317110e25972d6f053af50</macroponent>
+        <name>listUserPrefState</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api, event, helpers, imports}) {
+    // event name
+    const eventName = event.name;
+    
+    // import the getUserPreference method from userPreferenceUtils script includes
+    const {
+        getUserPreference
+    } = imports["sn_record_page.userPreferenceUtils"](api.context.props.userPrefs);
+
+    /**
+     * setWrapListText - toggle the srap list text behavior
+     */
+    const setWrapListText = () => {
+        // show preference name constant
+        const WRAP_LIST_TEXT_PREF_NAME = "workspace.wrapListText";
+
+        // fetch the user's wrap list text preference value
+        const pref = getUserPreference(WRAP_LIST_TEXT_PREF_NAME);
+
+        api.setState('wrapListText', pref);
+    };
+
+    /**
+     * onLoadUserPreference - if User pref from DR lookup exists, save it to client state.
+     */
+    const onLoadUserPreference = (userPrefs) => {
+        if(userPrefs.length > 0) {
+            userPrefs.forEach((userPref) => {
+                switch(userPref.name) {
+                    case api.state.listRatioPreference:
+                        if(userPref.value) 
+                            api.setState('listDividerPosition', userPref.value);
+                        break;
+                    case api.state.listMenuOpenPreference:
+                        const closed = userPref.value === 'false';
+                        api.setState('listMenuOpen', !closed);
+                        api.setState('listDisplayPanes', closed? 'right': 'both');
+                        break;
+                }
+            });
+        }
+    };
+
+    /**
+     * onLoadListPref - When page is loading, read the list ratio preference via DR
+     */
+    const onLoadListPref = () => {
+        // Set the preferences we want to load
+        api.setState('listPreferences', api.state.listRatioPreference + ',' + api.state.listMenuOpenPreference);
+
+        // the preference name is loaded by DR from client state var, this 
+        // calls the DR to look it up. Then DR calls the DATA_FETCH_SUCCEEDED
+        // event handler (in switch statement below) to update state variable    
+        api.data.getListPreferences.refresh();
+    };
+
+    // handle the wrap list text collapsed state based on the macroponent ready & 
+    // macroponent property change events
+    switch(eventName) {
+        case 'MACROPONENT_READY':
+            setWrapListText();
+            onLoadListPref();
+            break;
+
+        case 'MACROPONENT_PROPERTY_CHANGED':
+            if(event.payload.name === 'userPrefs') 
+                setWrapListText();    
+            break;
+
+        case 'DATA_FETCH_SUCCEEDED':
+            if (event.elementId === 'getListPreferences') 
+                onLoadUserPreference(api.data.getListPreferences.result.preferences);
+            break;
+
+        default:
+            break;
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 04:56:15</sys_created_on>
+        <sys_id>39da7f8997317110e25972d6f053affc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>listUserPrefState</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_ux_client_script_39da7f8997317110e25972d6f053affc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 04:56:15</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_ux_client_script_39da7f8997317110e25972d6f053affc</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes&gt;e75113c0c3302010de10a0f89d40dd0e&lt;/includes&gt;&lt;macroponent display_value="List"&gt;65da7b8997317110e25972d6f053af50&lt;/macroponent&gt;&lt;name&gt;listUserPrefState&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api, event, helpers, imports}) {
+    // event name
+    const eventName = event.name;
+    
+    // import the getUserPreference method from userPreferenceUtils script includes
+    const {
+        getUserPreference
+    } = imports["sn_record_page.userPreferenceUtils"](api.context.props.userPrefs);
+
+    /**
+     * setWrapListText - toggle the srap list text behavior
+     */
+    const setWrapListText = () =&gt; {
+        // show preference name constant
+        const WRAP_LIST_TEXT_PREF_NAME = "workspace.wrapListText";
+
+        // fetch the user's wrap list text preference value
+        const pref = getUserPreference(WRAP_LIST_TEXT_PREF_NAME);
+
+        api.setState('wrapListText', pref);
+    };
+
+    /**
+     * onLoadUserPreference - if User pref from DR lookup exists, save it to client state.
+     */
+    const onLoadUserPreference = (userPrefs) =&gt; {
+        if(userPrefs.length &gt; 0) {
+            userPrefs.forEach((userPref) =&gt; {
+                switch(userPref.name) {
+                    case api.state.listRatioPreference:
+                        if(userPref.value) 
+                            api.setState('listDividerPosition', userPref.value);
+                        break;
+                    case api.state.listMenuOpenPreference:
+                        const closed = userPref.value === 'false';
+                        api.setState('listMenuOpen', !closed);
+                        api.setState('listDisplayPanes', closed? 'right': 'both');
+                        break;
+                }
+            });
+        }
+    };
+
+    /**
+     * onLoadListPref - When page is loading, read the list ratio preference via DR
+     */
+    const onLoadListPref = () =&gt; {
+        // Set the preferences we want to load
+        api.setState('listPreferences', api.state.listRatioPreference + ',' + api.state.listMenuOpenPreference);
+
+        // the preference name is loaded by DR from client state var, this 
+        // calls the DR to look it up. Then DR calls the DATA_FETCH_SUCCEEDED
+        // event handler (in switch statement below) to update state variable    
+        api.data.getListPreferences.refresh();
+    };
+
+    // handle the wrap list text collapsed state based on the macroponent ready &amp; 
+    // macroponent property change events
+    switch(eventName) {
+        case 'MACROPONENT_READY':
+            setWrapListText();
+            onLoadListPref();
+            break;
+
+        case 'MACROPONENT_PROPERTY_CHANGED':
+            if(event.payload.name === 'userPrefs') 
+                setWrapListText();    
+            break;
+
+        case 'DATA_FETCH_SUCCEEDED':
+            if (event.elementId === 'getListPreferences') 
+                onLoadUserPreference(api.data.getListPreferences.result.preferences);
+            break;
+
+        default:
+            break;
+    }
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-10-09 04:56:15&lt;/sys_created_on&gt;&lt;sys_id&gt;39da7f8997317110e25972d6f053affc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;listUserPrefState&lt;/sys_name&gt;&lt;sys_package display_value="Account Financials" source="x_323515_account_0"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Account Financials"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_39da7f8997317110e25972d6f053affc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-10-09 04:56:15&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1338421644</payload_hash>
+        <record_name>listUserPrefState</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 04:56:17</sys_created_on>
+        <sys_id>4edabf8997317110e25972d6f053af67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b12cb05b50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 04:56:17</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>06dabf89b9317110e2917d60a5799567</update_guid>
+        <update_guid_history>06dabf89b9317110e2917d60a5799567:1338421644,02dabf895d3171100636742864a03859:-905866231,79da7f89e3317110a632dd23fb553aff:1338421644</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 05:16:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>a492b5ff640c4b1291012806415dbfc1</sys_id>
+        <sys_metadata>39da7f8997317110e25972d6f053affc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>listUserPrefState</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_39da7f8997317110e25972d6f053affc</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_39da7f8997317110e25972d6f053affc">4edabf8997317110e25972d6f053af67</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 05:16:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

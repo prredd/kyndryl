@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs">
+    <pa_tabs action="DELETE">
+        <canvas_page/>
+        <name>Resource Unit Manage - New Tab 2</name>
+        <page/>
+        <sys_class_name>pa_tabs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-17 04:06:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a83cb43b97313110e25972d6f053af45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Resource Unit Manage - New Tab 2</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>pa_tabs_a83cb43b97313110e25972d6f053af45</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-17 04:06:37</sys_updated_on>
+    </pa_tabs>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>pa_tabs_a83cb43b97313110e25972d6f053af45</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs"><pa_tabs action="INSERT_OR_UPDATE"><canvas_page/><name>Resource Unit Manage - New Tab 2</name><page/><sys_class_name>pa_tabs</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-10-17 04:06:37</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a83cb43b97313110e25972d6f053af45</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Resource Unit Manage - New Tab 2</sys_name><sys_overrides/><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>pa_tabs_a83cb43b97313110e25972d6f053af45</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-10-17 04:06:37</sys_updated_on></pa_tabs></record_update>]]></payload>
+        <payload_hash>1062837492</payload_hash>
+        <record_name>Resource Unit Manage - New Tab 2</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-17 04:06:43</sys_created_on>
+        <sys_id>793c7c3b97313110e25972d6f053af2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b3bd084450000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-17 04:06:43</sys_updated_on>
+        <type>Tab</type>
+        <update_guid>e43cb43b10313110debf5a7fc8f39946</update_guid>
+        <update_guid_history>e43cb43b10313110debf5a7fc8f39946:-306619736,e43cb43b10313110debf5a7fc8f39946:-306619736,e43cb43b10313110debf5a7fc8f39946:-306619736</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Resource Unit Manage - New Tab 2">b93c7c3b97313110e25972d6f053af34</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-17 04:06:43</sys_created_on>
+        <sys_db_object display_value="" name="pa_tabs">pa_tabs</sys_db_object>
+        <sys_id>25a8e16ebe1847ae8d87114c6da5c6f1</sys_id>
+        <sys_metadata>a83cb43b97313110e25972d6f053af45</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Resource Unit Manage - New Tab 2</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>pa_tabs_a83cb43b97313110e25972d6f053af45</sys_update_name>
+        <sys_update_version display_value="pa_tabs_a83cb43b97313110e25972d6f053af45">793c7c3b97313110e25972d6f053af2e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-17 04:06:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="fb0a7cf097613110e25972d6f053af49" extends="task" label="RU Requests" max_length="40" name="x_323515_account_0_ru_requests" text_index="true" type="collection">
+        <element label="Requested for" max_length="32" name="requested_for" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+    </element>
+</database>

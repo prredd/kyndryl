@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="DELETE">
+        <active>true</active>
+        <condition table="x_323515_account_0_financial_statement">state=2^EQ<item display_value="Awaiting DPE Approval" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>Awaiting DPE Approval</label>
+        <name>Awaiting DPE Approval</name>
+        <order>15</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-28 12:51:26</sys_created_on>
+        <sys_id>cf1eb4b197253110e25972d6f053af07</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Awaiting DPE Approval</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_process_flow_cf1eb4b197253110e25972d6f053af07</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-28 13:33:56</sys_updated_on>
+        <table>x_323515_account_0_financial_statement</table>
+    </sys_process_flow>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_process_flow_cf1eb4b197253110e25972d6f053af07</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="x_323515_account_0_financial_statement">state=2^EQ<item display_value="Awaiting DPE Approval" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Awaiting DPE Approval</label><name>Awaiting DPE Approval</name><order>15</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-28 12:51:26</sys_created_on><sys_id>cf1eb4b197253110e25972d6f053af07</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Awaiting DPE Approval</sys_name><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>sys_process_flow_cf1eb4b197253110e25972d6f053af07</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-28 13:33:56</sys_updated_on><table>x_323515_account_0_financial_statement</table></sys_process_flow></record_update>]]></payload>
+        <payload_hash>-1685665829</payload_hash>
+        <record_name>Awaiting DPE Approval</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-28 13:33:56</sys_created_on>
+        <sys_id>add7417d97253110e25972d6f053af4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18adbff004a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-28 13:33:56</sys_updated_on>
+        <type>Flow Formatter</type>
+        <update_guid>e5d7417d91253110673bd736d4d2854f</update_guid>
+        <update_guid_history>e5d7417d91253110673bd736d4d2854f:-1685665829,164e74b1f3253110730e7127a21d8ba3:642382797,623e74b13c253110fdc522d26eb948d6:566094311,871eb4b1032531108444c4fa78eba209:1395261329</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-30 09:56:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_process_flow">sys_process_flow</sys_db_object>
+        <sys_id>077c0e8b905c4b96aacce2fdd7d44e24</sys_id>
+        <sys_metadata>cf1eb4b197253110e25972d6f053af07</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Awaiting DPE Approval</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_process_flow_cf1eb4b197253110e25972d6f053af07</sys_update_name>
+        <sys_update_version display_value="sys_process_flow_cf1eb4b197253110e25972d6f053af07">add7417d97253110e25972d6f053af4f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-30 09:56:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

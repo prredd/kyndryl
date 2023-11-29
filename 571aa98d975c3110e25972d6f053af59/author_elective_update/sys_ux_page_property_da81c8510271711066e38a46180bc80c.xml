@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description>sys_ux_applicability sys_id for Workspace audience</description>
+        <name>wbApplicabilityConfigId</name>
+        <page display_value="">d681c851a17171105a13cb5d7e49881d</page>
+        <required_translations/>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 05:25:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>da81c8510271711066e38a46180bc80c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>wbApplicabilityConfigId</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_ux_page_property_da81c8510271711066e38a46180bc80c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 05:25:31</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_323515_account_0.d681c851a17171105a13cb5d7e49881d.root.wbApplicabilityConfigId</unique_name>
+        <value>f9daf82749109581374d10b6c97ac9dc</value>
+    </sys_ux_page_property>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_ux_page_property_da81c8510271711066e38a46180bc80c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description>sys_ux_applicability sys_id for Workspace audience</description><name>wbApplicabilityConfigId</name><page display_value="">d681c851a17171105a13cb5d7e49881d</page><required_translations/><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-10-09 05:25:31</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>da81c8510271711066e38a46180bc80c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>wbApplicabilityConfigId</sys_name><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>sys_ux_page_property_da81c8510271711066e38a46180bc80c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-10-09 05:25:31</sys_updated_on><type>string</type><unique_name>x_323515_account_0.d681c851a17171105a13cb5d7e49881d.root.wbApplicabilityConfigId</unique_name><value>f9daf82749109581374d10b6c97ac9dc</value></sys_ux_page_property></record_update>]]></payload>
+        <payload_hash>269530886</payload_hash>
+        <record_name>wbApplicabilityConfigId</record_name>
+        <reverted_from/>
+        <source>f355c62097313110e25972d6f053afdd</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-10-07 07:06:05</sys_created_on>
+        <sys_id>e83d559997b57110e25972d6f053afcb</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18b08f523480000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX Page Property</type>
+        <update_guid>a83d5599cab5711009e12a7a4c281acb</update_guid>
+        <update_guid_history>a83d5599cab5711009e12a7a4c281acb:269530886</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 12:05:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>0029da33fd6a4f388000c9612e05da84</sys_id>
+        <sys_metadata>da81c8510271711066e38a46180bc80c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>wbApplicabilityConfigId</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_da81c8510271711066e38a46180bc80c</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_da81c8510271711066e38a46180bc80c">e83d559997b57110e25972d6f053afcb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 12:05:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

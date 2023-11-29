@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Resource Unit Date">f88be46597b0b110e25972d6f053af28</sc_cat_item>
+        <sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-21 10:14:01</sys_created_on>
+        <sys_id>6ead68e597b0b110e25972d6f053af00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You?.Resource Unit Date</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sc_cat_item_category_6ead68e597b0b110e25972d6f053af00</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-21 10:14:01</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sc_cat_item_category_6ead68e597b0b110e25972d6f053af00</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Resource Unit Date">f88be46597b0b110e25972d6f053af28</sc_cat_item><sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-21 10:14:01</sys_created_on><sys_id>6ead68e597b0b110e25972d6f053af00</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Can We Help You?.Resource Unit Date</sys_name><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>sc_cat_item_category_6ead68e597b0b110e25972d6f053af00</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-21 10:14:01</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-1700491281</payload_hash>
+        <record_name>Can We Help You?.Resource Unit Date</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-21 10:14:01</sys_created_on>
+        <sys_id>a6ad68e597b0b110e25972d6f053af04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18a1796508f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-21 10:14:01</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>2ead68e57eb0b1104dd43f4d77f2af03</update_guid>
+        <update_guid_history>2ead68e57eb0b1104dd43f4d77f2af03:-1700491281</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Can We Help You?.Resource Unit Date">6b6e642997b0b110e25972d6f053af53</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-21 10:17:21</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>c2f76b345c694d3e8afbbfd4d20ca624</sys_id>
+        <sys_metadata>6ead68e597b0b110e25972d6f053af00</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You?.Resource Unit Date</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_6ead68e597b0b110e25972d6f053af00</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_6ead68e597b0b110e25972d6f053af00">a6ad68e597b0b110e25972d6f053af04</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-21 10:17:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

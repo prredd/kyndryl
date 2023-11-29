@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description/>
+        <name>globalSearchDataConfigId</name>
+        <page display_value="Resource Unit Management">5ca18f48e6c67110cb9ff5216ce700fb</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-18 08:28:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>1ca18f481dc67110bb7cc44ee500ece9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>globalSearchDataConfigId</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_ux_page_property_1ca18f481dc67110bb7cc44ee500ece9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-18 08:28:11</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_323515_account_0.5ca18f48e6c67110cb9ff5216ce700fb.root.globalSearchDataConfigId</unique_name>
+        <value>007d99994cb571104b252dc52bb377ad</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="DELETE" query="documentkey=1ca18f481dc67110bb7cc44ee500ece9"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_ux_page_property_1ca18f481dc67110bb7cc44ee500ece9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description/><name>globalSearchDataConfigId</name><page display_value="Resource Unit Management">5ca18f48e6c67110cb9ff5216ce700fb</page><required_translations>[]</required_translations><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-10-18 08:28:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>1ca18f481dc67110bb7cc44ee500ece9</sys_id><sys_mod_count>1</sys_mod_count><sys_name>globalSearchDataConfigId</sys_name><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>sys_ux_page_property_1ca18f481dc67110bb7cc44ee500ece9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-10-18 08:28:11</sys_updated_on><type>string</type><unique_name>x_323515_account_0.5ca18f48e6c67110cb9ff5216ce700fb.root.globalSearchDataConfigId</unique_name><value>007d99994cb571104b252dc52bb377ad</value></sys_ux_page_property><sys_translated_text action="delete_multiple" query="documentkey=1ca18f481dc67110bb7cc44ee500ece9"/></record_update>]]></payload>
+        <payload_hash>-251407851</payload_hash>
+        <record_name>globalSearchDataConfigId</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-18 08:28:11</sys_created_on>
+        <sys_id>fda1438897c67110e25972d6f053af1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b41e644ad0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-18 08:28:11</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>75a14388abc671107eb5fb727259591f</update_guid>
+        <update_guid_history>75a14388abc671107eb5fb727259591f:-251407851,71a1438850c671103c38d8c590b9bb1e:-1389612433</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 10:11:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>3092eddeb436473698ad1a03b52b1024</sys_id>
+        <sys_metadata>1ca18f481dc67110bb7cc44ee500ece9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>globalSearchDataConfigId</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_1ca18f481dc67110bb7cc44ee500ece9</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_1ca18f481dc67110bb7cc44ee500ece9">fda1438897c67110e25972d6f053af1f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-29 10:11:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

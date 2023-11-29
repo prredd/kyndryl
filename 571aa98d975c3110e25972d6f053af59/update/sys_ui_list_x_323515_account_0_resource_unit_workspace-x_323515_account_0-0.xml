@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_323515_account_0_resource_unit" version="2" view="Workspace-Account-Financials-0">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_323515_account_0_resource_unit" element="NULL" name="x_323515_account_0_resource_unit" parent="NULL" relationship="NULL" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">7f6ee0799754f110e25972d6f053af88</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>bb6ee0799754f110e25972d6f053af8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>active</element>
+            <list_id display_value="x_323515_account_0_resource_unit" element="NULL" name="x_323515_account_0_resource_unit" parent="NULL" relationship="NULL" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">7f6ee0799754f110e25972d6f053af88</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>f36ee0799754f110e25972d6f053af8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="x_323515_account_0_resource_unit" element="NULL" name="x_323515_account_0_resource_unit" parent="NULL" relationship="NULL" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">7f6ee0799754f110e25972d6f053af88</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>f76ee0799754f110e25972d6f053af8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_by</element>
+            <list_id display_value="x_323515_account_0_resource_unit" element="NULL" name="x_323515_account_0_resource_unit" parent="NULL" relationship="NULL" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">7f6ee0799754f110e25972d6f053af88</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>fb6ee0799754f110e25972d6f053af8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_323515_account_0_resource_unit" element="NULL" name="x_323515_account_0_resource_unit" parent="NULL" relationship="NULL" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">7f6ee0799754f110e25972d6f053af88</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>ff6ee0799754f110e25972d6f053af8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_by</element>
+            <list_id display_value="x_323515_account_0_resource_unit" element="NULL" name="x_323515_account_0_resource_unit" parent="NULL" relationship="NULL" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">7f6ee0799754f110e25972d6f053af88</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>f36ee0799754f110e25972d6f053af8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_mod_count</element>
+            <list_id display_value="x_323515_account_0_resource_unit" element="NULL" name="x_323515_account_0_resource_unit" parent="NULL" relationship="NULL" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">7f6ee0799754f110e25972d6f053af88</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>f76ee0799754f110e25972d6f053af8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_323515_account_0_resource_unit</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7f6ee0799754f110e25972d6f053af88</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_323515_account_0_resource_unit</sys_name>
+            <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+            <sys_update_name>sys_ui_list_x_323515_account_0_resource_unit_Workspace-x_323515_account_0-0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace Account Financials 0" name="Workspace-Account-Financials-0">fd6e60793754f110f8ac7f734fcbbd6e</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

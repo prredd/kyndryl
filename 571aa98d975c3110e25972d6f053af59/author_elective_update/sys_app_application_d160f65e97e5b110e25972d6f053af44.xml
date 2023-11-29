@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-30 10:27:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d160f65e97e5b110e25972d6f053af44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RU request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_app_application_d160f65e97e5b110e25972d6f053af44</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-30 10:27:50</sys_updated_on>
+        <title>RU request</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_app_application_d160f65e97e5b110e25972d6f053af44</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name/><order>100</order><roles/><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-30 10:27:50</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d160f65e97e5b110e25972d6f053af44</sys_id><sys_mod_count>0</sys_mod_count><sys_name>RU request</sys_name><sys_overrides/><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>sys_app_application_d160f65e97e5b110e25972d6f053af44</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-30 10:27:50</sys_updated_on><title>RU request</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>-1460946308</payload_hash>
+        <record_name>RU request</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-30 10:27:50</sys_created_on>
+        <sys_id>8760be1e97e5b110e25972d6f053af4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ae5a156780000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-30 10:27:50</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>cf60be1e61e5b110f2fffe7688362e49</update_guid>
+        <update_guid_history>cf60be1e61e5b110f2fffe7688362e49:-1460946308</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="RU request">15807e5e97e5b110e25972d6f053af89</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-30 10:28:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>0767ef7699594c18871f2bc9bf82e1e4</sys_id>
+        <sys_metadata>d160f65e97e5b110e25972d6f053af44</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RU request</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_app_application_d160f65e97e5b110e25972d6f053af44</sys_update_name>
+        <sys_update_version display_value="sys_app_application_d160f65e97e5b110e25972d6f053af44">8760be1e97e5b110e25972d6f053af4a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-30 10:28:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

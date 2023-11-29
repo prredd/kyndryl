@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="Account Financials Config">c2b21e6cb27531105725688a57686960</app_config>
+        <description/>
+        <event_mappings/>
+        <macroponent display_value="SDO">06e777c597317110e25972d6f053af80</macroponent>
+        <macroponent_config>{ }</macroponent_config>
+        <name>SDO</name>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Home">cab21e6c10753110a5fa8b01f37c8540</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 04:43:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>02e777c597317110e25972d6f053af84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SDO</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_ux_screen_02e777c597317110e25972d6f053af84</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 04:43:27</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=02e777c597317110e25972d6f053af84"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_ux_screen_02e777c597317110e25972d6f053af84</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="Account Financials Config">c2b21e6cb27531105725688a57686960</app_config><description/><event_mappings/><macroponent display_value="SDO">06e777c597317110e25972d6f053af80</macroponent><macroponent_config>{ }</macroponent_config><name>SDO</name><order>0</order><parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen/><screen_condition/><screen_type display_value="Home">cab21e6c10753110a5fa8b01f37c8540</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-10-09 04:43:27</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>02e777c597317110e25972d6f053af84</sys_id><sys_mod_count>0</sys_mod_count><sys_name>SDO</sys_name><sys_overrides/><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>sys_ux_screen_02e777c597317110e25972d6f053af84</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-10-09 04:43:27</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=02e777c597317110e25972d6f053af84"/></record_update>]]></payload>
+        <payload_hash>771810047</payload_hash>
+        <record_name>SDO</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 04:43:27</sys_created_on>
+        <sys_id>46e777c597317110e25972d6f053af87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b12bf46f20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 04:43:27</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>8ae777c57d31711049d057cb48237986</update_guid>
+        <update_guid_history>8ae777c57d31711049d057cb48237986:771810047</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 04:50:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>009834ee86d142bc8b3c70c898b37924</sys_id>
+        <sys_metadata>02e777c597317110e25972d6f053af84</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SDO</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_02e777c597317110e25972d6f053af84</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_02e777c597317110e25972d6f053af84">46e777c597317110e25972d6f053af87</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 04:50:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

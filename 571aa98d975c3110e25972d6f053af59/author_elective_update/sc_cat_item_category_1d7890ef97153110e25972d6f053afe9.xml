@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Monthly RU Data">7ae7946f97153110e25972d6f053afaf</sc_cat_item>
+        <sc_category display_value="Software">2809952237b1300054b6a3549dbe5dd4</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 10:20:37</sys_created_on>
+        <sys_id>1d7890ef97153110e25972d6f053afe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Software.Monthly RU Data</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sc_cat_item_category_1d7890ef97153110e25972d6f053afe9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 10:20:37</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sc_cat_item_category_1d7890ef97153110e25972d6f053afe9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Monthly RU Data">7ae7946f97153110e25972d6f053afaf</sc_cat_item><sc_category display_value="Software">2809952237b1300054b6a3549dbe5dd4</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-21 10:20:37</sys_created_on><sys_id>1d7890ef97153110e25972d6f053afe9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Software.Monthly RU Data</sys_name><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>sc_cat_item_category_1d7890ef97153110e25972d6f053afe9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-21 10:20:37</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-1657003222</payload_hash>
+        <record_name>Software.Monthly RU Data</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-21 10:20:37</sys_created_on>
+        <sys_id>517890ef97153110e25972d6f053afed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ab7417dd80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-21 10:20:37</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>997890efe01531109a10024f5408fcec</update_guid>
+        <update_guid_history>997890efe01531109a10024f5408fcec:-1657003222</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Software.Monthly RU Data">6cfc1f1d97657110e25972d6f053af8d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-27 11:08:26</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>279840dce75a4d3f8cdaeecda3c5bb39</sys_id>
+        <sys_metadata>1d7890ef97153110e25972d6f053afe9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Software.Monthly RU Data</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_1d7890ef97153110e25972d6f053afe9</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_1d7890ef97153110e25972d6f053afe9">517890ef97153110e25972d6f053afed</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-27 11:08:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

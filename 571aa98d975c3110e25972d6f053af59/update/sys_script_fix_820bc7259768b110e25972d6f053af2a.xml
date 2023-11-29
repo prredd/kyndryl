@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>testpdfserver</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[var pdf_data = {
+			title: 'RU Report',
+			ru_labels: get_ru_label_fields(),
+			rus: get_rus()
+		};
+		
+		generate_report_pdf(pdf_data);
+
+function generate_report_pdf(pdf_data) {
+		var response_generate_pdf = '';
+		var is_url_response_generate_pdf = '';
+		
+		var generate_pdf = new GenerateRuPDF();
+		
+		response_generate_pdf = generate_pdf.generate(pdf_data);
+		is_url_response_generate_pdf = response_generate_pdf.startsWith('http');
+		
+		if (response_generate_pdf && is_url_response_generate_pdf)
+			data.pdf_url = response_generate_pdf;
+		else
+			data.error_message = response_generate_pdf;
+	}
+	
+	function get_ru_label_fields() {
+		var ru_label_names = [];
+		
+		var glide_record_rus = new GlideRecord('x_323515_account_0_resource_unit');
+
+		glide_record_rus.setLimit(1);
+		glide_record_rus.query();
+
+		if (glide_record_rus.next()) {
+				ru_label_names.push(glide_record_rus.u_reference_unit_name.getLabel());
+				ru_label_names.push(glide_record_rus.m1_results.getLabel());
+				ru_label_names.push(glide_record_rus.m2_results.getLabel());
+				ru_label_names.push(glide_record_rus.m3_results.getLabel());
+				ru_label_names.push(glide_record_rus.m4_results.getLabel());
+				ru_label_names.push(glide_record_rus.m5_results.getLabel());
+				ru_label_names.push(glide_record_rus.m6_results.getLabel());
+				ru_label_names.push(glide_record_rus.m7_results.getLabel());
+				ru_label_names.push(glide_record_rus.m8_results.getLabel());
+				ru_label_names.push(glide_record_rus.m9_results.getLabel());
+				ru_label_names.push(glide_record_rus.m10_results.getLabel());
+				ru_label_names.push(glide_record_rus.m11_results.getLabel());
+			    ru_label_names.push(glide_record_rus.m12_results.getLabel());
+				ru_label_names.push(glide_record_rus.arc_rrc_rate.getLabel());
+				ru_label_names.push(glide_record_rus.month_change.getLabel());
+				ru_label_names.push(glide_record_rus.current_month_arc_rrc.getLabel());
+				ru_label_names.push(glide_record_rus.month_change_count.getLabel());
+				ru_label_names.push(glide_record_rus.u_variance_explanation.getLabel());
+		}
+		
+		return ru_label_names;
+	}
+	
+	function get_rus() {
+		var rus = [];
+		
+		var glide_record_rus = new GlideRecord('x_323515_account_0_resource_unit');
+
+    glide_record_rus.orderByDesc('sys_updated_on');
+		glide_record_rus.query();
+
+		while (glide_record_rus.next()) {
+			
+		var ru = {
+		u_reference_unit_name: glide_record_rus.u_reference_unit_name.getDisplayValue(),
+        m1_results: glide_record_rus.m1_results.toString(),
+        m2_results: glide_record_rus.m2_results.toString(),
+		m3_results: glide_record_rus.m3_results.toString(),
+        m4_results: glide_record_rus.m4_results.toString(),
+        m5_results: glide_record_rus.m5_results.toString(),
+		m6_results: glide_record_rus.m6_results.toString(),
+        m7_results: glide_record_rus.m7_results.toString(),
+        m8_results: glide_record_rus.m8_results.toString(),
+        m9_results: glide_record_rus.m9_results.toString(),
+		m10_results: glide_record_rus.m10_results.toString(),
+		m11_results: glide_record_rus.m11_results.toString(),
+		m12_results: glide_record_rus.m12_results.toString(),
+		arc_rrc_rate: glide_record_rus.arc_rrc_rate.toString(),
+        month_change: glide_record_rus.month_change.toString(),
+		current_month_arc_rrc: glide_record_rus.current_month_arc_rrc.toString(),
+		month_change_count: glide_record_rus.month_change_count.toString(),
+		u_variance_explanation: glide_record_rus.u_variance_explanation.toString()
+		};
+
+				
+      rus.push(ru);
+			
+		}
+		
+		return rus;
+	}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-09 11:29:30</sys_created_on>
+        <sys_id>820bc7259768b110e25972d6f053af2a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>testpdfserver</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_script_fix_820bc7259768b110e25972d6f053af2a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-19 14:17:16</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

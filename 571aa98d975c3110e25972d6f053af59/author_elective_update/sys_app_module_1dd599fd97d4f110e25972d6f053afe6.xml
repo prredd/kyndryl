@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Report">99d599fd97d4f110e25972d6f053afe3</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Reports</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_323515_account_0_report</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_323515_account_0.report_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-28 11:16:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1dd599fd97d4f110e25972d6f053afe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reports</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_app_module_1dd599fd97d4f110e25972d6f053afe6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-28 11:16:35</sys_updated_on>
+        <timeline_page/>
+        <title>Reports</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_app_module_1dd599fd97d4f110e25972d6f053afe6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Report">99d599fd97d4f110e25972d6f053afe3</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Reports</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_323515_account_0_report</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_323515_account_0.report_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-07-28 11:16:35</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1dd599fd97d4f110e25972d6f053afe6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Reports</sys_name><sys_overrides/><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>sys_app_module_1dd599fd97d4f110e25972d6f053afe6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-07-28 11:16:35</sys_updated_on><timeline_page/><title>Reports</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1711657469</payload_hash>
+        <record_name>Reports</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-28 11:16:35</sys_created_on>
+        <sys_id>11d599fd97d4f110e25972d6f053afe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1899c36f9b70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-28 11:16:35</sys_updated_on>
+        <type>Module</type>
+        <update_guid>59d599fd7dd4f1108b7b7541c7be31e8</update_guid>
+        <update_guid_history>59d599fd7dd4f1108b7b7541c7be31e8:1711657469</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Reports">6caf0de197a0b110e25972d6f053afa4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-09 02:26:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>a1c638ba45084bd0babae92288a5c610</sys_id>
+        <sys_metadata>1dd599fd97d4f110e25972d6f053afe6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reports</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_app_module_1dd599fd97d4f110e25972d6f053afe6</sys_update_name>
+        <sys_update_version display_value="sys_app_module_1dd599fd97d4f110e25972d6f053afe6">11d599fd97d4f110e25972d6f053afe9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-09 02:26:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

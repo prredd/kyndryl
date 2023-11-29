@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_applicability">
+    <sys_ux_applicability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <api_name>x_323515_account_0.Audience for app ru-service-delivery-owner</api_name>
+        <description/>
+        <name>Audience for app ru-service-delivery-owner</name>
+        <roles>6e611edf97613110e25972d6f053af1a,db1aa98d975c3110e25972d6f053af63,171aa98d975c3110e25972d6f053af5f,d17ac9fd9794f110e25972d6f053aff0,4784992597a0b110e25972d6f053af24,f1b9080a97203110e25972d6f053afa1,3e4ab8f097613110e25972d6f053afa0,5731387897213110e25972d6f053afd1,ce877c3097613110e25972d6f053afd7,24c51a5797a13110e25972d6f053afce,35dece5f97613110e25972d6f053affd,931aa98d975c3110e25972d6f053af66</roles>
+        <sys_class_name>sys_ux_applicability</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 05:29:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c6528c9197717110e25972d6f053af6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Audience for app ru-service-delivery-owner</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_ux_applicability_c6528c9197717110e25972d6f053af6d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 05:29:02</sys_updated_on>
+    </sys_ux_applicability>
+</record_update>

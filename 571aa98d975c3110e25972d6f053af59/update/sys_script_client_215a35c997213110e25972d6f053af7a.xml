@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>get_data_from_cmdb</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Get RU count form CMDB</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+    var formVal = g_form.getValue('resource_unit_number');
+    var ga = new GlideAjax('currentRuCount');
+    ga.addParam('sysparm_name', 'getCmdbCount');
+    ga.addParam('sysparm_ru_name', formVal);
+    ga.getXML(countParse);
+
+    function countParse(response) {
+
+        var answer = response.responseXML.documentElement.getAttribute("answer");
+
+        var clearvalue;
+
+        if (answer) {
+
+            var returneddata = answer;
+
+          //  g_form.setValue("current_month_count", returneddata);
+            //g_form.addInfoMessage("numbes is "+returneddata );
+
+        } 
+		if(newValue == 'yes'){
+			g_form.setValue("current_month_count", returneddata);
+		}
+		else if(newValue == 'no'){
+			g_form.clearValue("current_month_count");
+		}
+		else{
+			g_form.clearValue("current_month_count");
+		}
+    }
+
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-26 09:21:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>215a35c997213110e25972d6f053af7a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Get RU count form CMDB</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_script_client_215a35c997213110e25972d6f053af7a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 08:53:51</sys_updated_on>
+        <table>x_323515_account_0_ru_task</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

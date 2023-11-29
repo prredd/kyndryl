@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5934512597a0b110e25972d6f053afd6" label="RU Definition" max_length="40" name="x_323515_account_0_ru_definition" text_index="true" type="collection">
+        <element label="ARC/RRC Rate" max_length="40" name="arc_rrc_rate" type="currency"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;var agg = new GlideRecord('cmdb_ci');&#13;&#10;&#9;agg.addQuery('sys_class_name',current.description.toString());&#13;&#10;&#9;agg.addEncodedQuery('managed_by=5a826bf03710200044e0bfc8bcbe5dcc^operational_status=1');&#13;&#10;&#9;agg.query();&#13;&#10;&#9;var count = agg.getRowCount();&#13;&#10;return count;&#13;&#10;})(current);" label="Current Count" max_length="40" name="current_count" type="integer" virtual="true"/>
+        <element label="Description" max_length="80" name="description" type="table_name" use_dependent_field="true"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Service Delivery Owner" max_length="32" name="service_delivery_owner" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <index name="index">
+            <element name="service_delivery_owner"/>
+        </index>
+    </element>
+</database>

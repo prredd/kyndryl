@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_permission">
+    <par_dashboard_permission action="INSERT_OR_UPDATE">
+        <can_read>true</can_read>
+        <can_share>false</can_share>
+        <can_write>false</can_write>
+        <dashboard display_value="Resource Unit Management">087d99998ab57110b14b0219e3f8c9ae</dashboard>
+        <group/>
+        <role display_value="x_323515_account_0.ru_requests_user" name="x_323515_account_0.ru_requests_user">3e4ab8f097613110e25972d6f053afa0</role>
+        <sys_class_name>par_dashboard_permission</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 12:07:07</sys_created_on>
+        <sys_id>057dd99997b57110e25972d6f053afb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>087d99998ab57110b14b0219e3f8c9ae</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>par_dashboard_permission_057dd99997b57110e25972d6f053afb4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 12:07:07</sys_updated_on>
+        <user/>
+    </par_dashboard_permission>
+</record_update>

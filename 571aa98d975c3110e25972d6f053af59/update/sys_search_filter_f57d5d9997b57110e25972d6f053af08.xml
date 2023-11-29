@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_filter">
+    <sys_search_filter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ais_search_source display_value="Statement Adjustments">f8c292ac97753110e25972d6f053af8b</ais_search_source>
+        <label>Statement Adjustments</label>
+        <name>Statement Adjustments</name>
+        <order>500</order>
+        <search_context_config display_value="Resource Unit Management AI Search Configuration">c47d99996cb57110679f251552c1f1ac</search_context_config>
+        <sys_class_name>sys_search_filter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 12:07:09</sys_created_on>
+        <sys_id>f57d5d9997b57110e25972d6f053af08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Statement Adjustments</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_search_filter_f57d5d9997b57110e25972d6f053af08</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 12:07:09</sys_updated_on>
+    </sys_search_filter>
+</record_update>

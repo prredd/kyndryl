@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope, $window, $location) {
+  /* widget controller */
+  var c = this;
+	
+	c.title = 'Incident Report';
+	c.incident_label_fields = [];
+	c.incidents = [];
+	c.attachment_sys_id = '';
+	c.issue_date = '';
+	c.issue_hour = '';
+	
+	get_date_hour_issue();
+	
+	c.incident_label_fields = c.data.incident_label_fields;
+	c.incidents = organize_incidents(c.data.incidents);
+	
+	/*  
+	 * Set date and time when the report is issued.
+	 */
+	function get_date_hour_issue() {
+		c.issue_date = moment().format("DD/MM/YYYY");
+		c.issue_hour = moment().format("HH:mm:ss");
+	}
+	
+	function organize_incidents(incidents) {
+		var incidents_organized = incidents;
+		
+		incidents_organized.map(function(incident) {
+			return {
+				number: incident.number,
+				opened_at: incident.opened_at,
+        short_description: incident.short_description,
+       	caller_name: incident.caller_name,
+        priority: incident.priority,
+        state: incident.state,
+       	category: incident.category,
+        assignment_group: incident.assignment_group,
+        assigned_to_name: incident.assigned_to_name,
+        sys_updated_on: incident.sys_updated_on
+			}
+		});
+		
+		return incidents_organized;
+	}
+
+	/* 
+	 * Generate PDF report.
+	 */
+	c.generate_pdf = function() {
+		var attachment_url = '';
+		var error_message = '';
+		
+		var obj = {
+			action: 'generate_pdf',
+		};
+
+		c.server.get(obj).then(function(response) {
+			c.data.action = undefined;
+			
+			if (response.data.pdf_url && response.data.pdf_url !== '') {
+				attachment_url = response.data.pdf_url;				
+				$window.open(attachment_url, '_self');
+			} else {
+				error_message = response.data.error_message;
+				alert(error_message);
+			}
+		});
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.page_title {
+	border-bottom: 1px solid #000;
+	padding-bottom: 5px;
+  font-weight: 600;
+}
+
+.page-header {
+	border-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+      
+.page-header, .page-body {
+	font-family: Roboto;
+}
+
+.page-body {
+  font-size: 12px;
+}
+
+.table-header { 
+	box-shadow: 0 0 0 2px rgb(0, 0, 0) inset;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.title {
+	padding: 20px;
+  margin-left: 190px;
+  font-size: 16px !important;
+}
+
+.table-filters {
+	margin-top: 20px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-weight: 600;
+  text-align: center;
+  padding: 5px
+}
+
+table.table-data thead tr th {
+	padding: 10px 6px; 
+	background-color: #C1C1C1;
+  border-left: 2px solid #C1C1C1;
+  border-right: 2px solid #C1C1C1;
+	text-align: center; 
+	font-weight: bold; 
+	color: #000;
+  border: 2px solid #000;
+}
+      
+table.table-data tbody tr td {
+	padding: 10px 6px;
+	text-align: center;
+  border: 2px solid #000;
+  font-weight: 600;
+}
+      
+.table-data { 
+	border: 0px;
+}
+
+.table-data-title-1, .table-data-title-2 {
+  color: #FFF !important;
+}
+
+.table-data-title-1 {
+  background-color: #3075B4 !important;
+  border-left: 2px solid #3075B4 !important;
+  border-right: 2px solid #3075B4 !important;
+}
+
+.table-data-title-2 {
+  background-color: #3298FD !important;
+  border-left: 2px solid #3298FD !important;
+  border-right: 2px solid #3298FD !important;
+}
+
+table-data-total {
+  border: 2px solid #000;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+      
+.flex {
+	display: flex;
+}
+    
+.flex-1 {
+	flex: 1
+}
+    
+.flex-2 {
+	flex: 2
+}
+    
+.left {
+	text-align: left;
+}
+
+.no-border {
+  border: 0px !important;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>ru_report</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Ru Report</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	var table_name = 'incident';
+	
+	data.pdf_url = '';
+	data.error_message = '';
+	data.attachment_sys_id = '';	
+	data.incident_label_fields = [];
+	data.incidents = [];
+	
+	data.incident_label_fields = get_incident_label_fields();
+	data.incidents = get_incidents();
+
+	if (input && input.action == 'generate_pdf') {
+	
+		var pdf_data = {
+			title: 'Incident Report',
+			incident_labels: get_incident_label_fields(),
+			incidents: get_incidents()
+		};
+		
+		generate_report_pdf(pdf_data);
+	}
+	
+	/**
+	 * Generates and returns the url of the PDF file, or an error message if the PDF file is not generated.
+	 *  {object} pdfData PDF report data.
+	 * @return {string} URL of the PDF file or error message.
+	 */
+	function generate_report_pdf(pdf_data) {
+		var response_generate_pdf = '';
+		var is_url_response_generate_pdf = '';
+		
+		var generate_pdf = new GeneratePDFIncidentReport();
+		
+		response_generate_pdf = generate_pdf.generate(pdf_data);
+		is_url_response_generate_pdf = response_generate_pdf.startsWith('http');
+		
+		if (response_generate_pdf && is_url_response_generate_pdf)
+			data.pdf_url = response_generate_pdf;
+		else
+			data.error_message = response_generate_pdf;
+	}
+	
+	function get_incident_label_fields() {
+		var incident_label_names = [];
+		
+		var glide_record_incidents = new GlideRecord(table_name);
+
+		glide_record_incidents.setLimit(1);
+		glide_record_incidents.query();
+
+		if (glide_record_incidents.next()) {
+				incident_label_names.push(glide_record_incidents.number.getLabel());
+				incident_label_names.push(glide_record_incidents.opened_at.getLabel());
+				incident_label_names.push(glide_record_incidents.short_description.getLabel());
+				incident_label_names.push(glide_record_incidents.caller_id.getLabel());
+				incident_label_names.push(glide_record_incidents.priority.getLabel());
+				incident_label_names.push(glide_record_incidents.state.getLabel());
+				incident_label_names.push(glide_record_incidents.category.getLabel());
+				incident_label_names.push(glide_record_incidents.assignment_group.getLabel());
+				incident_label_names.push(glide_record_incidents.assigned_to.getLabel());
+				incident_label_names.push(glide_record_incidents.sys_updated_on.getLabel());
+		}
+		
+		return incident_label_names;
+	}
+	
+	function get_incidents() {
+		var incidents = [];
+		
+		var glide_record_incidents = new GlideRecord(table_name);
+
+    glide_record_incidents.orderByDesc('sys_updated_on');
+		glide_record_incidents.query();
+
+		while (glide_record_incidents.next()) {
+			
+			var incident = {
+      	number: glide_record_incidents.number.toString(),
+        opened_at: glide_record_incidents.opened_at.toString(),
+        short_description: glide_record_incidents.short_description.toString(),
+       	caller_name: glide_record_incidents.caller_id.first_name.toString() + ' ' + glide_record_incidents.caller_id.last_name.toString(),
+        priority: glide_record_incidents.priority.toString(),
+        state: glide_record_incidents.state.toString(),
+       	category: glide_record_incidents.category.toString(),
+        assignment_group: glide_record_incidents.assignment_group.name.toString(),
+        assigned_to_name: glide_record_incidents.assigned_to.first_name.toString() + ' ' + glide_record_incidents.assigned_to.last_name.toString(),
+        sys_updated_on: glide_record_incidents.sys_updated_on.toString()
+			};
+				
+      incidents.push(incident);
+			
+			incident = {};
+		}
+		
+		return incidents;
+	}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-28 12:11:47</sys_created_on>
+        <sys_id>3172e9b99718f110e25972d6f053af6f</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Ru Report</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sp_widget_3172e9b99718f110e25972d6f053af6f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 13:02:43</sys_updated_on>
+        <template><![CDATA[<div id="report">
+  
+  <h4 class="page_title">{{ c.title }}</h4> <br />
+	
+  <button type="button" name="button-generate-pdf" ng-click="c.generate_pdf()">Generate PDF</button>
+  
+  <div class="page-header">
+    <div class="table-header flex">
+      <div class="logo flex-1">
+        <!--img src="https://fakeimg.pl/50x50/282828/eae0d0/?retina=1"/-->
+        <img src="logo_sn.png" width="110" height="110"/>
+      </div>
+      <div class="title flex-2">
+        <div class="flex">
+        	<div class="font-bold left">Incident Report</div>
+        </div>
+        <div class="flex">
+        	<div class="flex-1 left"><strong>Issue:</strong> {{ c.issue_date }} {{ c.issue_hour }}</div>
+        </div>
+        <div class="flex">
+        	<div class="flex-1 left"><strong>Page:</strong> <span class="current-page-number"></span> de <span class="current-page-number"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="page-body">
+    <table class="table-data" width="100%">
+	  	<thead>
+        <tr>
+          <th style="background-color:#F9423A" ng-repeat="label in c.incident_label_fields">{{ label }}</th>
+        </tr>
+      </thead>
+    	<tbody>
+        <tr ng-repeat="incident in c.incidents">
+          <td ng-repeat="property in incident">{{ property }}</td>
+        </tr>
+      </tbody>
+		</table>
+  </div>
+  
+</div>]]></template>
+    </sp_widget>
+</record_update>

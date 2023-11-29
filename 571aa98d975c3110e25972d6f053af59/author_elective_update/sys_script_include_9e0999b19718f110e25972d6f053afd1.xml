@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_323515_account_0.GeneratePDFIncidentReport</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>GeneratePDFIncidentReport</name>
+        <script><![CDATA[var GeneratePDFIncidentReport  = Class.create();
+GeneratePDFIncidentReport .prototype = {
+    initialize: function() {
+    },
+
+	/**
+     * Create a name for the PDF file.
+	 *  {object} pdf_data Object with data from the PDF file.
+	 * @return {string} pdf_url PDF URL.
+     */
+    generate: function(pdf_data) {
+        var meta_tags = '';
+		var css = '';
+		var header = '';
+		var body = '';
+		var body_data = '';
+		var incident_labels = [];
+		var incidents = [];
+		var pdf_url = '';
+		var has_report_temp = false;
+		var deleted_report_temp = false;
+		var no_generate_pdf = '';
+		var no_add_report_temp = '';
+		
+		var pdf_config = {
+			html: '',
+			table_target: 'x_323515_account_0_report',
+			sys_id_target: '',
+			pdf_name: this.create_pdf_name(),
+			header_footer_info: {
+				PageSize: 'A4 ',
+				PageOrientation: 'LANDSCAPE',
+				GeneratePageNumber: 'false',
+				TopOrBottomMargin: '16',
+				LeftOrRightMargin: '16'
+			},
+			sys_id_font_family: '09d73ac9c317911038641c5ce001311d' //sys_id of a font family record on the 'sys_pdf_generation_font_family' table
+		};
+		
+        meta_tags = this.create_metatags(pdf_data.title);
+		
+		css = this.create_css();
+		
+		header = this.create_header();
+		
+		incident_labels = pdf_data.incident_labels;
+		incidents = pdf_data.incidents;
+		
+		body = this.create_body(incident_labels);
+		
+		body_data = this.create_body_data(incidents);
+		
+		pdf_config.html = meta_tags + css + header + body + body_data;
+		
+		has_report_temp = this.has_report_temp(pdf_config);
+		
+		if (has_report_temp) {
+			deleted_report_temp = this.delete_report_Temp(pdf_config);
+			
+			if (deleted_report_temp) {
+				pdf_config.sys_id_target = this.add_report_temp(pdf_config);
+
+				if (pdf_config.sys_id_target && pdf_config.sys_id_target !== '') {
+					pdf = this.convert_html_to_pdf(pdf_config);
+
+					if (pdf && pdf.attachment_id !== '') {
+						pdf_url = this.create_pdf_url_to_download(pdf.attachment_id);
+
+						return pdf_url;
+					} else {
+						no_generate_pdf = 'Não foi possível gerar o relatório!';
+
+						return no_generate_pdf;
+					}
+
+
+				} else {
+					no_add_report_temp = 'Não foi possível gerar o relatório, por não ter sido adicionado o registro na tabela <Report Temp>';
+
+					return no_add_report_temp;
+				}
+
+			} else {
+				var no_deleted_report_temp = 'Não foi possível gerar o relatório, por não ter sido possível excluir o registro anterior na tabela <Report Temp>';
+
+				return no_deleted_report_temp;
+			}
+			
+		} else {
+			pdf_config.sys_id_target = this.add_report_temp(pdf_config);
+
+			if (pdf_config.sys_id_target && pdf_config.sys_id_target !== '') {
+				pdf = this.convert_html_to_pdf(pdf_config);
+
+				if (pdf && pdf.attachment_id !== '') {
+					pdf_url = this.create_pdf_url_to_download(pdf.attachment_id);
+
+					return pdf_url;
+				} else {
+					no_generate_pdf = 'Não foi possível gerar o relatório!';
+
+					return no_generate_pdf;
+				}
+			} else {
+				no_add_report_temp = 'Não foi possível gerar o relatório, por não ter sido adicionado o registro na tabela <Report Temp>';
+
+				return no_add_report_temp;
+			}
+		}
+    },
+	
+	/**
+	* Check if there is a record in the Report Temp table with the specified name.
+	*  {object} pdf_config PDF configuration
+	* @return {booelan} has_report_temp True if it has a record. False if it doesn't
+	*/
+	has_report_temp: function(pdf_config) {
+		var pdf_name = pdf_config.pdf_name;
+		var has_report_temp = false;
+		
+		var glide_record = new GlideRecord(pdf_config.table_target);
+
+		glide_record.addQuery("u_name", pdf_name);
+		glide_record.query();
+		
+		if (glide_record.next()) {
+			has_report_temp = true;
+		}
+		
+		return has_report_temp;
+	},
+
+    /**
+     * Create a name for the PDF file.
+     * @return {string} pdf_name Name for the PDF file.
+     */
+    create_pdf_name: function() {
+        var pdf_name = '';
+
+        pdf_name = 'incident_report_' + gs.getUserID();
+
+        return pdf_name;
+    },
+
+    /**
+     * Create the initial HTML to convert to PDF.
+     *  {string} title The title of the HTML page.
+     * @return {string} meta_tags Beginning of the HTML page.
+     */
+    create_metatags: function(page_html_title) {
+        var meta_tags = '';
+
+        meta_tags = '<!DOCTYPE html><html lang="en">' + 
+			'<head>' + 
+            '<meta charset="UTF-8" />' + 
+            '<meta name="viewport" content="width=device-width, initial-scale=1.0" />' + 
+            '<title>' + page_html_title + '</title>';
+
+        return meta_tags;
+    },
+
+    /**
+     * Creates the page CSS.
+	 * @return {string} css Page CSS.
+     */
+    create_css: function() {
+        var css = '';
+
+        css = '<style>' + 
+            '@page { size: A4 landscape; margin-left: 1cm; margin-top: 4cm; margin-right: 1cm; margin-bottom: 1cm;' + 
+            '@top-center { font-family: Roboto, sans-serif; font-size: 12px; content: element(page-header); }' +
+			'}' +
+			'.page-header { position: running(page-header) }' +
+			'.current-page-number:after { content: counter(page) " de " counter(pages); }' +
+			
+            '.page-header { border-bottom: 0px !important; padding-bottom: 0px !important; }' +
+            '.page-header, .page-body { font-family: Roboto; }' +
+			'.page-body { font-size: 12px; } ' +
+			'table { border-collapse: collapse; border-spacing: 0; font-size: 12px; font-weight: 600; }' +
+            '.table-header { border: 2px solid rgb(0, 0, 0); box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}' +
+			'.logo { margin-left: -102px; margin-bottom: -5px; }' +
+			'.title { padding: 25px; margin-left: 190px; font-size: 16px !important; }' +
+			'.table-filters { padding: 6px; margin-top: 20px; border-top: 2px solid #000; border-bottom: 2px solid #000; font-weight: 600; text-align: center; }' +
+            'table.table-data thead tr th { padding: 10px 6px; background-color: #C1C1C1; border-left: 2px solid #C1C1C1; border-right: 2px solid #C1C1C1; text-align: center;  font-weight: bold; color: #000; border: 2px solid #000; }' +
+            'table.table-data tbody tr td { padding: 10px 6px; text-align: center; border: 2px solid #000; }' +
+			'.table-data { border: 0px; }' +
+            '.table-data-title-1, .table-data-title-2 { color: #FFF !important; }' +
+			'.table-data-title-1 { background-color: #3075B4 !important; border-left: 2px solid #3075B4 !important; border-right: 2px solid #3075B4 !important; }' +
+			'.table-data-title-2 { background-color: #3298FD !important; border-left: 2px solid #3298FD !important; border-right: 2px solid #3298FD !important; }' +
+			'table-data-total { border: 2px solid #000; }' +
+			'.font-bold { font-weight: bold; }' +
+			'.full-width { width: 100%; }' +
+			'.flex { display: flex; }' +
+			'.flex-1 { flex: 1 }' +
+			'.flex-2 { flex: 2 }' +
+			'.left { text-align: left; }' +
+			'.no-border { border: 0px !important; }' +
+			'</style></head><body>';
+		
+		return css;
+    },
+	
+	/**
+	 * Creates the date and time of issue.
+	 * @return {object} issue Date and time of issue.
+	 */
+	create_date_hour_issue: function() {
+		var issue = {
+			date: '',
+			hour: ''
+		};
+		
+		var glideDateTime = new GlideDateTime();
+		
+        getTime = glideDateTime.getTime();
+		
+		issue.date = glideDateTime.getDate().getByFormat('dd/MM/YYYY');
+		issue.hour = getTime.getByFormat('hh:mm:ss');
+		
+		return issue;
+	},
+	
+	/**
+	 * Create the report header.
+	 *  {object} pdf_data Object with data from the PDF file.
+	 * @return {string} header Report header.
+	 */
+	create_header: function() {
+		var header = '';
+		
+		var issue = this.create_date_hour_issue();
+		
+		header = '<div class="page-header">' +
+			'<div class="table-header flex">' +
+			'<div class="logo flex-1"><img src="logo_sn.png" width="110" height="110"/></div>' +
+			'<div class="title flex-2">' +
+			'<div class="flex"><div class="font-bold left">Incident Report</div></div>' +
+			'<div class="flex"><div class="flex-1 left"><strong>Issue: </strong>' + issue.date  + ' ' + issue.hour  + '</div></div>' +
+			'<div class="flex"><div class="flex-1 left"><strong>Page: </strong><span class="current-page-number"></span></div></div>' +
+			'</div>' +
+			'</div>' +
+			'</div>';
+		
+		return header;
+	},
+	
+	/**
+	 * Create the report body.
+	 * @return {string} body Report body.
+	 */
+	create_body: function(incident_labels) {
+		var body = '';
+		
+		body = '<div class="page-body">' +
+			'<table class="table-data" width="100%">' +
+			'<thead>';
+		
+		body += '<tr>';
+		for (var label in incident_labels) {
+			body += '<th>' + incident_labels[label] + '</th>';
+		}
+		body += '</tr>';
+		
+		body += '</thead>';
+		body += '<tbody>';
+		
+		return body;
+	},
+	
+	/**
+	 * Creates the data for the body of the report.
+	 *  {array} titulosPublicosParameter Array of 'Public Titles' objects.
+	 * @return {string} body_data Data for the body of the report.
+	 */
+	create_body_data: function(incidents) { gs.info('leandro' + JSON.stringify(incidents));
+		var body_data = '';
+		var self  = this;
+		
+		incidents.forEach(function(incident) {
+			
+			body_data += '<tr>';
+			for (var property in incident) {
+				body_data += '<td>' + incident[property] + '</td>';
+			}
+			body_data += '</tr>';
+		});
+		
+		body_data += '</tbody></table></div></body></html>';
+		
+		return body_data;
+	},
+	
+	/**
+	 * Format a number in the USA standard to the BRL standard.
+	 *  {decimal} number Number to be formatted.
+	 * @return {string} numberFormatted Formatted number.
+	 */
+	formatter_number_to_brl: function(number) {
+		var number_formatted = number;
+		
+		number_formatted = number_formatted.toString().match(/^-?\d+(?:\.\d{0,2})?/)[0];
+
+		if (number_formatted.length >= 0 ) {
+			var number_formatted_aux = number_formatted.replace(/\./g,",");
+			number_formatted = number_formatted_aux.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+		}
+		
+		return number_formatted;
+	},
+	
+	/**
+	 * Deletes a record from the 'Report Temp' table and consequently the associated attachment record in the 'sys_attachment' table.
+	 *  {object} pdf_config PDF attachment settings.
+	 * @return {void}
+	 */
+	delete_report_Temp: function(pdf_config) {
+		var pdf_name = pdf_config.pdf_name;
+		var deleted = false;
+		
+		var glide_record = new GlideRecord(pdf_config.table_target);
+		
+		glide_record.addQuery("u_name", pdf_name);
+		glide_record.query();
+		
+		if (glide_record.next()) {
+			deleted = glide_record.deleteRecord();
+		}
+		
+		return deleted;
+	},
+	
+	/**
+	 * Adds a record in the 'Report Temp' table.
+	 *  {object} pdf_config PDF attachment settings.
+	 * @return {string} reportTempSysID Sys ID of a Report Temp.
+	 */
+	add_report_temp: function (pdf_config) {
+		var report_temp_sys_id = '';
+		
+		var glide_record = new GlideRecord(pdf_config.table_target);
+		
+		glide_record.initialize();
+		
+		glide_record.u_name = pdf_config.pdf_name;
+
+		report_temp_sys_id = glide_record.insert();
+		
+		return report_temp_sys_id;
+	},
+	
+	/**
+	 * Convert HTML to PDF.
+	 *  {object} pdf_config PDF attachment settings.
+	 * @return {object} pdf Object with information from the created PDF.
+	 */
+	convert_html_to_pdf: function(pdf_config) {
+		var pdf_generation_api = new sn_pdfgeneratorutils.PDFGenerationAPI();
+		
+		var pdf = pdf_generation_api.convertToPDFWithHeaderFooter(
+            pdf_config.html, 
+            pdf_config.table_target, 
+            pdf_config.sys_id_target, 
+            pdf_config.pdf_name, 
+            pdf_config.header_footer_info,
+			pdf_config.sys_id_font_family
+        );
+		
+		gs.info(JSON.stringify(pdf));
+		
+		return pdf;
+	},
+	
+	/**
+	 * Creates the URL of the PDF for download.
+	 *  {string} attachmentSysID Sys Attachment ID.
+	 * @return {string} attachmentUrl Attachment URL.
+	 */
+	create_pdf_url_to_download: function(attachment_sys_id) {
+		var instace = 'https://' + gs.getProperty('instance_name') + '.service-now.com/';
+		var attachment_table = 'sys_attachment.do';
+		var attachment_param_sys_id = '?sys_id=' + attachment_sys_id;
+		var attachment_url = instace + attachment_table + attachment_param_sys_id + "target=_blank" ;
+		
+		return attachment_url;
+	},
+
+    type: 'GeneratePDFIncidentReport '
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-28 11:59:33</sys_created_on>
+        <sys_id>9e0999b19718f110e25972d6f053afd1</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>GeneratePDFIncidentReport</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_script_include_9e0999b19718f110e25972d6f053afd1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 13:21:09</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_script_include_9e0999b19718f110e25972d6f053afd1</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_323515_account_0.GeneratePDFIncidentReport&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;GeneratePDFIncidentReport&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var GeneratePDFIncidentReport  = Class.create();
+GeneratePDFIncidentReport .prototype = {
+    initialize: function() {
+    },
+
+	/**
+     * Create a name for the PDF file.
+	 *  {object} pdf_data Object with data from the PDF file.
+	 * @return {string} pdf_url PDF URL.
+     */
+    generate: function(pdf_data) {
+        var meta_tags = '';
+		var css = '';
+		var header = '';
+		var body = '';
+		var body_data = '';
+		var incident_labels = [];
+		var incidents = [];
+		var pdf_url = '';
+		var has_report_temp = false;
+		var deleted_report_temp = false;
+		var no_generate_pdf = '';
+		var no_add_report_temp = '';
+		
+		var pdf_config = {
+			html: '',
+			table_target: 'x_323515_account_0_report',
+			sys_id_target: '',
+			pdf_name: this.create_pdf_name(),
+			header_footer_info: {
+				PageSize: 'A4 ',
+				PageOrientation: 'LANDSCAPE',
+				GeneratePageNumber: 'false',
+				TopOrBottomMargin: '16',
+				LeftOrRightMargin: '16'
+			},
+			sys_id_font_family: '09d73ac9c317911038641c5ce001311d' //sys_id of a font family record on the 'sys_pdf_generation_font_family' table
+		};
+		
+        meta_tags = this.create_metatags(pdf_data.title);
+		
+		css = this.create_css();
+		
+		header = this.create_header();
+		
+		incident_labels = pdf_data.incident_labels;
+		incidents = pdf_data.incidents;
+		
+		body = this.create_body(incident_labels);
+		
+		body_data = this.create_body_data(incidents);
+		
+		pdf_config.html = meta_tags + css + header + body + body_data;
+		
+		has_report_temp = this.has_report_temp(pdf_config);
+		
+		if (has_report_temp) {
+			deleted_report_temp = this.delete_report_Temp(pdf_config);
+			
+			if (deleted_report_temp) {
+				pdf_config.sys_id_target = this.add_report_temp(pdf_config);
+
+				if (pdf_config.sys_id_target &amp;&amp; pdf_config.sys_id_target !== '') {
+					pdf = this.convert_html_to_pdf(pdf_config);
+
+					if (pdf &amp;&amp; pdf.attachment_id !== '') {
+						pdf_url = this.create_pdf_url_to_download(pdf.attachment_id);
+
+						return pdf_url;
+					} else {
+						no_generate_pdf = 'Não foi possível gerar o relatório!';
+
+						return no_generate_pdf;
+					}
+
+
+				} else {
+					no_add_report_temp = 'Não foi possível gerar o relatório, por não ter sido adicionado o registro na tabela &lt;Report Temp&gt;';
+
+					return no_add_report_temp;
+				}
+
+			} else {
+				var no_deleted_report_temp = 'Não foi possível gerar o relatório, por não ter sido possível excluir o registro anterior na tabela &lt;Report Temp&gt;';
+
+				return no_deleted_report_temp;
+			}
+			
+		} else {
+			pdf_config.sys_id_target = this.add_report_temp(pdf_config);
+
+			if (pdf_config.sys_id_target &amp;&amp; pdf_config.sys_id_target !== '') {
+				pdf = this.convert_html_to_pdf(pdf_config);
+
+				if (pdf &amp;&amp; pdf.attachment_id !== '') {
+					pdf_url = this.create_pdf_url_to_download(pdf.attachment_id);
+
+					return pdf_url;
+				} else {
+					no_generate_pdf = 'Não foi possível gerar o relatório!';
+
+					return no_generate_pdf;
+				}
+			} else {
+				no_add_report_temp = 'Não foi possível gerar o relatório, por não ter sido adicionado o registro na tabela &lt;Report Temp&gt;';
+
+				return no_add_report_temp;
+			}
+		}
+    },
+	
+	/**
+	* Check if there is a record in the Report Temp table with the specified name.
+	*  {object} pdf_config PDF configuration
+	* @return {booelan} has_report_temp True if it has a record. False if it doesn't
+	*/
+	has_report_temp: function(pdf_config) {
+		var pdf_name = pdf_config.pdf_name;
+		var has_report_temp = false;
+		
+		var glide_record = new GlideRecord(pdf_config.table_target);
+
+		glide_record.addQuery("u_name", pdf_name);
+		glide_record.query();
+		
+		if (glide_record.next()) {
+			has_report_temp = true;
+		}
+		
+		return has_report_temp;
+	},
+
+    /**
+     * Create a name for the PDF file.
+     * @return {string} pdf_name Name for the PDF file.
+     */
+    create_pdf_name: function() {
+        var pdf_name = '';
+
+        pdf_name = 'incident_report_' + gs.getUserID();
+
+        return pdf_name;
+    },
+
+    /**
+     * Create the initial HTML to convert to PDF.
+     *  {string} title The title of the HTML page.
+     * @return {string} meta_tags Beginning of the HTML page.
+     */
+    create_metatags: function(page_html_title) {
+        var meta_tags = '';
+
+        meta_tags = '&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;' + 
+			'&lt;head&gt;' + 
+            '&lt;meta charset="UTF-8" /&gt;' + 
+            '&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;' + 
+            '&lt;title&gt;' + page_html_title + '&lt;/title&gt;';
+
+        return meta_tags;
+    },
+
+    /**
+     * Creates the page CSS.
+	 * @return {string} css Page CSS.
+     */
+    create_css: function() {
+        var css = '';
+
+        css = '&lt;style&gt;' + 
+            '@page { size: A4 landscape; margin-left: 1cm; margin-top: 4cm; margin-right: 1cm; margin-bottom: 1cm;' + 
+            '@top-center { font-family: Roboto, sans-serif; font-size: 12px; content: element(page-header); }' +
+			'}' +
+			'.page-header { position: running(page-header) }' +
+			'.current-page-number:after { content: counter(page) " de " counter(pages); }' +
+			
+            '.page-header { border-bottom: 0px !important; padding-bottom: 0px !important; }' +
+            '.page-header, .page-body { font-family: Roboto; }' +
+			'.page-body { font-size: 12px; } ' +
+			'table { border-collapse: collapse; border-spacing: 0; font-size: 12px; font-weight: 600; }' +
+            '.table-header { border: 2px solid rgb(0, 0, 0); box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}' +
+			'.logo { margin-left: -102px; margin-bottom: -5px; }' +
+			'.title { padding: 25px; margin-left: 190px; font-size: 16px !important; }' +
+			'.table-filters { padding: 6px; margin-top: 20px; border-top: 2px solid #000; border-bottom: 2px solid #000; font-weight: 600; text-align: center; }' +
+            'table.table-data thead tr th { padding: 10px 6px; background-color: #C1C1C1; border-left: 2px solid #C1C1C1; border-right: 2px solid #C1C1C1; text-align: center;  font-weight: bold; color: #000; border: 2px solid #000; }' +
+            'table.table-data tbody tr td { padding: 10px 6px; text-align: center; border: 2px solid #000; }' +
+			'.table-data { border: 0px; }' +
+            '.table-data-title-1, .table-data-title-2 { color: #FFF !important; }' +
+			'.table-data-title-1 { background-color: #3075B4 !important; border-left: 2px solid #3075B4 !important; border-right: 2px solid #3075B4 !important; }' +
+			'.table-data-title-2 { background-color: #3298FD !important; border-left: 2px solid #3298FD !important; border-right: 2px solid #3298FD !important; }' +
+			'table-data-total { border: 2px solid #000; }' +
+			'.font-bold { font-weight: bold; }' +
+			'.full-width { width: 100%; }' +
+			'.flex { display: flex; }' +
+			'.flex-1 { flex: 1 }' +
+			'.flex-2 { flex: 2 }' +
+			'.left { text-align: left; }' +
+			'.no-border { border: 0px !important; }' +
+			'&lt;/style&gt;&lt;/head&gt;&lt;body&gt;';
+		
+		return css;
+    },
+	
+	/**
+	 * Creates the date and time of issue.
+	 * @return {object} issue Date and time of issue.
+	 */
+	create_date_hour_issue: function() {
+		var issue = {
+			date: '',
+			hour: ''
+		};
+		
+		var glideDateTime = new GlideDateTime();
+		
+        getTime = glideDateTime.getTime();
+		
+		issue.date = glideDateTime.getDate().getByFormat('dd/MM/YYYY');
+		issue.hour = getTime.getByFormat('hh:mm:ss');
+		
+		return issue;
+	},
+	
+	/**
+	 * Create the report header.
+	 *  {object} pdf_data Object with data from the PDF file.
+	 * @return {string} header Report header.
+	 */
+	create_header: function() {
+		var header = '';
+		
+		var issue = this.create_date_hour_issue();
+		
+		header = '&lt;div class="page-header"&gt;' +
+			'&lt;div class="table-header flex"&gt;' +
+			'&lt;div class="logo flex-1"&gt;&lt;img src="logo_sn.png" width="110" height="110"/&gt;&lt;/div&gt;' +
+			'&lt;div class="title flex-2"&gt;' +
+			'&lt;div class="flex"&gt;&lt;div class="font-bold left"&gt;Incident Report&lt;/div&gt;&lt;/div&gt;' +
+			'&lt;div class="flex"&gt;&lt;div class="flex-1 left"&gt;&lt;strong&gt;Issue: &lt;/strong&gt;' + issue.date  + ' ' + issue.hour  + '&lt;/div&gt;&lt;/div&gt;' +
+			'&lt;div class="flex"&gt;&lt;div class="flex-1 left"&gt;&lt;strong&gt;Page: &lt;/strong&gt;&lt;span class="current-page-number"&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;' +
+			'&lt;/div&gt;' +
+			'&lt;/div&gt;' +
+			'&lt;/div&gt;';
+		
+		return header;
+	},
+	
+	/**
+	 * Create the report body.
+	 * @return {string} body Report body.
+	 */
+	create_body: function(incident_labels) {
+		var body = '';
+		
+		body = '&lt;div class="page-body"&gt;' +
+			'&lt;table class="table-data" width="100%"&gt;' +
+			'&lt;thead&gt;';
+		
+		body += '&lt;tr&gt;';
+		for (var label in incident_labels) {
+			body += '&lt;th&gt;' + incident_labels[label] + '&lt;/th&gt;';
+		}
+		body += '&lt;/tr&gt;';
+		
+		body += '&lt;/thead&gt;';
+		body += '&lt;tbody&gt;';
+		
+		return body;
+	},
+	
+	/**
+	 * Creates the data for the body of the report.
+	 *  {array} titulosPublicosParameter Array of 'Public Titles' objects.
+	 * @return {string} body_data Data for the body of the report.
+	 */
+	create_body_data: function(incidents) { gs.info('leandro' + JSON.stringify(incidents));
+		var body_data = '';
+		var self  = this;
+		
+		incidents.forEach(function(incident) {
+			
+			body_data += '&lt;tr&gt;';
+			for (var property in incident) {
+				body_data += '&lt;td&gt;' + incident[property] + '&lt;/td&gt;';
+			}
+			body_data += '&lt;/tr&gt;';
+		});
+		
+		body_data += '&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;';
+		
+		return body_data;
+	},
+	
+	/**
+	 * Format a number in the USA standard to the BRL standard.
+	 *  {decimal} number Number to be formatted.
+	 * @return {string} numberFormatted Formatted number.
+	 */
+	formatter_number_to_brl: function(number) {
+		var number_formatted = number;
+		
+		number_formatted = number_formatted.toString().match(/^-?\d+(?:\.\d{0,2})?/)[0];
+
+		if (number_formatted.length &gt;= 0 ) {
+			var number_formatted_aux = number_formatted.replace(/\./g,",");
+			number_formatted = number_formatted_aux.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+		}
+		
+		return number_formatted;
+	},
+	
+	/**
+	 * Deletes a record from the 'Report Temp' table and consequently the associated attachment record in the 'sys_attachment' table.
+	 *  {object} pdf_config PDF attachment settings.
+	 * @return {void}
+	 */
+	delete_report_Temp: function(pdf_config) {
+		var pdf_name = pdf_config.pdf_name;
+		var deleted = false;
+		
+		var glide_record = new GlideRecord(pdf_config.table_target);
+		
+		glide_record.addQuery("u_name", pdf_name);
+		glide_record.query();
+		
+		if (glide_record.next()) {
+			deleted = glide_record.deleteRecord();
+		}
+		
+		return deleted;
+	},
+	
+	/**
+	 * Adds a record in the 'Report Temp' table.
+	 *  {object} pdf_config PDF attachment settings.
+	 * @return {string} reportTempSysID Sys ID of a Report Temp.
+	 */
+	add_report_temp: function (pdf_config) {
+		var report_temp_sys_id = '';
+		
+		var glide_record = new GlideRecord(pdf_config.table_target);
+		
+		glide_record.initialize();
+		
+		glide_record.u_name = pdf_config.pdf_name;
+
+		report_temp_sys_id = glide_record.insert();
+		
+		return report_temp_sys_id;
+	},
+	
+	/**
+	 * Convert HTML to PDF.
+	 *  {object} pdf_config PDF attachment settings.
+	 * @return {object} pdf Object with information from the created PDF.
+	 */
+	convert_html_to_pdf: function(pdf_config) {
+		var pdf_generation_api = new sn_pdfgeneratorutils.PDFGenerationAPI();
+		
+		var pdf = pdf_generation_api.convertToPDFWithHeaderFooter(
+            pdf_config.html, 
+            pdf_config.table_target, 
+            pdf_config.sys_id_target, 
+            pdf_config.pdf_name, 
+            pdf_config.header_footer_info,
+			pdf_config.sys_id_font_family
+        );
+		
+		gs.info(JSON.stringify(pdf));
+		
+		return pdf;
+	},
+	
+	/**
+	 * Creates the URL of the PDF for download.
+	 *  {string} attachmentSysID Sys Attachment ID.
+	 * @return {string} attachmentUrl Attachment URL.
+	 */
+	create_pdf_url_to_download: function(attachment_sys_id) {
+		var instace = 'https://' + gs.getProperty('instance_name') + '.service-now.com/';
+		var attachment_table = 'sys_attachment.do';
+		var attachment_param_sys_id = '?sys_id=' + attachment_sys_id;
+		var attachment_url = instace + attachment_table + attachment_param_sys_id + "target=_blank" ;
+		
+		return attachment_url;
+	},
+
+    type: 'GeneratePDFIncidentReport '
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-07-28 11:59:33&lt;/sys_created_on&gt;&lt;sys_id&gt;9e0999b19718f110e25972d6f053afd1&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;GeneratePDFIncidentReport&lt;/sys_name&gt;&lt;sys_package display_value="Account Financials" source="x_323515_account_0"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Account Financials"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_9e0999b19718f110e25972d6f053afd1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-01 13:21:09&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>941748809</payload_hash>
+        <record_name>GeneratePDFIncidentReport</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 13:21:09</sys_created_on>
+        <sys_id>f4b81e4797d07110e25972d6f053aff0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>189b14273a20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 13:21:09</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>bcb81e472fd07110731cc5e707de98ef</update_guid>
+        <update_guid_history>bcb81e472fd07110731cc5e707de98ef:941748809,b036da834ed0711075c6e398d865b08f:1251035974,a4d5b5073750711012c34e965617b539:963172368,2974b9c330507110addd0759395d8a3a:2082447853,bf243d83df5071101ca48da25a58c42a:657957664,fb19a1717758f1105edd2a0bfd91056f:-650008349,3e02e9f53218f110124c1e2443b29ae0:1492557317,aeafd9f57e18f11036a667ef7337a959:-353694748</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-09 09:59:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>1fe4f5f48c244f24967f24e771f76491</sys_id>
+        <sys_metadata>9e0999b19718f110e25972d6f053afd1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GeneratePDFIncidentReport</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_script_include_9e0999b19718f110e25972d6f053afd1</sys_update_name>
+        <sys_update_version display_value="sys_script_include_9e0999b19718f110e25972d6f053afd1">f4b81e4797d07110e25972d6f053aff0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-09 09:59:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="98026a9897313110e25972d6f053affa" sys_domain="global" table="x_323515_account_0_ru_task" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-06 14:32:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1c026a9897313110e25972d6f053affd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_323515_account_0_ru_task" name="x_323515_account_0_ru_task" sys_domain="global" view="0cebef090a0006d40188d968934d3e9a">98026a9897313110e25972d6f053affa</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_ru_task" sys_domain="global" view="0cebef090a0006d40188d968934d3e9a">fb40225897313110e25972d6f053af03</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-06 14:32:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-06 14:32:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>18026a9897313110e25972d6f053affe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_323515_account_0_ru_task" name="x_323515_account_0_ru_task" sys_domain="global" view="0cebef090a0006d40188d968934d3e9a">98026a9897313110e25972d6f053affa</sys_ui_form>
+            <sys_ui_section caption="Resource Unit Data" display_value="Resource Unit Data" name="x_323515_account_0_ru_task" sys_domain="global" view="0cebef090a0006d40188d968934d3e9a">d8026a9897313110e25972d6f053aff9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-06 14:32:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_323515_account_0_ru_task</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-06 14:32:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>98026a9897313110e25972d6f053affa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_323515_account_0_ru_task</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+            <sys_update_name>sys_ui_form_sections_98026a9897313110e25972d6f053affa</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-06 14:32:42</sys_updated_on>
+            <sys_user/>
+            <view display_value="Approval" name="approval">0cebef090a0006d40188d968934d3e9a</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

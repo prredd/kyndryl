@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="DELETE">
+        <category display_value="" name="x_323515_account_0_statement_adjustmnets">x_323515_account_0_statement_adjustmnets</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>ADJS</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-03 10:35:38</sys_created_on>
+        <sys_id>d2fe469f97613110e25972d6f053afec</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ADJS</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_number_d2fe469f97613110e25972d6f053afec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-03 11:01:10</sys_updated_on>
+    </sys_number>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>sys_number_d2fe469f97613110e25972d6f053afec</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number"><sys_number action="INSERT_OR_UPDATE"><category display_value="" name="x_323515_account_0_statement_adjustmnets">x_323515_account_0_statement_adjustmnets</category><maximum_digits>7</maximum_digits><number>1000</number><prefix>ADJS</prefix><sys_class_name>sys_number</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-10-03 10:35:38</sys_created_on><sys_id>d2fe469f97613110e25972d6f053afec</sys_id><sys_mod_count>1</sys_mod_count><sys_name>ADJS</sys_name><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>sys_number_d2fe469f97613110e25972d6f053afec</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-10-03 11:01:10</sys_updated_on></sys_number></record_update>]]></payload>
+        <payload_hash>1199449775</payload_hash>
+        <record_name>ADJS</record_name>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-03 11:01:12</sys_created_on>
+        <sys_id>30d4125797a13110e25972d6f053af0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18af532f6b00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-03 11:01:12</sys_updated_on>
+        <type>Number</type>
+        <update_guid>78d412571fa13110425c5b9fe784230b</update_guid>
+        <update_guid_history>78d412571fa13110425c5b9fe784230b:1199449775,52feca9f0a6131106f7a60de820e4702:-422661093</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-03 11:04:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_number">sys_number</sys_db_object>
+        <sys_id>02325496a1a649649f2590d6d6149084</sys_id>
+        <sys_metadata>d2fe469f97613110e25972d6f053afec</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ADJS</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent display_value="">74be469f97613110e25972d6f053af2c</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_number_d2fe469f97613110e25972d6f053afec</sys_update_name>
+        <sys_update_version display_value="sys_number_d2fe469f97613110e25972d6f053afec">30d4125797a13110e25972d6f053af0c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-03 11:04:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

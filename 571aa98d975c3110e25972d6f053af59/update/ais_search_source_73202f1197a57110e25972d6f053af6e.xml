@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_source">
+    <ais_search_source action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <datasource display_value="">x_323515_account_0_financial_statement</datasource>
+        <name>Financial Statement</name>
+        <sys_class_name>ais_search_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-27 11:22:35</sys_created_on>
+        <sys_id>73202f1197a57110e25972d6f053af6e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Financial Statement</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>ais_search_source_73202f1197a57110e25972d6f053af6e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-27 11:22:35</sys_updated_on>
+    </ais_search_source>
+</record_update>

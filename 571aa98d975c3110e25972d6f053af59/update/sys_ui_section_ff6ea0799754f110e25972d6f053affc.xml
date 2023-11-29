@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="ff6ea0799754f110e25972d6f053affc" sys_domain="global" table="x_323515_account_0_resource_unit" version="3" view="Workspace-Account-Financials-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>376ea0799754f110e25972d6f053afff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>7f6ea0799754f110e25972d6f053afff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>736ee0799754f110e25972d6f053af00</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>resource_unit_type</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>776ee0799754f110e25972d6f053af00</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>count</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>7b6ee0799754f110e25972d6f053af00</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>m1_results</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>7f6ee0799754f110e25972d6f053af00</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>m2_results</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>736ee0799754f110e25972d6f053af01</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>m3_results</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>776ee0799754f110e25972d6f053af01</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>m4_results</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>7b6ee0799754f110e25972d6f053af01</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>m5_results</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>7f6ee0799754f110e25972d6f053af01</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>m6_results</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>736ee0799754f110e25972d6f053af02</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>m7_results</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>776ee0799754f110e25972d6f053af02</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>m8_results</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>7b6ee0799754f110e25972d6f053af02</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>m9_results</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>7f6ee0799754f110e25972d6f053af02</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>m10_results</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>736ee0799754f110e25972d6f053af03</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>m11_results</element>
+            <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>776ee0799754f110e25972d6f053af03</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>m12_results</element>
+            <position>16</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>7b6ee0799754f110e25972d6f053af03</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>arc_rrc_rate</element>
+            <position>17</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>7f6ee0799754f110e25972d6f053af03</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>current_month_arc_rrc</element>
+            <position>18</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>3f6ee0799754f110e25972d6f053afa5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>month_change</element>
+            <position>19</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>336ee0799754f110e25972d6f053afa6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>current_month_arc_rrc_rate</element>
+            <position>20</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>376ee0799754f110e25972d6f053afa6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>month_change_count</element>
+            <position>21</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>3b6ee0799754f110e25972d6f053afa6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>variance_explanation</element>
+            <position>22</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_id>3f6ee0799754f110e25972d6f053afa6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="fd6e60793754f110f8ac7f734fcbbd6e">ff6ea0799754f110e25972d6f053affc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_323515_account_0_resource_unit</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 08:24:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ff6ea0799754f110e25972d6f053affc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_323515_account_0_resource_unit</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+            <sys_update_name>sys_ui_section_ff6ea0799754f110e25972d6f053affc</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 08:24:27</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Workspace Account Financials 0" name="Workspace-Account-Financials-0">fd6e60793754f110f8ac7f734fcbbd6e</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="arc_rrc_rate" label="ARC/RRC Rate" language="en" table="x_323515_account_0_resource_unit">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>arc_rrc_rate</element>
+            <help/>
+            <hint/>
+            <label>ARC/RRC Rate</label>
+            <language>en</language>
+            <name>x_323515_account_0_resource_unit</name>
+            <plural>ARC/RRC Rates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-28 05:51:27</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>ARC/RRC Rate</sys_name>
+            <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+            <sys_update_name>sys_documentation_x_323515_account_0_resource_unit_arc_rrc_rate_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-28 05:51:27</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

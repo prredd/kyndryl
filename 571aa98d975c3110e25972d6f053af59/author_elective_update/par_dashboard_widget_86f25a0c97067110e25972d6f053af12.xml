@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">b9f212c897067110e25972d6f053af3c</canvas>
+        <component display_value="">d24d53f60350de7a652caf3188a46ed2</component>
+        <component_props>{"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"newReporting":false,"showSparkline":false,"dataPassthrough":null,"configVersion":"23.0.0-ci-SNAPSHOT","groupBy":null,"trendBy":null,"showMaximumRange":false,"enableRealTimeUpdate":false,"scoreType":null,"showScoreUpdateTime":false,"colorConfig":{"type":"default"},"headerTitle":"Pending Request-Month","showFilterIcon":true,"followFilters":true,"applyDateRange":false,"showChange":false,"showTarget":false,"showGapPercentage":false,"showScoreDate":false,"showChangePercentage":false,"showChangeFrom":false,"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"RU Requests","sourceType":"table","tableOrViewName":"x_323515_account_0_ru_requests","filterQuery":"state=1^ORstate=2","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzMyMzUxNV9hY2NvdW50XzBfcnVfcmVxdWVzdHMxNjk3NjA1NDA2MzMx","dataCategories":["trend","group","simple"]}],"metrics":[{"dataSource":"dGFibGV4XzMyMzUxNV9hY2NvdW50XzBfcnVfcmVxdWVzdHMxNjk3NjA1NDA2MzMx","id":"ZEdGaWJHVjRYek15TXpVeE5WOWhZMk52ZFc1MFh6QmZjblZmY21WeGRXVnpkSE14TmprM05qQTFOREEyTXpNeDE2OTc2MDU0MDc2NTg=","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"showHeaderSeparator":false}</component_props>
+        <h>10</h>
+        <name/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-18 05:04:13</sys_created_on>
+        <sys_id>86f25a0c97067110e25972d6f053af12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>par_dashboard_widget_86f25a0c97067110e25972d6f053af12</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-18 05:04:13</sys_updated_on>
+        <visualization/>
+        <w>8</w>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Account Financials">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>d529dcf0db9ad5d00b9d21c40596194d</instance_id>
+        <instance_name>dev137878</instance_name>
+        <name>par_dashboard_widget_86f25a0c97067110e25972d6f053af12</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">b9f212c897067110e25972d6f053af3c</canvas><component display_value="">d24d53f60350de7a652caf3188a46ed2</component><component_props>{"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"newReporting":false,"showSparkline":false,"dataPassthrough":null,"configVersion":"23.0.0-ci-SNAPSHOT","groupBy":null,"trendBy":null,"showMaximumRange":false,"enableRealTimeUpdate":false,"scoreType":null,"showScoreUpdateTime":false,"colorConfig":{"type":"default"},"headerTitle":"Pending Request-Month","showFilterIcon":true,"followFilters":true,"applyDateRange":false,"showChange":false,"showTarget":false,"showGapPercentage":false,"showScoreDate":false,"showChangePercentage":false,"showChangeFrom":false,"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"RU Requests","sourceType":"table","tableOrViewName":"x_323515_account_0_ru_requests","filterQuery":"state=1^ORstate=2","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzMyMzUxNV9hY2NvdW50XzBfcnVfcmVxdWVzdHMxNjk3NjA1NDA2MzMx","dataCategories":["trend","group","simple"]}],"metrics":[{"dataSource":"dGFibGV4XzMyMzUxNV9hY2NvdW50XzBfcnVfcmVxdWVzdHMxNjk3NjA1NDA2MzMx","id":"ZEdGaWJHVjRYek15TXpVeE5WOWhZMk52ZFc1MFh6QmZjblZmY21WeGRXVnpkSE14TmprM05qQTFOREEyTXpNeDE2OTc2MDU0MDc2NTg=","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"showHeaderSeparator":false}</component_props><h>10</h><name/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-10-18 05:04:13</sys_created_on><sys_id>86f25a0c97067110e25972d6f053af12</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>par_dashboard_widget_86f25a0c97067110e25972d6f053af12</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-10-18 05:04:13</sys_updated_on><visualization/><w>8</w><x>0</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>1174223198</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>971aa98d975c3110e25972d6f053af5b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-18 05:04:13</sys_created_on>
+        <sys_id>cef25a0c97067110e25972d6f053af13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b412b85c00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-18 05:04:13</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>c2f25a0cf406711080f25ab8335bdf13</update_guid>
+        <update_guid_history>c2f25a0cf406711080f25ab8335bdf13:1174223198</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">06f25a0c97067110e25972d6f053af23</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-18 05:04:13</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>898e82c8bc894af088e9345f9ff3fc10</sys_id>
+        <sys_metadata>86f25a0c97067110e25972d6f053af12</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_86f25a0c97067110e25972d6f053af12</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_86f25a0c97067110e25972d6f053af12">cef25a0c97067110e25972d6f053af13</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-18 05:04:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

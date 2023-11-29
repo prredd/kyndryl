@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_323515_account_0_resource_unit">x_323515_account_0_resource_unit</category>
+        <maximum_digits>7</maximum_digits>
+        <number>10000</number>
+        <prefix>RU</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-26 04:53:28</sys_created_on>
+        <sys_id>25fae5cd975c3110e25972d6f053af70</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>RU</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_number_25fae5cd975c3110e25972d6f053af70</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-08 17:14:42</sys_updated_on>
+    </sys_number>
+</record_update>

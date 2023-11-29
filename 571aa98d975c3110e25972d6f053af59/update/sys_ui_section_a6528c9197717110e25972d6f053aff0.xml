@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Description" section_id="a6528c9197717110e25972d6f053aff0" sys_domain="global" table="x_323515_account_0_ru_task" version="3" view="workspace-ru-service-delivery-owner-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 05:29:05</sys_created_on>
+            <sys_id>ee5200d197717110e25972d6f053af28</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Description" display_value="Description" name="x_323515_account_0_ru_task" sys_domain="global" view="cd524c91c6717110116fc4020d014e92">a6528c9197717110e25972d6f053aff0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 05:29:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 05:29:05</sys_created_on>
+            <sys_id>e25200d197717110e25972d6f053af29</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Description" display_value="Description" name="x_323515_account_0_ru_task" sys_domain="global" view="cd524c91c6717110116fc4020d014e92">a6528c9197717110e25972d6f053aff0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 05:29:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 05:29:05</sys_created_on>
+            <sys_id>e65200d197717110e25972d6f053af29</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Description" display_value="Description" name="x_323515_account_0_ru_task" sys_domain="global" view="cd524c91c6717110116fc4020d014e92">a6528c9197717110e25972d6f053aff0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 05:29:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Description</caption>
+            <header>false</header>
+            <name>x_323515_account_0_ru_task</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-09 05:29:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a6528c9197717110e25972d6f053aff0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_323515_account_0_ru_task</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+            <sys_update_name>sys_ui_section_a6528c9197717110e25972d6f053aff0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-09 05:29:05</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace RU Service Delivery Owner 0" name="workspace-ru-service-delivery-owner-0">cd524c91c6717110116fc4020d014e92</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
