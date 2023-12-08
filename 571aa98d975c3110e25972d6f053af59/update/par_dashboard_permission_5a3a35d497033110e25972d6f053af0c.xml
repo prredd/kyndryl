@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_permission">
+    <par_dashboard_permission action="INSERT_OR_UPDATE">
+        <can_read>true</can_read>
+        <can_share>false</can_share>
+        <can_write>false</can_write>
+        <dashboard display_value="Resource Unit Management">d53af1d48c033110000edf8a4aa1b006</dashboard>
+        <group/>
+        <role display_value="x_323515_account_0.adjustment_tasks_user" name="x_323515_account_0.adjustment_tasks_user">6e611edf97613110e25972d6f053af1a</role>
+        <sys_class_name>par_dashboard_permission</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-07 14:57:23</sys_created_on>
+        <sys_id>5a3a35d497033110e25972d6f053af0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>d53af1d48c033110000edf8a4aa1b006</sys_name>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>par_dashboard_permission_5a3a35d497033110e25972d6f053af0c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-07 14:57:23</sys_updated_on>
+        <user/>
+    </par_dashboard_permission>
+</record_update>

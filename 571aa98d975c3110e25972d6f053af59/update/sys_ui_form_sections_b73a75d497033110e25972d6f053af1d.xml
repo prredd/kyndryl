@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="b73a75d497033110e25972d6f053af1d" sys_domain="global" table="x_323515_account_0_resource_unit" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-07 14:57:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>084af5d497033110e25972d6f053af52</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_323515_account_0_resource_unit" name="x_323515_account_0_resource_unit" sys_domain="global" view="9d3af1d4ac03311053aa198390237f03">b73a75d497033110e25972d6f053af1d</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_323515_account_0_resource_unit" sys_domain="global" view="9d3af1d4ac03311053aa198390237f03">4c4a75d497033110e25972d6f053af20</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-07 14:57:29</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-07 14:57:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c84af5d497033110e25972d6f053af56</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_323515_account_0_resource_unit" name="x_323515_account_0_resource_unit" sys_domain="global" view="9d3af1d4ac03311053aa198390237f03">b73a75d497033110e25972d6f053af1d</sys_ui_form>
+            <sys_ui_section caption="Q1 Results" display_value="Q1 Results" name="x_323515_account_0_resource_unit" sys_domain="global" view="9d3af1d4ac03311053aa198390237f03">c84af5d497033110e25972d6f053af55</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-07 14:57:29</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-07 14:57:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>404af5d497033110e25972d6f053af59</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_323515_account_0_resource_unit" name="x_323515_account_0_resource_unit" sys_domain="global" view="9d3af1d4ac03311053aa198390237f03">b73a75d497033110e25972d6f053af1d</sys_ui_form>
+            <sys_ui_section caption="Q2 Results" display_value="Q2 Results" name="x_323515_account_0_resource_unit" sys_domain="global" view="9d3af1d4ac03311053aa198390237f03">804af5d497033110e25972d6f053af58</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-07 14:57:29</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-07 14:57:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c44af5d497033110e25972d6f053af5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_323515_account_0_resource_unit" name="x_323515_account_0_resource_unit" sys_domain="global" view="9d3af1d4ac03311053aa198390237f03">b73a75d497033110e25972d6f053af1d</sys_ui_form>
+            <sys_ui_section caption="Q3 Results" display_value="Q3 Results" name="x_323515_account_0_resource_unit" sys_domain="global" view="9d3af1d4ac03311053aa198390237f03">084af5d497033110e25972d6f053af5a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-07 14:57:29</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-07 14:57:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4c4af5d497033110e25972d6f053af5d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_323515_account_0_resource_unit" name="x_323515_account_0_resource_unit" sys_domain="global" view="9d3af1d4ac03311053aa198390237f03">b73a75d497033110e25972d6f053af1d</sys_ui_form>
+            <sys_ui_section caption="Q4 Results" display_value="Q4 Results" name="x_323515_account_0_resource_unit" sys_domain="global" view="9d3af1d4ac03311053aa198390237f03">8c4af5d497033110e25972d6f053af5c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-07 14:57:29</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_323515_account_0_resource_unit</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-07 14:57:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b73a75d497033110e25972d6f053af1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_323515_account_0_resource_unit</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+            <sys_update_name>sys_ui_form_sections_b73a75d497033110e25972d6f053af1d</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-07 14:57:29</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace-x 323515 account 0-3" name="Workspace-x_323515_account_0-3">9d3af1d4ac03311053aa198390237f03</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
