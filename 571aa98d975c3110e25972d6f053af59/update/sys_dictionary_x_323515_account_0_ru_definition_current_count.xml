@@ -7,8 +7,9 @@
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
 	var agg = new GlideRecord('cmdb_ci');
+	var cbuilder = current.cmdb_query.toString();
 	agg.addQuery('sys_class_name',current.description.toString());
-	agg.addEncodedQuery('managed_by=5a826bf03710200044e0bfc8bcbe5dcc^operational_status=1');
+	agg.addEncodedQuery(cbuilder);
 	agg.query();
 	var count = agg.getRowCount();
 return count;
@@ -41,7 +42,7 @@ return count;
         <name>x_323515_account_0_ru_definition</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -56,12 +57,12 @@ return count;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-21 13:13:45</sys_created_on>
         <sys_name>Current Count</sys_name>
-        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
         <sys_update_name>sys_dictionary_x_323515_account_0_ru_definition_current_count</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-22 10:55:05</sys_updated_on>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-01-04 11:49:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

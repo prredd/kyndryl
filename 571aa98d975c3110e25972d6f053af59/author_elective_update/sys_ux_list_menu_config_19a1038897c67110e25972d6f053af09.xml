@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_list_menu_config">
+    <sys_ux_list_menu_config action="DELETE">
+        <active>true</active>
+        <description/>
+        <name>Resource Unit Management_menu_config</name>
+        <sys_class_name>sys_ux_list_menu_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-18 08:28:09</sys_created_on>
+        <sys_id>19a1038897c67110e25972d6f053af09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Resource Unit Management_menu_config</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_ux_list_menu_config_19a1038897c67110e25972d6f053af09</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-18 08:28:09</sys_updated_on>
+    </sys_ux_list_menu_config>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>49efa1e0dbcb5380439ef70fbf9619fe</instance_id>
+        <instance_name>motivaenterprisesdev</instance_name>
+        <name>sys_ux_list_menu_config_19a1038897c67110e25972d6f053af09</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_list_menu_config">
+    <sys_ux_list_menu_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Resource Unit Management_menu_config</name>
+        <sys_class_name>sys_ux_list_menu_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-18 08:28:09</sys_created_on>
+        <sys_id>19a1038897c67110e25972d6f053af09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Resource Unit Management_menu_config</sys_name>
+        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_ux_list_menu_config_19a1038897c67110e25972d6f053af09</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-18 08:28:09</sys_updated_on>
+    </sys_ux_list_menu_config>
+</record_update>]]></payload>
+        <payload_hash>-1891417181</payload_hash>
+        <record_name>Resource Unit Management_menu_config</record_name>
+        <reverted_from/>
+        <source>cce8bfa587ba39d0bc28ca68cebb3543</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>Prashanth.Reddy@Motiva.com</sys_created_by>
+        <sys_created_on>2023-11-29 11:21:40</sys_created_on>
+        <sys_id>642cf7a187fa39d0bc28ca68cebb3590</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c1ad02ed80000001</sys_recorded_at>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2023-11-29 11:21:40</sys_updated_on>
+        <type>UX List Menu Configuration</type>
+        <update_guid>242cf7a14afa39d029cf32869ac00490</update_guid>
+        <update_guid_history>242cf7a14afa39d029cf32869ac00490:-1891417181</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Prashanth.Reddy@Motiva.com</sys_created_by>
+        <sys_created_on>2023-12-14 10:26:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_list_menu_config">sys_ux_list_menu_config</sys_db_object>
+        <sys_id>1443693ae624437684b73869cb237e59</sys_id>
+        <sys_metadata>19a1038897c67110e25972d6f053af09</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Resource Unit Management_menu_config</sys_name>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_ux_list_menu_config_19a1038897c67110e25972d6f053af09</sys_update_name>
+        <sys_update_version display_value="sys_ux_list_menu_config_19a1038897c67110e25972d6f053af09">642cf7a187fa39d0bc28ca68cebb3590</sys_update_version>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2023-12-14 10:26:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -11,7 +11,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>monthly_ru_data_request</internal_name>
-        <label_cache>[{"name":"17427bb9-3b46-48fe-95ac-132195cebd34.item","label":"8 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"685877cc-48c9-4c36-9b3d-ad0bce2ef9b9.item","label":"10 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"74392f77-9a24-4ef2-a4d4-a636609fc1c7.approval_state","label":"10 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.4f79e46397953110e25972d6f053af43}}","label":"Financial Analyst","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"},{"name":"ebcc5a72-bb13-4ba8-93ef-ff4be55a617a.item","label":"6 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"d428e5d0-5f9e-4675-ae47-bc8c9cff60a0.__action_status__","label":"4 - Create Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"748004cc-9373-4967-90e1-a5d6c2b7583a.item.resource_unit_number","label":"8 - For Each➛RU Task Record➛Resource Unit Number","reference":"x_323515_account_0_ru_definition","reference_display":"RU Definition","type":"reference","base_type":"reference","parent_table_name":"x_323515_account_0_ru_task","column_name":"resource_unit_number"},{"name":"f976ee3e-cdc3-4bb2-9b22-0e8a923e35ce.item","label":"6 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"7c5fbe00-ca45-4f23-a6a8-b8eae76ef1e3.Records","label":"5 - Look Up Records➛RU Task Records","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e9d717e-5283-464a-9732-a4ffc6f03323.item.name","label":"3➛RU Definition Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_323515_account_0_ru_definition","column_name":"name"},{"name":"d428e5d0-5f9e-4675-ae47-bc8c9cff60a0.Record.state","label":"4 - Create Task➛RU Task Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_323515_account_0_ru_task","column_name":"state","choices":[{"used":false,"label":"Pending","image":"","reference":false,"rawLabel":"Pending","selected":false,"missing":false,"value":"-5","parameters":{"name":"task"}},{"used":false,"label":"Open","image":"","reference":false,"rawLabel":"Open","selected":false,"missing":false,"value":"1","parameters":{"name":"task"}},{"used":false,"label":"Work in Progress","image":"","reference":false,"rawLabel":"Work in Progress","selected":false,"missing":false,"value":"2","parameters":{"name":"task"}},{"used":false,"label":"Closed Complete","image":"","reference":false,"rawLabel":"Closed Complete","selected":false,"missing":false,"value":"3","parameters":{"name":"task"}},{"used":false,"label":"Closed Incomplete","image":"","reference":false,"rawLabel":"Closed Incomplete","selected":false,"missing":false,"value":"4","parameters":{"name":"task"}},{"used":false,"label":"Closed Skipped","image":"","reference":false,"rawLabel":"Closed Skipped","selected":false,"missing":false,"value":"7","parameters":{"name":"task"}}]},{"name":"d428e5d0-5f9e-4675-ae47-bc8c9cff60a0.Record","label":"4 - Create Task➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e9d717e-5283-464a-9732-a4ffc6f03323.item.sys_id","label":"3➛RU Definition Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_323515_account_0_ru_definition","column_name":"sys_id"},{"name":"2b959c7b-d4f7-46ce-b237-8b3e0cde1c57.record","label":"1 - Create Record➛RU Requests Record","reference":"x_323515_account_0_ru_requests","reference_display":"RU Requests Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4ea4b76d-011b-41e0-bc79-9c98adadcf4e.Records","label":"2 - Look Up Records➛RU Definition Records","reference":"x_323515_account_0_ru_definition","reference_display":"RU Definition Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e9d717e-5283-464a-9732-a4ffc6f03323.item.service_delivery_owner","label":"3➛RU Definition Record➛Service Delivery Owner","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_323515_account_0_ru_definition","column_name":"service_delivery_owner"},{"name":"df9fbe1f-e571-44b3-8db6-53b8079033b9.Records","label":"5 - Look Up Records➛RU Task Records","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"748004cc-9373-4967-90e1-a5d6c2b7583a.item","label":"8 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"ebcc5a72-bb13-4ba8-93ef-ff4be55a617a.item.variance_explanation","label":"6 - For Each➛RU Task Record➛Variance Explanation","reference":"","reference_display":"Variance Explanation","type":"string","base_type":"string","parent_table_name":"x_323515_account_0_ru_task","column_name":"variance_explanation"},{"name":"ebcc5a72-bb13-4ba8-93ef-ff4be55a617a.item.state","label":"6 - For Each➛RU Task Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_323515_account_0_ru_task","column_name":"state","choices":[{"used":false,"label":"Pending","image":"","reference":false,"rawLabel":"Pending","selected":false,"missing":false,"value":"-5","parameters":{"name":"task"}},{"used":false,"label":"Open","image":"","reference":false,"rawLabel":"Open","selected":false,"missing":false,"value":"1","parameters":{"name":"task"}},{"used":false,"label":"Work in Progress","image":"","reference":false,"rawLabel":"Work in Progress","selected":false,"missing":false,"value":"2","parameters":{"name":"task"}},{"used":false,"label":"Closed Complete","image":"","reference":false,"rawLabel":"Closed Complete","selected":false,"missing":false,"value":"3","parameters":{"name":"task"}},{"used":false,"label":"Closed Incomplete","image":"","reference":false,"rawLabel":"Closed Incomplete","selected":false,"missing":false,"value":"4","parameters":{"name":"task"}},{"used":false,"label":"Closed Skipped","image":"","reference":false,"rawLabel":"Closed Skipped","selected":false,"missing":false,"value":"7","parameters":{"name":"task"}}]},{"name":"a1f98593-0c74-4040-957a-50c3a6f9ef89.item","label":"8 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"ab92fdda-4f38-4082-be6d-3b3e1e4c8705.state","label":"7 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"447c1c07-cdac-454c-9cad-d8ddf7a328f2.item","label":"8 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"b8a7af78-1623-43cc-82ae-97f13d0fc98d.state","label":"7 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"f331c58a-a1d3-481b-a6f8-aa3845be30b8.Records","label":"8 - Look Up Records➛RU Task Records","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4d625f50-fd0e-4736-b79e-689ba6d4ef78.item","label":"6 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"b225e437-d792-4427-ab03-fdab4364fd6d.Records","label":"5 - Look Up Records➛RU Task Records","reference":"x_323515_account_0_ru_task","reference_display":"RU Task Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2cf408e2-e084-4b68-a49b-6a9b146e2d85.item","label":"6 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"11833e71-81ab-447a-a9cb-6008311acd63.state","label":"7 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}}]</label_cache>
+        <label_cache>[{"name":"11833e71-81ab-447a-a9cb-6008311acd63.state","label":"7 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"2cf408e2-e084-4b68-a49b-6a9b146e2d85.item","label":"6 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"b225e437-d792-4427-ab03-fdab4364fd6d.Records","label":"5 - Look Up Records➛RU Task Records","reference":"x_323515_account_0_ru_task","reference_display":"RU Task Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4d625f50-fd0e-4736-b79e-689ba6d4ef78.item","label":"6 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"f331c58a-a1d3-481b-a6f8-aa3845be30b8.Records","label":"8 - Look Up Records➛RU Task Records","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b8a7af78-1623-43cc-82ae-97f13d0fc98d.state","label":"7 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"447c1c07-cdac-454c-9cad-d8ddf7a328f2.item","label":"8 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"ab92fdda-4f38-4082-be6d-3b3e1e4c8705.state","label":"7 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"a1f98593-0c74-4040-957a-50c3a6f9ef89.item","label":"8 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"ebcc5a72-bb13-4ba8-93ef-ff4be55a617a.item.state","label":"6 - For Each➛RU Task Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_323515_account_0_ru_task","column_name":"state","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"Pending","image":"","reference":false,"rawLabel":"Pending","selected":false,"missing":false,"value":"-5","parameters":{"name":"task"}},{"used":false,"label":"Open","image":"","reference":false,"rawLabel":"Open","selected":false,"missing":false,"value":"1","parameters":{"name":"task"}},{"used":false,"label":"Work in Progress","image":"","reference":false,"rawLabel":"Work in Progress","selected":false,"missing":false,"value":"2","parameters":{"name":"task"}},{"used":false,"label":"Closed Complete","image":"","reference":false,"rawLabel":"Closed Complete","selected":false,"missing":false,"value":"3","parameters":{"name":"task"}},{"used":false,"label":"Closed Incomplete","image":"","reference":false,"rawLabel":"Closed Incomplete","selected":false,"missing":false,"value":"4","parameters":{"name":"task"}},{"used":false,"label":"Closed Skipped","image":"","reference":false,"rawLabel":"Closed Skipped","selected":false,"missing":false,"value":"7","parameters":{"name":"task"}}]},{"name":"ebcc5a72-bb13-4ba8-93ef-ff4be55a617a.item.variance_explanation","label":"6 - For Each➛RU Task Record➛Variance Explanation","reference":"","reference_display":"Variance Explanation","type":"string","base_type":"string","parent_table_name":"x_323515_account_0_ru_task","column_name":"variance_explanation"},{"name":"748004cc-9373-4967-90e1-a5d6c2b7583a.item","label":"8 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"df9fbe1f-e571-44b3-8db6-53b8079033b9.Records","label":"5 - Look Up Records➛RU Task Records","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e9d717e-5283-464a-9732-a4ffc6f03323.item.service_delivery_owner","label":"3➛RU Definition Record➛Service Delivery Owner","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_323515_account_0_ru_definition","column_name":"service_delivery_owner"},{"name":"4ea4b76d-011b-41e0-bc79-9c98adadcf4e.Records","label":"2 - Look Up Records➛RU Definition Records","reference":"x_323515_account_0_ru_definition","reference_display":"RU Definition Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b959c7b-d4f7-46ce-b237-8b3e0cde1c57.record","label":"1 - Create Record➛RU Requests Record","reference":"x_323515_account_0_ru_requests","reference_display":"RU Requests Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e9d717e-5283-464a-9732-a4ffc6f03323.item.sys_id","label":"3➛RU Definition Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_323515_account_0_ru_definition","column_name":"sys_id"},{"name":"d428e5d0-5f9e-4675-ae47-bc8c9cff60a0.Record","label":"4 - Create Task➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d428e5d0-5f9e-4675-ae47-bc8c9cff60a0.Record.state","label":"4 - Create Task➛RU Task Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_323515_account_0_ru_task","column_name":"state","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"Pending","image":"","reference":false,"rawLabel":"Pending","selected":false,"missing":false,"value":"-5","parameters":{"name":"task"}},{"used":false,"label":"Open","image":"","reference":false,"rawLabel":"Open","selected":false,"missing":false,"value":"1","parameters":{"name":"task"}},{"used":false,"label":"Work in Progress","image":"","reference":false,"rawLabel":"Work in Progress","selected":false,"missing":false,"value":"2","parameters":{"name":"task"}},{"used":false,"label":"Closed Complete","image":"","reference":false,"rawLabel":"Closed Complete","selected":false,"missing":false,"value":"3","parameters":{"name":"task"}},{"used":false,"label":"Closed Incomplete","image":"","reference":false,"rawLabel":"Closed Incomplete","selected":false,"missing":false,"value":"4","parameters":{"name":"task"}},{"used":false,"label":"Closed Skipped","image":"","reference":false,"rawLabel":"Closed Skipped","selected":false,"missing":false,"value":"7","parameters":{"name":"task"}}]},{"name":"6e9d717e-5283-464a-9732-a4ffc6f03323.item.name","label":"3➛RU Definition Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_323515_account_0_ru_definition","column_name":"name"},{"name":"7c5fbe00-ca45-4f23-a6a8-b8eae76ef1e3.Records","label":"5 - Look Up Records➛RU Task Records","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f976ee3e-cdc3-4bb2-9b22-0e8a923e35ce.item","label":"6 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"748004cc-9373-4967-90e1-a5d6c2b7583a.item.resource_unit_number","label":"8 - For Each➛RU Task Record➛Resource Unit Number","reference":"x_323515_account_0_ru_definition","reference_display":"RU Definition","type":"reference","base_type":"reference","parent_table_name":"x_323515_account_0_ru_task","column_name":"resource_unit_number"},{"name":"d428e5d0-5f9e-4675-ae47-bc8c9cff60a0.__action_status__","label":"4 - Create Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ebcc5a72-bb13-4ba8-93ef-ff4be55a617a.item","label":"6 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"{{static.4f79e46397953110e25972d6f053af43}}","label":"Financial Analyst","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"},{"name":"74392f77-9a24-4ef2-a4d4-a636609fc1c7.approval_state","label":"10 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"685877cc-48c9-4c36-9b3d-ad0bce2ef9b9.item","label":"10 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"17427bb9-3b46-48fe-95ac-132195cebd34.item","label":"8 - For Each➛RU Task Record","reference":"x_323515_account_0_ru_task","reference_display":"RU Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
         <latest_snapshot/>
         <master_snapshot/>
         <name>Monthly RU Data Request</name>
@@ -29,20 +29,18 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-25 11:07:20</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>bc89857497a13110e25972d6f053af46</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name>Monthly RU Data Request</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
         <sys_update_name>sys_hub_flow_bc89857497a13110e25972d6f053af46</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-28 15:46:09</sys_updated_on>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-01-04 11:34:57</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
-    <sys_translated_text action="delete_multiple" query="documentkey=bc89857497a13110e25972d6f053af46"/>
     <sys_variable_value action="delete_multiple" query="document_key=bc89857497a13110e25972d6f053af46"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=bc89857497a13110e25972d6f053af46^sys_idNOT IN084be53497253110e25972d6f053afe2"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
@@ -51,13 +49,18 @@
         <flow display_value="Monthly RU Data Request">bc89857497a13110e25972d6f053af46</flow>
         <name>Monthly</name>
         <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-25 13:34:44</sys_created_on>
         <sys_id>084be53497253110e25972d6f053afe2</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
         <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-28 15:46:09</sys_updated_on>
+        <sys_update_name/>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-01-04 11:34:57</sys_updated_on>
         <trigger_definition display_value="Monthly">2ca52504c32222002841b63b12d3ae4a</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -107,11 +110,16 @@
         <order>0</order>
         <stage_id>1e5536fd-2e87-4d4c-bb6e-fe2ec2386962</stage_id>
         <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-26 13:56:11</sys_created_on>
         <sys_id>80c93ac997253110e25972d6f053af37</sys_id>
         <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
         <sys_scope/>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-09-28 15:46:09</sys_updated_on>
         <type>standard</type>
@@ -121,11 +129,16 @@
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>bc89857497a13110e25972d6f053af46</id>
         <name>Monthly RU Data Request</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-25 11:07:20</sys_created_on>
         <sys_id>7c89857497a13110e25972d6f053af48</sys_id>
         <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
         <sys_scope/>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-09-25 11:07:20</sys_updated_on>
     </sys_flow_cat_variable_model>
@@ -148,10 +161,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-25 11:23:51</sys_created_on>
         <sys_id>3e4dc17897a13110e25972d6f053afb6</sys_id>
-        <sys_mod_count>76</sys_mod_count>
-        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-28 15:46:09</sys_updated_on>
+        <sys_mod_count>78</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-01-04 11:34:57</sys_updated_on>
         <ui_id>2b959c7b-d4f7-46ce-b237-8b3e0cde1c57</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3e4dc17897a13110e25972d6f053afb6"/>
@@ -201,10 +218,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-27 13:19:46</sys_created_on>
         <sys_id>500b775d97e57110e25972d6f053af45</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-28 15:46:09</sys_updated_on>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-01-04 11:34:57</sys_updated_on>
         <ui_id>3cf78933-eb6e-49f9-9e72-0d0803b61af3</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=500b775d97e57110e25972d6f053af45"/>
@@ -289,10 +310,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-25 11:23:51</sys_created_on>
         <sys_id>764dc17897a13110e25972d6f053affd</sys_id>
-        <sys_mod_count>76</sys_mod_count>
-        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-28 15:46:09</sys_updated_on>
+        <sys_mod_count>78</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-01-04 11:34:57</sys_updated_on>
         <ui_id>4ea4b76d-011b-41e0-bc79-9c98adadcf4e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=764dc17897a13110e25972d6f053affd"/>
@@ -328,10 +353,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-25 11:23:51</sys_created_on>
         <sys_id>7a4d057897a13110e25972d6f053af08</sys_id>
-        <sys_mod_count>76</sys_mod_count>
-        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-28 15:46:09</sys_updated_on>
+        <sys_mod_count>78</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-01-04 11:34:57</sys_updated_on>
         <ui_id>d428e5d0-5f9e-4675-ae47-bc8c9cff60a0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7a4d057897a13110e25972d6f053af08"/>
@@ -356,11 +385,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-25 11:23:51</sys_created_on>
         <sys_id>c34d057897a13110e25972d6f053af0a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-26 12:19:53</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-01-04 11:34:57</sys_updated_on>
         <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
-        <value>request={{2b959c7b-d4f7-46ce-b237-8b3e0cde1c57.record}}^resource_unit_number={{6e9d717e-5283-464a-9732-a4ffc6f03323.item.sys_id}}^assigned_to={{6e9d717e-5283-464a-9732-a4ffc6f03323.item.service_delivery_owner}}^approval=not requested^state=1</value>
+        <value>request={{2b959c7b-d4f7-46ce-b237-8b3e0cde1c57.record}}^resource_unit_number={{6e9d717e-5283-464a-9732-a4ffc6f03323.item.sys_id}}^assigned_to={{6e9d717e-5283-464a-9732-a4ffc6f03323.item.service_delivery_owner}}^approval=not requested^state=1^short_description=Monthly RU Data Request</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>task_table</field>
@@ -391,10 +420,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-27 13:09:23</sys_created_on>
         <sys_id>98a83b9997e57110e25972d6f053af51</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-28 15:46:09</sys_updated_on>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-01-04 11:34:57</sys_updated_on>
         <ui_id>11833e71-81ab-447a-a9cb-6008311acd63</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=98a83b9997e57110e25972d6f053af51"/>
@@ -480,10 +513,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-27 13:09:23</sys_created_on>
         <sys_id>d0a83b9997e57110e25972d6f053af3b</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-28 15:46:09</sys_updated_on>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-01-04 11:34:57</sys_updated_on>
         <ui_id>b225e437-d792-4427-ab03-fdab4364fd6d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d0a83b9997e57110e25972d6f053af3b"/>
@@ -531,7 +568,7 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=bc89857497a13110e25972d6f053af46"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=bc89857497a13110e25972d6f053af46^sys_idNOT IN764d057897a13110e25972d6f053af00,d0a83b9997e57110e25972d6f053af4a"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">3a4dc17897a13110e25972d6f053afff</block>
+        <block display_value="">0a681515872b7954bc28ca68cebb3525</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -552,10 +589,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-25 11:23:51</sys_created_on>
         <sys_id>764d057897a13110e25972d6f053af00</sys_id>
-        <sys_mod_count>38</sys_mod_count>
-        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-28 15:46:09</sys_updated_on>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-01-04 11:34:57</sys_updated_on>
         <ui_id>6e9d717e-5283-464a-9732-a4ffc6f03323</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -577,7 +618,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=764d057897a13110e25972d6f053af00"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=764d057897a13110e25972d6f053af00"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">18a83b9997e57110e25972d6f053af49</block>
+        <block display_value="">42681515872b7954bc28ca68cebb352f</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -598,10 +639,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-27 13:09:23</sys_created_on>
         <sys_id>d0a83b9997e57110e25972d6f053af4a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-28 15:46:09</sys_updated_on>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-01-04 11:34:57</sys_updated_on>
         <ui_id>2cf408e2-e084-4b68-a49b-6a9b146e2d85</ui_id>
         <workflow_inputs/>
         <workflow_reference/>

@@ -67,6 +67,7 @@ function updateAndRedirect() {
 
         if (glide_record_rus.next()) {
             ru_label_names.push(glide_record_rus.u_reference_unit_name.getLabel());
+			ru_label_names.push(glide_record_rus.u_fiscal_year.getLabel());
             ru_label_names.push(glide_record_rus.m1_results.getLabel());
             ru_label_names.push(glide_record_rus.m2_results.getLabel());
             ru_label_names.push(glide_record_rus.m3_results.getLabel());
@@ -101,6 +102,7 @@ function updateAndRedirect() {
 
             var ru = {
                 u_reference_unit_name: glide_record_rus.u_reference_unit_name.getDisplayValue(),
+				u_fiscal_year:glide_record_rus.u_fiscal_year.getDisplayValue(),
                 m1_results: glide_record_rus.m1_results.toString(),
                 m2_results: glide_record_rus.m2_results.toString(),
                 m3_results: glide_record_rus.m3_results.toString(),
@@ -146,15 +148,15 @@ function updateAndRedirect() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d5f284b597213110e25972d6f053afc8</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Generate Financial Statement</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
         <sys_update_name>sys_ui_action_d5f284b597213110e25972d6f053afc8</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-09 14:13:33</sys_updated_on>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-01-10 13:29:25</sys_updated_on>
         <table>x_323515_account_0_ru_requests</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">113af1d43203311092d5671513ae1807</canvas>
+        <component display_value="">d24d53f60350de7a652caf3188a46ed2</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","scoreSize":"xl","headingPosition":"top","sparklineStyle":"area","scoreIcon":"","iconStyle":"background","showScoreDate":false,"useRelativeScoreTime":false,"showScoreUpdateTime":false,"showZero":true,"colorConfig":{"type":"singleColor","values":[{"color":"8acf7295dbf98094da71c191159619dd","metric":"ZEdGaWJHVjRYek15TXpVeE5WOWhZMk52ZFc1MFh6QmZjblZmZEdGemF6RTNNRFUxTnpReU9URXhPRFE9MTcwNTU3NDI5MjE2NA==","rules":[]}]},"newReporting":false,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"RU Task","sourceType":"table","tableOrViewName":"x_323515_account_0_ru_task","filterQuery":"state=2^opened_atONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()^approval=requested","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzMyMzUxNV9hY2NvdW50XzBfcnVfdGFzazE3MDU1NzQyOTExODQ=","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"headerTitle":"Pending FA Approval","showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"dataPassthrough":null,"metrics":[{"dataSource":"dGFibGV4XzMyMzUxNV9hY2NvdW50XzBfcnVfdGFzazE3MDU1NzQyOTExODQ=","id":"ZEdGaWJHVjRYek15TXpVeE5WOWhZMk52ZFc1MFh6QmZjblZmZEdGemF6RTNNRFUxTnpReU9URXhPRFE9MTcwNTU3NDI5MjE2NA==","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":null,"sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableCustomEmptyState":false,"emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","filterConfigurations":[],"contextMenuActions":[],"showMaximumRange":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":false,"period":"M","dateFormat":"default"}</component_props>
+        <h>10</h>
+        <name/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>Prashanth.Reddy@Motiva.com</sys_created_by>
+        <sys_created_on>2024-01-18 10:40:43</sys_created_on>
+        <sys_id>5c42d17593f77d104f1234f17cba101b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>par_dashboard_widget_5c42d17593f77d104f1234f17cba101b</sys_update_name>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-01-18 11:10:52</sys_updated_on>
+        <visualization/>
+        <w>9</w>
+        <x>18</x>
+        <y>0</y>
+    </par_dashboard_widget>
+</record_update>

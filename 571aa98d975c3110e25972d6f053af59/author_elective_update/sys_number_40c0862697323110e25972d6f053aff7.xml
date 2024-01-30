@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="DELETE">
+        <category display_value="" name="x_323515_account_0_ru_definitions">x_323515_account_0_ru_definitions</category>
+        <maximum_digits>6</maximum_digits>
+        <number>100</number>
+        <prefix>MOT</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-02 04:56:32</sys_created_on>
+        <sys_id>40c0862697323110e25972d6f053aff7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MOT</sys_name>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_number_40c0862697323110e25972d6f053aff7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-02 04:56:32</sys_updated_on>
+    </sys_number>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>49efa1e0dbcb5380439ef70fbf9619fe</instance_id>
+        <instance_name>motivaenterprisesdev</instance_name>
+        <name>sys_number_40c0862697323110e25972d6f053aff7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_323515_account_0_ru_definitions">x_323515_account_0_ru_definitions</category>
+        <maximum_digits>6</maximum_digits>
+        <number>100</number>
+        <prefix>MOT</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-02 04:56:32</sys_created_on>
+        <sys_id>40c0862697323110e25972d6f053aff7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MOT</sys_name>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_number_40c0862697323110e25972d6f053aff7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-02 04:56:32</sys_updated_on>
+    </sys_number>
+</record_update>]]></payload>
+        <payload_hash>-1851187861</payload_hash>
+        <record_name>MOT</record_name>
+        <reverted_from/>
+        <source>7ef3c1e887cb3554bc28ca68cebb3554</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>Prashanth.Reddy@Motiva.com</sys_created_by>
+        <sys_created_on>2023-12-08 06:06:17</sys_created_on>
+        <sys_id>204a452c870f3554bc28ca68cebb35c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c4808aca70000001</sys_recorded_at>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2023-12-08 06:06:17</sys_updated_on>
+        <type>Number</type>
+        <update_guid>ec4a452c610f35546f47c738f17de1c2</update_guid>
+        <update_guid_history>ec4a452c610f35546f47c738f17de1c2:-1851187861</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Prashanth.Reddy@Motiva.com</sys_created_by>
+        <sys_created_on>2023-12-08 12:50:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_number">sys_number</sys_db_object>
+        <sys_id>3c74f68e84834640ae1eaedc14b50290</sys_id>
+        <sys_metadata>40c0862697323110e25972d6f053aff7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MOT</sys_name>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent display_value="">7b704ee297323110e25972d6f053af81</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_number_40c0862697323110e25972d6f053aff7</sys_update_name>
+        <sys_update_version display_value="sys_number_40c0862697323110e25972d6f053aff7">204a452c870f3554bc28ca68cebb35c3</sys_update_version>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2023-12-08 12:50:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

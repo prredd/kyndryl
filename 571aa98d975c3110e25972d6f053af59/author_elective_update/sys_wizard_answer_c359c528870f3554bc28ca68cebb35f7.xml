@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>true</active>
+        <answer>RU Definitions</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>RU Definitions</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Base Configuration Item" name="Base Configuration Item">ea6339f7db3213004a7152c8dc9619e1</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>Prashanth.Reddy@Motiva.com</sys_created_by>
+        <sys_created_on>2023-12-08 06:02:22</sys_created_on>
+        <sys_id>c359c528870f3554bc28ca68cebb35f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RU Definitions</sys_name>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_wizard_answer_c359c528870f3554bc28ca68cebb35f7</sys_update_name>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2023-12-08 06:02:22</sys_updated_on>
+        <table/>
+        <target_url>x_323515_account_0_ru_definitions.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>49efa1e0dbcb5380439ef70fbf9619fe</instance_id>
+        <instance_name>motivaenterprisesdev</instance_name>
+        <name>sys_wizard_answer_c359c528870f3554bc28ca68cebb35f7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>RU Definitions</answer><button_label/><dependent_value/><element/><name>RU Definitions</name><next_question/><order>100</order><payload_name/><question display_value="Base Configuration Item" name="Base Configuration Item">ea6339f7db3213004a7152c8dc9619e1</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>Prashanth.Reddy@Motiva.com</sys_created_by><sys_created_on>2023-12-08 06:02:22</sys_created_on><sys_id>c359c528870f3554bc28ca68cebb35f7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>RU Definitions</sys_name><sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package><sys_policy/><sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope><sys_update_name>sys_wizard_answer_c359c528870f3554bc28ca68cebb35f7</sys_update_name><sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by><sys_updated_on>2023-12-08 06:02:22</sys_updated_on><table/><target_url>x_323515_account_0_ru_definitions.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>-1268551831</payload_hash>
+        <record_name>RU Definitions</record_name>
+        <reverted_from/>
+        <source>3a5b1800db2231101dfa2d8913961919</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-11-11 16:53:01</sys_created_on>
+        <sys_id>24e6ee64878b7554bc28ca68cebb354a</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18bbf4d11c80000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Answer</type>
+        <update_guid>e0e6ee64b68b75546406af774fea1e4a</update_guid>
+        <update_guid_history>e0e6ee64b68b75546406af774fea1e4a:-1268551831</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Prashanth.Reddy@Motiva.com</sys_created_by>
+        <sys_created_on>2023-12-08 12:50:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>42e4582530b041dc885bfdf1652d6ea4</sys_id>
+        <sys_metadata>c359c528870f3554bc28ca68cebb35f7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RU Definitions</sys_name>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent display_value="Base Configuration Item">ea6339f7db3213004a7152c8dc9619e1</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_c359c528870f3554bc28ca68cebb35f7</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_c359c528870f3554bc28ca68cebb35f7">24e6ee64878b7554bc28ca68cebb354a</sys_update_version>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2023-12-08 12:50:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

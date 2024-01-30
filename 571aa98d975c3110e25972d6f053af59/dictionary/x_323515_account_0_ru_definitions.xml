@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="7b704ee297323110e25972d6f053af81" extends="cmdb_ci" label="RU Definitions" max_length="40" name="x_323515_account_0_ru_definitions" type="collection">
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Name" max_length="40" name="number" reference_qual="null" reference_qual_condition="null" type="string"/>
-    </element>
-</database>

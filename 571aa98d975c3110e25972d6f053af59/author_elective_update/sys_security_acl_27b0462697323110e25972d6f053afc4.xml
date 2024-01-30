@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_323515_account_0_ru_definitions</description>
+        <name>x_323515_account_0_ru_definitions</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-02 04:56:29</sys_created_on>
+        <sys_id>27b0462697323110e25972d6f053afc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_323515_account_0_ru_definitions</sys_name>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_security_acl_27b0462697323110e25972d6f053afc4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-02 04:56:29</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>49efa1e0dbcb5380439ef70fbf9619fe</instance_id>
+        <instance_name>motivaenterprisesdev</instance_name>
+        <name>sys_security_acl_27b0462697323110e25972d6f053afc4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_323515_account_0_ru_definitions</description>
+        <name>x_323515_account_0_ru_definitions</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-02 04:56:29</sys_created_on>
+        <sys_id>27b0462697323110e25972d6f053afc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_323515_account_0_ru_definitions</sys_name>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_security_acl_27b0462697323110e25972d6f053afc4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-02 04:56:29</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>]]></payload>
+        <payload_hash>-48925234</payload_hash>
+        <record_name>x_323515_account_0_ru_definitions</record_name>
+        <reverted_from/>
+        <source>7ef3c1e887cb3554bc28ca68cebb3554</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>Prashanth.Reddy@Motiva.com</sys_created_by>
+        <sys_created_on>2023-12-08 06:06:22</sys_created_on>
+        <sys_id>f14ac52c870f3554bc28ca68cebb35b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c4808c2850000001</sys_recorded_at>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2023-12-08 06:06:22</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>b14ac52c0a0f3554bd25b49441dc09b7</update_guid>
+        <update_guid_history>b14ac52c0a0f3554bd25b49441dc09b7:-48925234</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Prashanth.Reddy@Motiva.com</sys_created_by>
+        <sys_created_on>2023-12-08 12:47:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>065f8493723e4057802c71f93b9c5a69</sys_id>
+        <sys_metadata>27b0462697323110e25972d6f053afc4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_323515_account_0_ru_definitions</sys_name>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent display_value="">cb59c528870f3554bc28ca68cebb35f8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_27b0462697323110e25972d6f053afc4</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_27b0462697323110e25972d6f053afc4">f14ac52c870f3554bc28ca68cebb35b7</sys_update_version>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2023-12-08 12:47:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
