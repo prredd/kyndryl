@@ -22,46 +22,35 @@
 
     function countParse(response) {
 
-        var answer = response.responseXML.documentElement.getAttribute("answer");
+        var answer = JSON.parse(response.responseXML.documentElement.getAttribute('answer'));
 
         var clearvalue;
 
-        if (answer) {
+        if (newValue == 'yes') {
 
-            var returneddata = answer;
-
-          //  g_form.setValue("current_month_count", returneddata);
-            //g_form.addInfoMessage("numbes is "+returneddata );
-
-        } 
-		if(newValue == 'yes'){
-			g_form.setValue("current_month_count", returneddata);
-		}
-		else if(newValue == 'no'){
-			g_form.clearValue("current_month_count");
-		}
-		else{
-			g_form.clearValue("current_month_count");
-		}
+            g_form.setValue("current_month_count", answer.count);
+        } else {
+            g_form.clearValue("current_month_count");
+        }
     }
 
 
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-09-26 09:21:51</sys_created_on>
+        <sys_created_by>Prashanth.Reddy@Motiva.com</sys_created_by>
+        <sys_created_on>2024-02-05 12:05:49</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>215a35c997213110e25972d6f053af7a</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_id>9e525aef9388c6104f1234f17cba1079</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Get RU count form CMDB</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
-        <sys_update_name>sys_script_client_215a35c997213110e25972d6f053af7a</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-30 08:53:51</sys_updated_on>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_script_client_9e525aef9388c6104f1234f17cba1079</sys_update_name>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-02-05 12:22:57</sys_updated_on>
         <table>x_323515_account_0_ru_task</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="19fae5cd975c3110e25972d6f053af3c" label="Resource Unit" max_length="40" name="x_323515_account_0_resource_unit" text_index="true" type="collection">
         <element label="Active" max_length="255" name="active" type="boolean"/>
-        <element label="ARC/RRC Rate" max_length="38" name="arc_rrc_rate" type="currency"/>
+        <element label="ARC/RRC Rate" max_length="38" name="arc_rrc_rate" type="currency" use_dependent_field="true"/>
+        <element label="Baseline" max_length="40" name="baseline" type="integer"/>
         <element label="Current Month ARC/RRC" max_length="40" name="current_month_arc_rrc" type="integer"/>
         <element label="Current Month ARC/RRC - $$" max_length="38" name="current_month_arc_rrc_rate" type="currency"/>
+        <element label="Current Month Count" max_length="40" name="current_month_count" type="integer"/>
+        <element label="Delta to Base" max_length="40" name="delta_to_base" type="integer"/>
         <element label="M10 Results" max_length="40" name="m10_results" type="integer"/>
         <element label="M11 Results" max_length="40" name="m11_results" type="integer"/>
         <element label="M12 Results" max_length="40" name="m12_results" type="integer"/>
@@ -19,9 +22,11 @@
         <element label="Month Change %" max_length="40" name="month_change" type="integer"/>
         <element label="Month Change Count" max_length="40" name="month_change_count" type="integer"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Previous Month Count" max_length="40" name="previous_month_count" type="integer"/>
         <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
         <element attributes="encode_utf8=false" label="Fiscal year" max_length="32" name="u_fiscal_year" reference="fiscal_period" reference_qual="fiscal_type=year^EQ" reference_qual_condition="fiscal_type=year^EQ" type="reference"/>
         <element attributes="encode_utf8=false" label="Resource Unit Number" max_length="32" name="u_reference_unit_name" reference="x_323515_account_0_ru_definition" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="RU Description" max_length="40" name="u_ru_description" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Variance Explanation" max_length="4000" name="u_variance_explanation" type="string"/>
         <index name="index">
             <element name="sys_class_name"/>

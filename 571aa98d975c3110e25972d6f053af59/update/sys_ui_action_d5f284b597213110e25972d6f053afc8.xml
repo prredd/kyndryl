@@ -67,7 +67,8 @@ function updateAndRedirect() {
 
         if (glide_record_rus.next()) {
             ru_label_names.push(glide_record_rus.u_reference_unit_name.getLabel());
-			ru_label_names.push(glide_record_rus.u_fiscal_year.getLabel());
+            ru_label_names.push(glide_record_rus.u_fiscal_year.getLabel());
+            ru_label_names.push(glide_record_rus.baseline.getLabel());
             ru_label_names.push(glide_record_rus.m1_results.getLabel());
             ru_label_names.push(glide_record_rus.m2_results.getLabel());
             ru_label_names.push(glide_record_rus.m3_results.getLabel());
@@ -80,6 +81,7 @@ function updateAndRedirect() {
             ru_label_names.push(glide_record_rus.m10_results.getLabel());
             ru_label_names.push(glide_record_rus.m11_results.getLabel());
             ru_label_names.push(glide_record_rus.m12_results.getLabel());
+            ru_label_names.push(glide_record_rus.delta_to_base.getLabel());
             ru_label_names.push(glide_record_rus.arc_rrc_rate.getLabel());
             ru_label_names.push(glide_record_rus.month_change.getLabel());
             ru_label_names.push(glide_record_rus.current_month_arc_rrc.getLabel());
@@ -102,7 +104,8 @@ function updateAndRedirect() {
 
             var ru = {
                 u_reference_unit_name: glide_record_rus.u_reference_unit_name.getDisplayValue(),
-				u_fiscal_year:glide_record_rus.u_fiscal_year.getDisplayValue(),
+                u_fiscal_year: glide_record_rus.u_fiscal_year.getDisplayValue(),
+                baseline: glide_record_rus.baseline.toString(),
                 m1_results: glide_record_rus.m1_results.toString(),
                 m2_results: glide_record_rus.m2_results.toString(),
                 m3_results: glide_record_rus.m3_results.toString(),
@@ -115,6 +118,7 @@ function updateAndRedirect() {
                 m10_results: glide_record_rus.m10_results.toString(),
                 m11_results: glide_record_rus.m11_results.toString(),
                 m12_results: glide_record_rus.m12_results.toString(),
+                delta_to_base: glide_record_rus.delta_to_base.toString(),
                 arc_rrc_rate: glide_record_rus.arc_rrc_rate.toString(),
                 month_change: glide_record_rus.month_change.toString(),
                 current_month_arc_rrc: glide_record_rus.current_month_arc_rrc.toString(),
@@ -122,22 +126,14 @@ function updateAndRedirect() {
                 u_variance_explanation: glide_record_rus.u_variance_explanation.toString()
             };
 
-
             rus.push(ru);
+            
+            }
+            return rus;
 
         }
-
-        return rus;
     }
-	redirect();
-	function redirect() {
-    gs.addInfoMessage('New Financial Statement Created in Financial Statement Module');
-    action.setRedirectURL(current);
-}
-
-}
-
-    ]]></script>
+]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -148,7 +144,7 @@ function updateAndRedirect() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d5f284b597213110e25972d6f053afc8</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>Generate Financial Statement</sys_name>
         <sys_overrides/>
         <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
@@ -156,7 +152,7 @@ function updateAndRedirect() {
         <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
         <sys_update_name>sys_ui_action_d5f284b597213110e25972d6f053afc8</sys_update_name>
         <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
-        <sys_updated_on>2024-01-10 13:29:25</sys_updated_on>
+        <sys_updated_on>2024-02-27 03:10:22</sys_updated_on>
         <table>x_323515_account_0_ru_requests</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

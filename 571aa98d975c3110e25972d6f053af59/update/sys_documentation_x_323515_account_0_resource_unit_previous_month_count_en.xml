@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="previous_month_count" label="Previous Month Count" language="en" table="x_323515_account_0_resource_unit">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>previous_month_count</element>
+            <help/>
+            <hint/>
+            <label>Previous Month Count</label>
+            <language>en</language>
+            <name>x_323515_account_0_resource_unit</name>
+            <plural>Previous Month Counts</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Prashanth.Reddy@Motiva.com</sys_created_by>
+            <sys_created_on>2024-03-13 23:46:48</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Previous Month Count</sys_name>
+            <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+            <sys_update_name>sys_documentation_x_323515_account_0_resource_unit_previous_month_count_en</sys_update_name>
+            <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+            <sys_updated_on>2024-03-13 23:46:48</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

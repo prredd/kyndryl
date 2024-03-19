@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_323515_account_0_resource_unit</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_323515_account_0_resource_unit">current_month_countVALCHANGES^EQ<item endquery="false" field="current_month_count" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Set previous month count</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Prashanth.Reddy@Motiva.com</sys_created_by>
+        <sys_created_on>2024-03-14 02:20:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>df6877a793308e104f1234f17cba1065</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set previous month count</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_script_df6877a793308e104f1234f17cba1065</sys_update_name>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-03-14 02:20:38</sys_updated_on>
+        <template>previous_month_countSAMEAScurrent_month_count^EQ</template>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=df6877a793308e104f1234f17cba1065"/>
+</record_update>

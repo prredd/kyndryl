@@ -13,7 +13,9 @@
         <element choice="3" label="Resource Unit Number" max_length="32" name="resource_unit_number" read_only="true" reference="x_323515_account_0_ru_definition" type="reference">
             <choice/>
         </element>
-        <element label="RU Description" max_length="32" name="ru_description" reference="x_323515_account_0_ru_definition" type="reference"/>
+        <element attributes="omit_sys_original=true" label="ARC/RRC Rate" max_length="20" name="u_arc_rrc_rate" type="currency"/>
+        <element label="Baseline" max_length="40" name="u_baseline" type="integer"/>
+        <element attributes="base_start=true" label="RU Description" max_length="80" name="u_ru_description" type="table_name"/>
         <element label="Variance Explanation" mandatory="true" max_length="4000" name="variance_explanation" type="string"/>
     </element>
 </database>

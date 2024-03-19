@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>get_data_from_cmdb</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Get RU count form CMDB</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+    var formVal = g_form.getValue('resource_unit_number');
+    var ga = new GlideAjax('currentRuCount');
+    ga.addParam('sysparm_name', 'getCmdbCount');
+    ga.addParam('sysparm_ru_name', formVal);
+    ga.getXML(countParse);
+
+    function countParse(response) {
+
+        var answer = response.responseXML.documentElement.getAttribute("answer");
+
+        var clearvalue;
+
+		if(newValue == 'yes'){
+			g_form.addInfoMessage(answer);
+			//g_form.setValue()
+			g_form.setValue("current_month_count", answer.count.toSting());
+			g_form.setValue("u_ru_description", answer.description);
+			g_form.setValue("u_arc_rrc_rate", answer.arcrate);
+			g_form.setValue("u_baseline", answer.baseline);
+		}
+		else if(newValue == 'no'){
+			g_form.clearValue("current_month_count");
+		}
+		else{
+			g_form.clearValue("current_month_count");
+		}
+    }
+
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-26 09:21:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>215a35c997213110e25972d6f053af7a</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Get RU count form CMDB</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_update_name>sys_script_client_215a35c997213110e25972d6f053af7a</sys_update_name>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-02-05 11:57:06</sys_updated_on>
+        <table>x_323515_account_0_ru_task</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</application>
+        <file_path/>
+        <instance_id>49efa1e0dbcb5380439ef70fbf9619fe</instance_id>
+        <instance_name>motivaenterprisesdev</instance_name>
+        <name>sys_script_client_215a35c997213110e25972d6f053af7a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;get_data_from_cmdb&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Get RU count form CMDB&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+    var formVal = g_form.getValue('resource_unit_number');
+    var ga = new GlideAjax('currentRuCount');
+    ga.addParam('sysparm_name', 'getCmdbCount');
+    ga.addParam('sysparm_ru_name', formVal);
+    ga.getXML(countParse);
+
+    function countParse(response) {
+
+        var answer = response.responseXML.documentElement.getAttribute("answer");
+
+        var clearvalue;
+
+		if(newValue == 'yes'){
+			g_form.addInfoMessage(answer);
+			//g_form.setValue()
+			g_form.setValue("current_month_count", answer.count.toSting());
+			g_form.setValue("u_ru_description", answer.description);
+			g_form.setValue("u_arc_rrc_rate", answer.arcrate);
+			g_form.setValue("u_baseline", answer.baseline);
+		}
+		else if(newValue == 'no'){
+			g_form.clearValue("current_month_count");
+		}
+		else{
+			g_form.clearValue("current_month_count");
+		}
+    }
+
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-09-26 09:21:51&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;215a35c997213110e25972d6f053af7a&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;Get RU count form CMDB&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Kyndryl Resource Unit Management"&gt;571aa98d975c3110e25972d6f053af59&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_215a35c997213110e25972d6f053af7a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Prashanth.Reddy@Motiva.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-05 11:57:06&lt;/sys_updated_on&gt;&lt;table&gt;x_323515_account_0_ru_task&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1493986062</payload_hash>
+        <record_name>Get RU count form CMDB</record_name>
+        <reverted_from/>
+        <source>98ce3f6987ba39d0bc28ca68cebb3519</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Prashanth.Reddy@Motiva.com</sys_created_by>
+        <sys_created_on>2024-02-05 11:57:06</sys_created_on>
+        <sys_id>2e50d6ef9388c6104f1234f17cba10e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d79210ec60000001</sys_recorded_at>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-02-05 11:57:06</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>2a505aafcd88c610fa6a1ae7711d91f3</update_guid>
+        <update_guid_history>2a505aafcd88c610fa6a1ae7711d91f3:1493986062,fe5ec2eb1f88c6107d23fcd57754b756:-848056838,73fd8eab1688c610fce6ac6bbdf5f437:-2024251703,3fcd8e6b9a88c610a77257d70eada893:2093539592,079dca6bbf88c610fcb448559d64ccf2:2133748854,c93dca6bd888c6102c194b0e68635170:-74405324,9ae80a636d88c6107123214c787f91b5:-1748652490,e1a9732d60ba39d019f2f2339c16f22c:1414964865</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Prashanth.Reddy@Motiva.com</sys_created_by>
+        <sys_created_on>2024-02-05 12:07:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>75781901203a4da280f99dd43b8e2324</sys_id>
+        <sys_metadata>215a35c997213110e25972d6f053af7a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get RU count form CMDB</sys_name>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_parent display_value="RU Task">72be783897613110e25972d6f053af14</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope_delete display_value="">2bc20da32feb4c0bb384e3c1d88f23b1</sys_scope_delete>
+        <sys_update_name>sys_script_client_215a35c997213110e25972d6f053af7a</sys_update_name>
+        <sys_update_version display_value="sys_script_client_215a35c997213110e25972d6f053af7a">2e50d6ef9388c6104f1234f17cba10e5</sys_update_version>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-02-05 12:07:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

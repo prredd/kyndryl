@@ -9,17 +9,22 @@
         <name>currentRuCount</name>
         <script><![CDATA[var currentRuCount = Class.create();
 currentRuCount.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
-	
- getCmdbCount: function() {
-		var cmdbCount = new GlideRecord('x_323515_account_0_ru_definition');
-            cmdbCount.addQuery('sys_id',this.getParameter("sysparm_ru_name"));
-            cmdbCount.query();
-	while(cmdbCount.next()){
-	var count = cmdbCount.current_count;
-		gs.info(count);
-}
-		return count;
-		
+
+    getCmdbCount: function() {
+        var rudef = {};
+        var cmdbCount = new GlideRecord('x_323515_account_0_ru_definition');
+        cmdbCount.addQuery('sys_id', this.getParameter("sysparm_ru_name"));
+        cmdbCount.query();
+        while (cmdbCount.next()) {
+
+            rudef.count = cmdbCount.current_count.toString();
+            rudef.arcrate = cmdbCount.arc_rrc_rate.toString();
+            rudef.baseline = cmdbCount.baseline.toString();
+            rudef.description = cmdbCount.getDisplayValue("description");
+            gs.info(rudef);
+        }
+        return JSON.stringify(rudef);
+
     },
     type: 'currentRuCount'
 });]]></script>
@@ -27,13 +32,13 @@ currentRuCount.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-23 14:07:32</sys_created_on>
         <sys_id>5826ff4e97343110e25972d6f053af69</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>currentRuCount</sys_name>
-        <sys_package display_value="Account Financials" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
+        <sys_package display_value="Kyndryl Resource Unit Management" source="x_323515_account_0">571aa98d975c3110e25972d6f053af59</sys_package>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="Account Financials">571aa98d975c3110e25972d6f053af59</sys_scope>
+        <sys_scope display_value="Kyndryl Resource Unit Management">571aa98d975c3110e25972d6f053af59</sys_scope>
         <sys_update_name>sys_script_include_5826ff4e97343110e25972d6f053af69</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-14 12:36:24</sys_updated_on>
+        <sys_updated_by>Prashanth.Reddy@Motiva.com</sys_updated_by>
+        <sys_updated_on>2024-02-05 11:54:33</sys_updated_on>
     </sys_script_include>
 </record_update>
